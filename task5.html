@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Container with Two Small Containers</title>
+<style>
+    /* Big container styling */
+    .big-container {
+        display: flex;              /* Enables side-by-side layout */
+        justify-content: space-between; /* Space between small containers */
+        align-items: center;        /* Vertically center items */
+        width: 80%;                 /* Adjust as needed */
+        margin: 20px auto;          /* Center on page */
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    /* Small container styling */
+    .small-container {
+        flex: 1;                    /* Equal width for both */
+        margin: 0 10px;              /* Space between them */
+        padding: 20px;
+        background-color: #d0eaff;
+        border: 1px solid #999;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    /* Optional: Make it responsive */
+    @media (max-width: 600px) {
+        .big-container {
+            flex-direction: column; /* Stack vertically on small screens */
+        }
+        .small-container {
+            margin: 10px 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="big-container">
+    <div class="small-container">Small Container 1</div>
+    <div class="small-container">Small Container 2</div>
+</div>
+
+</body>
+</html>
