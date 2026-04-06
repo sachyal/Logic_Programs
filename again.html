@@ -4,12 +4,44 @@
         <title>Again practice</title>
         <base href="https://www.github.com/" target="_blank">
         <style>
-            table , th, td, tbody, thead ,tfoot {
-                border:1px solid black;
+            table , th,td,tbody, thead ,tfoot {
+                border:2px solid black;
         }
+         .sidenavbar{
+            height: 100%;
+            width:150px;
+            position:fixed;
+            top:0;
+            overflow-x: hidden;
+            background-color:black;
+            left:0;
+            z-index:1;
+
+         }
+         .sidenavbar a{
+            font-size: 18px;
+            color:lightgreen;
+            padding:8px 8px;
+            display: block;
+            text-decoration: none;
+         }
+         .sidenavbar a:hover{
+            color:white;
+         }
+         .main{
+            margin-left:160px;
+            padding-top:10px;
+
+         }
         </style>
     </head>
-    <body>
+    <body> <div class="sidenavbar">
+           <a href="#home"> HOME</a>
+           <a href="#about">ABOUT</a>
+           <a href="#services"> SERVICES</a>
+           <a href="#contacts"> CONTACTS</a>
+    </div>
+     <div class="main">
         <h1 style="text-align: center;">Practing again</h1>
         <a href="tags/tag_base.asp" >target blank page</a> <br>
         <abbr title="who"> World health organization</abbr>
@@ -80,7 +112,7 @@
             </colgroup>
             
         </table>
-
+     </div>
 
 
 

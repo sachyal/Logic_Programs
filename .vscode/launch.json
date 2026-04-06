@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Stringq6",
+            "request": "launch",
+            "mainClass": "Stringq6",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Stringq5",
+            "request": "launch",
+            "mainClass": "Stringq5",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Stringq4",
+            "request": "launch",
+            "mainClass": "Stringq4",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Stringq3",
+            "request": "launch",
+            "mainClass": "Stringq3",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Stringq2",
+            "request": "launch",
+            "mainClass": "Stringq2",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Stringq1",
+            "request": "launch",
+            "mainClass": "Stringq1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "CharQ3",
+            "request": "launch",
+            "mainClass": "CharQ3",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Char",
+            "request": "launch",
+            "mainClass": "Char",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mq11",
+            "request": "launch",
+            "mainClass": "Mq11",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mq9",
+            "request": "launch",
+            "mainClass": "Mq9",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mq9",
+            "request": "launch",
+            "mainClass": "html.Mq9",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open sidebar.html",
+            "file": "c:\\Users\\Sachin Goyal\\Desktop\\Logic_Programs\\html\\sidebar.html"
+        }
+    ]
+}
