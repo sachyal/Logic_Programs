@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <head> <title> practicing css</title>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9hY6Y5z5Q5e5l5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5e5Z5" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+      
+      <style>
+        .d{
+          h1{
+            font-family: serif;
+            font-style:italic;
+            font-size:larger;
+            font-weight: bold;
+            font-variant:normal;
+          }
+          p{
+            text-indent: 30px;
+            color:blue;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            word-spacing: 2px;
+            text-decoration: line-through;
+            text-shadow: 2px 2px red ;
+            line-height: 1cm;
+            overflow: scroll;
+            background-color: black;
+
+
+          }
+          
+        } <br> 
+        
+        .d4{
+          width:500px;
+          height:200px;
+          background-image: radial-gradient(circle closet-corner at 60% 40% ,yellow , red , blue)
+        }
+        span{
+          display:inline-block;
+          background-color: yellow;
+          width: 200px;
+          height:50px
+        }
+        .d1{
+          width:300px;
+          height:200px;
+          background-color: yellow;
+          float:left;
+        }
+        .d2{
+          width:300px;
+          height:200px;
+          background-color: gray;
+          float:left;
+        
+        }
+        .d3{
+          width:300px;
+          height:200px;
+          background-color: red;
+          float:left;
+          visibility: visible;
+          display:block;
+          
+        }
+        .d5{
+          width:500px;
+          height:200px;
+          background-color:rgba(20,40,40,1);
+          background-color:hsla(20,40%,40%,0.3);
+          opacity: 0.4 !important;
+        }
+        .d6{
+          background-color:red;
+          column-count:3;
+          column-gap:10px;
+          column-rule:2px solid black;
+
+          
+        }
+        .d7{
+          
+            h1::first-letter{
+              color:yellow;
+              font-size:100px;
+            }
+            h1::before{
+              content: "Beforre the h1 ";
+            }
+            h1::after{
+              content:" After the h1";
+            }
+            p::first-line{
+              color:red;
+            }
+            p::selection{
+              color:white;
+              background-color:black;
+            }
+          
+        }
+        .d8{
+          p:nth-child(2){
+            color:white;
+            background-color:black;
+          }
+        }
+        .d9{
+          width: 300px;
+          height:200px;
+          margin-top: 200px;
+          margin-left:200px;
+          background-color:gray;
+          transform:translate(40px,40px);
+          transform:rotate(30deg);
+          transform:scale(2,2);
+          transform:skew(10deg,10deg);
+
+        }
+        .d9 {
+          p {
+          margin-left:100px ;
+        } }
+
+        .d10{
+          width:300px;
+          height:200px;
+          margin-top:100px;
+          margin-left:100px;
+          background-color:brown;
+        }
+        .d10in{
+          width:300px;
+          height:200px;
+          background-color:gray;
+          transform: perspective(200px) rotateY(30deg);
+        }
+        .d11{
+          width:300px;
+          height:200px;
+          margin-top:100px;
+          background-color:gray;
+          transition-property:widt, height,background-color;
+          transition-duration:2s;
+          transition-timing-function:ease;
+
+        }
+        .d11:hover{
+          width:200px;
+          height:300px;
+          background-color:red;
+
+        }
+        .d12{
+          width: 100px;
+          height:100px;
+          margin:100;
+          background-color:green;
+          animation-name:example;
+          animation-duration:2s;
+          animation-iteration-count: infinite;
+          animation-timing-function:cubic-bezier(0.2, 0.3,0.4);
+        }
+        
+          @keyframes example {
+            from{
+              background-color:red;
+            }
+            to{
+              background-color:yellow;
+            }
+            
+          }
+          .d13{
+            width:900px;
+            height:400px;
+            background-color:violet;
+          }
+          @media screen and (max-width:650px){
+                 .d13{
+                  width:100%;
+                  background-color:yellow;
+                 }            
+          }
+          .d14{
+            table,tr,th,td{
+              border-collapse: collapse;
+              border:1px solid black;
+              background-color:pink;
+              color:red;
+              margin:auto;
+              width:50%;
+            }
+            th{
+              background-color:blue;
+
+            }
+
+          }
+          .d15{
+            display: inline-block;
+            margin-top:100px;
+          }
+          .d15 a {
+            text-decoration: none;
+            padding-left:5px;
+            margin-left:5px;
+            padding:10px 20px;
+            
+          }
+          .d15 a:hover{
+            background-color:pink;
+            color:yellow;
+            cursor: pointer;
+          }
+
+          .d16 a { 
+             text-decoration: none;
+             color:green;
+             background-color:brown;
+             border-radius:5px;
+             border:3px solid black;
+            }
+
+            .d16 a:hover{
+              color:orange;
+              background-color: aqua;
+              padding-left:40px;
+              border-radius:5px;
+            }
+            .d17{
+              ul{
+                list-style-type: none;
+              }
+              li{
+                float:left;
+                padding:20px;
+                background-color:Green;
+                margin-left:1px;
+                color:gold;
+              }
+            }
+            .d18{
+              ul{
+                list-style-type: none;
+              }
+              li a{
+                float:left;
+                padding:20px;
+                margin-left:1px;
+                color:black;
+                text-decoration: none;
+              }
+              a:hover{
+                background-color:yellow;
+                color:blueviolet;
+              }
+            }
+        .d19 {
+          input[type="text"]:focus{
+            background-color:orange;
+
+          }
+          input[type="text"]{
+            background-color: aqua;
+            border-radius:10px;
+          }
+          label{
+            color:blue;
+          }
+        }
+        .d20{
+          display:flex;
+          background-color:dodgerblue;
+          flex-wrap:wrap;
+          align-content:center;
+          overflow:scroll;
+          height:400px;
+
+        }
+        .d20 div{
+          background-color:gray;
+          width:100px;
+          margin:10px;
+          padding:10px;
+          text-align:center;
+          font-size:30px;
+          
+
+        }
+
+      
+      </style>
+        </head>
+        <body> 
+          <div class="d">
+            <h1> this is font about font</p> 
+              <p> this is about text.textthis is about text.textthis is about text.textthis is about text.textthis is about text.text
+                this is about text.textthis is about text.textthis is about text.textthis is about text.textthis is about text.text
+                this is about text.textthis is about text.textthis is about text.textthis is about text.textthis is about text.text
+                this is about text.textthis is about text.textthis is about text.textthis is about text.text
+                this is about text.textthis is about text.textthis is about text.text
+              </p>
+              
+           </div>
+          <div class="d1"> d1</div>
+
+          <div class="d2">d2</div>
+          <div id="d4">
+          <div class="d3"> d3</div> 
+        </div>
+          <span> this is span inline element</span>
+          <div class="d4"> div 4</div> <br>
+
+          <div class="d5"> 
+            <p> this is paraagrapgh about paragraph</p>
+          </div> <br>
+          <div class="d6">
+          <p>this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.
+          </p> </div> <br>
+          <i class="fas fa-home"></i> 
+            <i class="fab fa-twitter"></i> 
+            <i class="fa-solid fa-crow"></i>
+
+            <div class="d7">
+              <h1> This is first line</h1> 
+            <p>this is line 2this is line 2this is line 2this is line 2this is line 2this is line 2
+              this is line 2this is line 2this is line 2this is line 2this is line 2this is line 2
+              this is line 2this is line 2this is line 2this is line 2this is line 2
+              this is line 2this is line 2this is line 2this is line 2
+              this is line 2this is line 2this is line 2this is line 2this is line 2
+            </p>
+            </div>
+            <div class="d8">
+              <ul>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+                <li>list item 4</li>
+                <li>list item 5</li>
+              </ul>
+              <p>parapah 2 child </p>
+              <p>paragraph 3 child</p>
+              <div class="d8in1">
+                <p> paragraph of child div 1</p>
+                <p> paragraph of child div 2</p>
+                <p> paragraph of child div 3</p>
+                <p> paragraph of child div 4</p>
+              </div>
+              <div class="d8in2">
+                <p>child of div 2 </p>
+              </div>
+               <ul>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+                <li>list item 4</li>
+                <li>list item 5</li>
+              </ul>
+            </div>
+           <div class="d9">
+            <p> this is p of div 9</p>
+
+           </div>
+           <div class="d10">
+           <div class="d10in"><p> this is 3d transform</p> </div>
+
+           </div> <br>
+          <div class="d11"> <p> this is div 11</p></div> <br>
+          <div class="d12"> 
+            <p> this is div 12</p>
+          </div>
+          <div class="d13">
+            <p> this is div13</p>
+            <p>this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.
+            this is about column and column.this is about column and column.this is about column and column.
+          </p>
+          </div>
+
+          <div class="d14">
+             <table>
+              <tr>
+                <th> Name </th>
+                <th>Age</th>
+                <th>Address</th>
+                <th> Subject</th>
+              </tr>
+              <tr>
+                <td>Rohan</td>
+                <td>20 </td>
+                <td> MP</td>
+                <td> Maths</td>
+              </tr>
+              <tr>
+                <td>Rohan</td>
+                <td>20 </td>
+                <td> MP</td>
+                <td> Maths</td>
+              </tr>
+              <tr>
+                <td>Rohan</td>
+                <td>20 </td>
+                <td> MP</td>
+                <td> Maths</td>
+              </tr>
+              
+             </table>
+          </div>
+          <div class="d15">
+            <h2> Pagination</h2>
+            <a href="#">&laquo</a>
+            <a href="#"> 1</a>
+             <a href="#"> 2</a>
+              <a href="#"> 3</a>
+               <a href="#"> 4</a>
+                <a href="#"> 5</a>
+                 <a href="#"> 6</a>
+                 <a href="#">&raquo</a>
+          </div><br> <br>
+
+          <div class="d16">
+            <a href="#"> This is Link</a> <br> <br>
+          </div>
+          <div class="d17">
+             <ul>
+              <li>Pink</li>
+              <li>Green</li>
+              <li>Black</li>
+              <li>White</li>
+              <li>yellow</li>
+             </ul> <br> <br>
+          </div> <br> <br>
+          <div class="d18">
+            <ul>
+              <li> <a href="#">Pink</a></li>
+              <li> <a href="#">Green</a></li>
+              <li><a href="#">Black</a></li>
+              <li><a href="#">White</a></li>
+              <li><a href="#">yellow</a></li>
+             </ul> <br> <br>
+
+          </div> <br> <br>
+          <div class="d19">
+            <form action="#">
+              <label for="fname"> First Name</label>
+              <input type="text" id="fname" name="fname"> <br>
+              <label for="lname"> Last Name</label>
+              <input type="text" id="lname" name="lname"> <br>
+              <input type="submit" value="submit">
+            </form>
+          </div>
+          <div class="d20">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            
+          </div>
+        </body>
+</html>

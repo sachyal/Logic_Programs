@@ -6,6 +6,195 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Arrq5",
+            "request": "launch",
+            "mainClass": "Arrq5",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Arrq4",
+            "request": "launch",
+            "mainClass": "Arrq4",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Arrq3",
+            "request": "launch",
+            "mainClass": "Arrq3",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Arrq2",
+            "request": "launch",
+            "mainClass": "Arrq2",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Arrq1",
+            "request": "launch",
+            "mainClass": "Arrq1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqop1",
+            "request": "launch",
+            "mainClass": "Mqop1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "VC",
+            "request": "launch",
+            "mainClass": "VC",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Scc",
+            "request": "launch",
+            "mainClass": "Scc",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqc5",
+            "request": "launch",
+            "mainClass": "Mqc5",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqc4",
+            "request": "launch",
+            "mainClass": "Mqc4",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqc3",
+            "request": "launch",
+            "mainClass": "Mqc3",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mq5",
+            "request": "launch",
+            "mainClass": "Mq5",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Stq",
+            "request": "launch",
+            "mainClass": "Stq",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Pn2",
+            "request": "launch",
+            "mainClass": "Pn2",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqc4",
+            "request": "launch",
+            "mainClass": "programstest.Mqc4",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqc3",
+            "request": "launch",
+            "mainClass": "programstest.Mqc3",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqc2",
+            "request": "launch",
+            "mainClass": "programstest.Mqc2",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Mqc",
+            "request": "launch",
+            "mainClass": "programstest.Mqc",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q8",
+            "request": "launch",
+            "mainClass": "programstest.Q8",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q7",
+            "request": "launch",
+            "mainClass": "programstest.Q7",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q6",
+            "request": "launch",
+            "mainClass": "programstest.Q6",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q5",
+            "request": "launch",
+            "mainClass": "programstest.Q5",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q4",
+            "request": "launch",
+            "mainClass": "programstest.Q4",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q3",
+            "request": "launch",
+            "mainClass": "programstest.Q3",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q2",
+            "request": "launch",
+            "mainClass": "programstest.Q2",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Q1",
+            "request": "launch",
+            "mainClass": "programstest.Q1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Stringq7",
+            "request": "launch",
+            "mainClass": "Stringq7",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
             "name": "Stringq6",
             "request": "launch",
             "mainClass": "Stringq6",
