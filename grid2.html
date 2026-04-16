@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.logo {
+  grid-area: lArea;
+}
+
+.header {
+  grid-area: hArea;
+}
+
+.left-sidebar {
+  grid-area: lSbArea;
+}
+
+.content-area {
+  grid-area: cArea;
+}
+
+.right-sidebar {
+  grid-area: rSbArea;
+}
+
+.footer {
+  grid-area: fArea;
+}
+
+.main-container {
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;  
+  grid-template-areas: 
+    'lArea hArea hArea hArea hArea hArea hArea hArea hArea hArea hArea hArea' 
+	'lSbArea lSbArea cArea cArea cArea cArea cArea cArea cArea cArea rSbArea rSbArea'  	
+	'fArea fArea fArea fArea fArea fArea fArea fArea fArea fArea fArea fArea';
+}
+
+.main-container > div {
+  padding: 2px;
+  background:pink;
+  border:1px solid green;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="main-container">
+  <div class="logo">Logo</div>
+  <div class="header">Header Area</div>
+  <div class="left-sidebar">Left Sidebar</div>
+  <div class="content-area">Content Area</div>
+  <div class="right-sidebar">Right Sidebar</div>
+  <div class="footer">Footer Area</div> 
+</div>
+
+<h2><img src="circle.jpg" width="20px" height="20px"><span style="font-size: 20px;"> <sup>Cefpro*</sup></span>onnect</h2>
+</body>
+</html>

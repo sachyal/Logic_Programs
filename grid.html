@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-item2-name {
+  grid-area: gridArea1;
+}
+.main-container-template-areas2 {
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: 'gridArea1 gridArea1 .' 'gridArea1 gridArea1 .' 'gridArea1 gridArea1 .'  ;
+}
+.inner-divs4 {
+  padding: 2px;
+  background:aqua;
+  border:2px solid yellow;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+
+<p style="text-align:center">grid-template-columns is optional. Add grid-template-columns: auto auto auto; in the main container class & the output will not change</p>
+<div class="main-container-template-areas2">
+  <div class="inner-divs4">HTML</div>
+  <div class="grid-item2-name inner-divs4">CSS</div>
+  <div class="inner-divs4">Bootstrap</div>
+  <div class="inner-divs4">Javascript</div>
+  <div class="inner-divs4">PHP</div>
+  <div class="inner-divs4">MySQL</div>
+  <div class="inner-divs4">Photoshop</div>
+  <div class="inner-divs4">Python</div>  
+</div>
+
+</body>
+</html>

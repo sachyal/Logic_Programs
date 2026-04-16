@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "A2dq5",
+            "request": "launch",
+            "mainClass": "A2dq5",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "A2dq4",
+            "request": "launch",
+            "mainClass": "A2dq4",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "A2dq3",
+            "request": "launch",
+            "mainClass": "A2dq3",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "A2dq2",
+            "request": "launch",
+            "mainClass": "A2dq2",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "A2d",
+            "request": "launch",
+            "mainClass": "A2d",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Saq1",
+            "request": "launch",
+            "mainClass": "Saq1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Sscq1",
+            "request": "launch",
+            "mainClass": "Sscq1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Soq1",
+            "request": "launch",
+            "mainClass": "Soq1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Sarrq1",
+            "request": "launch",
+            "mainClass": "Sarrq1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Asq2",
+            "request": "launch",
+            "mainClass": "Asq2",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
+            "name": "Asq1",
+            "request": "launch",
+            "mainClass": "Asq1",
+            "projectName": "Logic_Programs_e088c2ff"
+        },
+        {
+            "type": "java",
             "name": "Arrq5",
             "request": "launch",
             "mainClass": "Arrq5",

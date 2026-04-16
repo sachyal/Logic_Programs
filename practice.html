@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     .grid-item2-name {
+      grid-area: gridArea1 ;
+     }
+     .main-container-template-areas {
+      display:grid;
+      grid-template-columns: auto auto auto ;
+      grid-template-areas: 'gridArea1 gridArea1 ';
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-right: 220px;
+      margin-top:20px;
+
+     }
+     .inner-divs3 {
+      padding: 2px;
+      background:orange;
+      border-bottom: 2px solid black;
+      text-align:center;
+     }
+     .sidebar{
+        width:200px;
+        height:500px;
+        right:0;
+        top:20px;
+        position:absolute;
+        background-color: black;
+        color:white;
+        padding:10px;
+     }
+     .sidebar a:link{
+        padding:3px;
+        border-radius: 10px;
+        background-color: blue;
+        color:gold;
+
+     }
+     .sidebar a:hover{
+        color:red;
+        background-color: white;
+     }
+     .main{
+        height:520px;
+        background-color: skyblue;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+        <div class="sidebar"> 
+            <h3> this is side bar</h3>
+            <p> this is something something, to work on </p>
+            <a href="#1"> this is link to press something on</a>
+        </div>
+    <div class="main-container-template-areas">
+      <div class="inner-divs3">HTML</div>
+      <div class="grid-item2-name inner-divs3">CSS</div>
+      <div class="inner-divs3">Bootstrap</div>
+      <div class="inner-divs3">Javascript</div>
+      <div class="inner-divs3">PHP</div>
+      <div class="inner-divs3">MySQL</div>
+      <div class="inner-divs3">Photoshop</div>
+      <div class="inner-divs3">Python</div>
+    </div> </div>
+  </body>
+</html>

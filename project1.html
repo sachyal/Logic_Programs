@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head><title>t1</title>
+        <meta charset="utf-8">
+    <meta type="viewport" content="width=device-width , initial-scale=1.0">
+        <style>
+            .sidebar{
+                width:160px;
+                height: 1150px;
+                position: absolute;
+                right:0;
+                margin-top: 7px;
+                background-color: blue;
+                color:white;
+                padding:10px;
+                overflow-x: hidden;
+
+            }
+            .sidebar a:link{
+                padding:5px;
+                color:white;
+                background-color: skyblue;
+                border-radius: 5px;
+                width:30px;
+                height: 5px;
+
+            }
+            .main{
+                
+                padding: 0 10px;
+                margin-right:180px;
+                margin-top:20px;
+
+            }
+            
+            .cont1{
+                display:grid;
+                grid-template-columns: auto auto auto;
+                grid-template-areas:'gridArea1 gridArea1 ';
+                 column-gap:10px;
+                row-gap:10px;
+            }
+            .grid-item2-flex {
+                grid-area: gridArea1;
+                
+            }
+            .f1{
+                display:flex;
+                padding:10px;
+            }
+            .f1 div{
+                flex:1;
+                padding:10px;
+            }
+            #n1 {
+                background-color: blue;
+                color:black;
+                
+            }
+            .inner-divs4{
+                padding:10px;
+                background-color: white;
+                border-bottom: 2px solid black;
+            }
+             .imc1 {
+                width: 380px;
+                 height: 250px;
+                  background-image: url('circle.jpg');
+                   background-size: cover;
+                    background-position: center;
+                    position: relative; 
+                    }
+                    .imagelink{
+                        background-color: blue;
+                        color:black;
+                       width:150px;
+                        left:0;
+                       float:left;
+                       bottom: 10px;
+                       position:absolute;
+                       text-decoration: none;
+
+                    }
+                    .m1{
+                        margin-left:30%;
+                        margin-right:25%;
+                        display:flex;
+                        overflow-wrap:break-word ;
+                        height: 120px;
+                    }
+                    .m1c{
+                        background-color: blue;
+                        color:white;
+                    }
+                    
+                    .m1c a:link{
+                         padding:5px;
+                      color:white;
+                     background-color: skyblue;
+                     border-radius: 5px;
+                    width:40pxx;
+                    height: 5px;
+               }
+            .cont2{
+                display:grid;
+                grid-template-columns:auto auto auto auto;
+                column-gap:10px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="d1">
+            <h1 style="color:skyblue;"> Latest stories</h1>
+        </div>
+        <div class="box1">
+            <div class="sidebar">
+                <div> <img src="logo.jpg"><h3>onnect</h3></div>
+                <h3><span style="color:skyblue;">Publish your thought leadership</span>
+                 to a global Community with Cefpro Connect.</h3>
+                 <a href="#link"> Get in touch ></a>
+            </div>
+            <div class="main">
+            <div class="cont1">
+            <div class="grid-item2-flex inner-divs4"> <div class="f1">
+                <div class="c1"> <img src="circle.jpg" widht="200px" height="300px"></div>
+                <div class="c2"> <h3 id="n1">NEWS</h3>
+                  <h3> Banks Brace for Slower Credit and Rising Stability Risks</h3>
+                <p> feb 27, 2026</p>   </div> </div>
+            </div>
+             <div class="inner-divs4"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> Geopolitics is REwriting the rules of Strategic Risk</h3>
+                 <p> feb 27,2026</p> </div>
+             <div class="inner-divs4"><div class="imc1">
+                  <a href="#news" class="imagelink"> News</a> </div>
+                 <h3>Banks Confront Credit REvival and Ai 
+                    Risk Surge</h3>
+                 <p> feb 26,2026</p></div>
+             <div class="inner-divs4"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> Payments Innovation Demands Balance Sheet Discipline Not Hype</h3>
+                 <p> feb 26,2026</p> </div>
+             <div class="inner-divs4"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> How Leaders Wrangle the Gray Rhino Before it charges</h3>
+                 <p> feb 25,2026</p> </div>
+             <div class="inner-divs4"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> What Happens When Bank Risk Models No longer Match Reality</h3>
+                 <p> feb 25,2026</p> </div>
+             <div class="inner-divs4"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3>How Stablecoins are Rewriting the Rules of Cash and Liquidity</h3>
+                 <p> feb 25,2026</p></div>
+             <div class="inner-divs4"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> Wrangling the Gray Rhino Before it Tramples your Risk Strategy</h3>
+                 <p> feb 25,2026</p></div>  
+            </div>
+            </div>
+        </div>
+
+        <div class="m1">
+            <div class="m1c"> <h3>Publish your <span style="color:skyblue;"> thought leadership</span>
+            to a global Community with <span style="color:skyblue;">Cefpro Connect.</span> </h3></div>
+            <div class="m1c"> <h3><img src="logo.jpg">onnect</h3>
+            <a href="#link">Get in touch ></a></div>
+        </div> <br>
+        <div>
+            <h2 style="color:blue;">Latest article</h2>
+        </div>
+        <div class="cont2">
+            <div class="inner-divs3"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> Geopolitics is REwriting the rules of Strategic Risk</h3>
+                 <p> feb 27,2026</p></div>
+             <div class="inner-divs3"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> Payments Innovation Demands Balance Sheet Discipline Not Hype</h3>
+                 <p> feb 26,2026</p></div>
+             <div class="inner-divs3"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> How Leaders Wrangle the Gray Rhino Before it charges</h3>
+                 <p> feb 25,2026</p> </div>
+             <div class="inner-divs3"><div class="imc1">
+                  <a href="#article" class="imagelink"> Article</a> </div>
+                 <h3> What Happens When Bank Risk Models No longer Match Reality</h3>
+                 <p> feb 25,2026</p> </div>
+        </div>
+
+    </body>
+</html>
