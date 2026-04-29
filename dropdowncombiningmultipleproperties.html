@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head> <title>drop-down combining multiple properties</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+        }
+        div{
+            display: block;
+            margin:0 auto;
+            text-align: center;
+            height: 150px;
+            width: 100%;
+        }
+        div a{
+            font-size: 23px;
+            display: block;
+            text-decoration: none;
+            color:white;
+            box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.8);
+        }
+        div a:hover{
+            color:black;
+            background: linear-gradient(to left,lavender 60%, hotpink 40%);
+            background-size: 50px;
+            animation:dropdownmenu 1s;
+        }
+        @keyframes dropdownmenu{
+            from{
+                opacity: 0;
+                top:5px;
+            }
+            to {
+                opacity: 1;
+                top:7px;
+            }
+        }
+        ul li{
+            float:left;
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+            background:hotpink;
+        }
+        ul ul li{
+            position:relative;
+            display: none;
+        }
+        ul li:hover ul li{
+            display: block;
+
+        }
+        ul ul ul{
+            display: none;
+        }
+        ul ul li:hover ul{
+            display: block;
+             position:absolute;
+            width:150px;
+            left:150px;
+            height: 50px;
+            top:0;
+            
+        }
+
+   </style>
+  </head>
+  <body>
+    <h2>Example for CSS drop-down</h2><br>
+    <div>
+      <ul>
+        <li>
+          <a href="#">Clothing</a>
+          <ul>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Skirts</a></li>
+            <li><a href="#">Kurtis</a></li>
+            <li><a href="#">Jeans</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Shoes</a>
+          <ul>
+            <li><a href="#">Wedges</a></li>
+            <li><a href="#">Heels</a></li>
+            <li><a href="#">Ankle boots</a></li>
+            <li><a href="#">Lace ups</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Bags</a>
+          <ul>
+            <li><a href="#">Sling</a></li>
+            <li> <a href="#">Clutch</a></li>
+            <li><a href="#">Tote</a></li>
+            <li><a href="#">Wallet</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Watches</a>
+          <ul>
+            <li><a href="#">Guess</a></li>
+            <li><a href="#">Fastrack</a></li>
+            <li> <a href="#">Fossil</a></li>
+            <li><a href="#">Rado</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

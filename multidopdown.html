@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html>
+    <head><title>multi drop down menu</title>
+    <style>
+      *{
+ padding:0;
+ margin:0;
+ box-sizing:border-box;
+}
+
+nav {
+ display:block;
+ margin:0 auto;
+ text-align:center;
+ height:100px;
+ width:100%;
+}
+
+nav a {
+ display:block;
+ text-decoration:none;
+ color:white;
+}
+
+nav a:hover {
+ color:white;
+ background:hotpink;
+}
+ 
+ul {
+ list-style-type:none;
+} 
+
+ ul li {
+ float:left;
+ width:150px;
+ height:50px;
+ line-height:50px;
+ background:black;
+}
+
+ul ul li {
+ position:relative;
+ display:none;
+}
+
+ul li:hover ul li {
+ display:block;
+}
+
+ul ul ul {
+ display:none;
+}
+
+ul ul li:hover ul {
+ display:block;
+ position:absolute;
+ width:150px;
+ height:50px;
+ left:150px;
+ top:0;
+}
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#"> clothing</a>
+                <ul><li><a href="#">Tops</a></li>
+                <li><a href="#">Skirts</a>
+                 <ul><li><a href="#">Partywear</a></li>
+                <li><a href="#">Regulars</a></li>
+               <li><a href="#">Short sleeves</a></li>
+             <li><a href="#">Long sleeves</a></li></ul>
+            </li>
+             <li><a href="#">Kurtis</a></li>
+             <li><a href="#">Jeans</a></li></ul>
+            </li>
+            <li><a href="#">Shoes</a>
+                <ul><li><a href="#">Wedges</a></li>
+                <li><a href="#">Heels</a>
+                <ul><li><a href="#">Party wear</a></li>
+                <li><a href="#"> Regular</a></li>
+             <li><a href="#">Short heels</a></li>
+              <li><a href="#">Long heels</a></li></ul>
+            </li>
+              <li><a href="#">Ankle Boots</a></li>
+             <li><a href="#">Lace ups</a></li></ul>
+            </li>
+            <li><a href="#">Bags</a>
+            <ul>
+                <li><a href="#">Sling</a></li>
+                <li><a href="#">Clutches</a>
+                <ul>
+                    <li><a href="#">Caprese</a></li>
+                    <li><a href="#"> Lavie</a></li>
+                </ul></li>
+                <li><a href="#">Tote</a></li>
+                <li><a href="#"> Wallet</a></li>
+            </ul></li>
+            <li><a href="#">Watces</a>
+            <ul>
+                <li><a href="#">Guess</a></li>
+                <li><a href="#">Fasttruck</a></li>
+                <li><a href="#">Fossile</a>
+                <ul><li><a href="#">Leather</a></li>
+                <li><a href="#">Regular</a></li></ul>
+               </li>
+                <li><a href="#">Rado</a></li>
+            </ul></li>
+            </ul>
+        </nav>
+    </body>
+</html>

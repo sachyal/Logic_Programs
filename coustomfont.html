@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head><title>fontcoustom font</title>
+        <style>
+            @font-face {
+                font-family: "user-font";
+                src: url(mycustomfont.tff);
+            }
+            body{
+                font-family: "user-font" , Arial, Helvetica, Courier , Georgia;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Example for @Font-face fallback</h2>
+        <p>If mycustomfont.ttf is not present or has some issues
+       while loading, then browser will look for 'arial' font
+       in the user's pc. If this is not present, it will look
+	   for 'Helvetica' and so on</p>
+
+    </body>
+</html>

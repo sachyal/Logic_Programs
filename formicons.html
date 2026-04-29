@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+     form {
+      background-color:#30A3F1;
+      padding:20px;
+      font-weight:bold;
+      margin:10px;
+      border-radius:20px;
+     }
+	 
+     input {
+      width: 100%;
+      padding: 15px;
+      margin:4px;
+      box-sizing: border-box;
+      padding-left:60px;
+     }
+	 
+     .Icon-inside {
+      position:relative;
+     }
+	 
+     .Icon-inside i {
+      position:absolute;
+      left:0;
+      top:10px;
+      padding:10px 10px;
+      color:#30A3F1;
+     }
+	 
+     .Icon-outside {
+      position:relative;
+     }
+	 
+     .Icon-outside i {
+      position:absolute;
+      margin-left:-6px;
+      top:4px;
+      padding:17px 15px;
+      color:#30A3F1;
+      background:black;
+     }
+    </style>
+  </head>
+  <body>
+    <h2>Icon appears inside input text in form</h2>
+    <form>
+      <div class="Icon-inside">
+        <input type="text" placeholder="Enter Name">
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="Icon-inside">
+        <input type="email" placeholder="Email">
+        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="Icon-inside">
+        <input type="tel" placeholder="Enter Number">
+        <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+    </form>
+    <h2>Icon appears to be outside of the input text</h2>
+    <form>
+      <div class="Icon-outside">
+        <input type="text" placeholder="Enter Name">
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="Icon-outside">
+        <input type="email" placeholder="Email">
+        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="Icon-outside">
+        <input type="tel" placeholder="Enter Number">
+        <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+    </form>
+  </body>
+</html>

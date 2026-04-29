@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Dev UI Clone</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#0d1117;
+    color:white;
+}
+
+/* HEADER */
+.headwrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+    border:1px solid #30363d;
+    border-radius:12px;
+    margin:20px;
+    position:relative;
+}
+
+.headtext h1{
+    margin:0;
+    font-size:28px;
+}
+
+.headtext p{
+    color:#8b949e;
+}
+
+.login-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:white;
+    color:black;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.headimg img{
+    width:200px;
+}
+
+/* GRID */
+.wrapperpage{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* CARD */
+.card{
+    background-color:#161b22;
+    border-radius:12px;
+    padding:15px;
+    transition:0.3s;
+    cursor:pointer;
+    border:1px solid #30363d;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* TAG */
+.tag{
+    background:#21262d;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    margin-right:5px;
+}
+
+/* TEXT */
+.card h2{
+    font-size:18px;
+    margin:10px 0;
+}
+
+.meta{
+    color:#8b949e;
+    font-size:12px;
+}
+
+/* IMAGE */
+.cimg img{
+    width:100%;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+/* FOOTER */
+.cfooter{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+
+.icon{
+    font-size:12px;
+    color:#8b949e;
+}
+</style>
+</head>
+
+<body>
+
+<header class="headwrapper">
+    <div class="headtext">
+        <h1>Unlock the full daily.dev experience</h1>
+        <p>Log in to pick up where you left off.</p>
+        <a href="#" class="login-btn">Log in to continue</a>
+    </div>
+
+    <div class="headimg">
+        <img src="circle.jpg" alt="cat">
+    </div>
+</header>
+
+<div class="wrapperpage">
+
+    <!-- CARD 1 -->
+    <div class="card">
+        <div class="tag">Collection</div>
+
+        <h2>Claude Opus 4.7 announced with improved instruction-following and self-verification</h2>
+
+        <div>
+            <span class="tag">#llm</span>
+            <span class="tag">#ai-agents</span>
+            <span class="tag">#claude</span>
+        </div>
+
+        <p class="meta">Yesterday • 3 min read</p>
+
+        <div class="cimg">
+            <img src="circle.jpg">
+        </div>
+
+        <div class="cfooter">
+            <span class="icon">⬆ 114</span>
+            <span class="icon">💬 12</span>
+            <span class="icon">🔖</span>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <h2>So AI is making me lazy...</h2>
+
+        <p class="meta">Today • 6 min read</p>
+
+        <div class="cimg">
+            <img src="circle.jpg">
+        </div>
+
+        <div class="cfooter">
+            <span class="icon">⬆ 34</span>
+            <span class="icon">💬 9</span>
+            <span class="icon">🔖</span>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <div class="tag">Promoted</div>
+
+        <h2>Stop juggling tools — get everything in one place</h2>
+
+        <div class="cimg">
+            <img src="circle.jpg">
+        </div>
+
+        <div class="cfooter">
+            <span class="icon">🔄 Refresh</span>
+            <span class="icon">❌ Remove</span>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+        <h2>GitHub – Tegaki: Handwriting animation for any font</h2>
+
+        <span class="tag">#typescript</span>
+
+        <p class="meta">Apr 15 • 2 min read</p>
+
+        <div class="cimg">
+            <img src="circle.jpg">
+        </div>
+
+        <div class="cfooter">
+            <span class="icon">⬆ 327</span>
+            <span class="icon">💬 18</span>
+            <span class="icon">🔖</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

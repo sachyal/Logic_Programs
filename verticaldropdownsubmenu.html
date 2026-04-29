@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        div.dropdown-submenu{
+            position:relative;
+            width: 200px;
+        }
+        div.dropdown-submenu ul{
+            background-color: deepskyblue;
+            font-size: 20;
+            list-style: none;
+
+        }
+        div.dropdown-submenu li{
+            position:relative;
+            border:2px solid black;
+        }
+        div.dropdown-submenu a{
+            display: block;
+            text-decoration: none;
+            padding:10px;
+            color:black;
+        }
+        div.dropdown-submenu li:hover > a{
+            background-color: black;
+            color: deepskyblue;
+        }
+        div.dropdown-submenu ul ul{
+            position:absolute;
+            top:0;
+            width:100%;
+            visibility: hidden;
+        }
+        div.dropdown-submenu li:hover > ul{
+            left:100%;
+            visibility: visible;
+
+        }
+        
+
+     </style>
+  </head>
+  <body>
+    <h2>Example for CSS Vertical drop-down with sub menu</h2><br>
+    <div class="dropdown-submenu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="#">Services ►</a>
+          <ul>
+            <li>
+              <a href="#">Logo Design ►</a>
+              <ul>
+                <li><a href="#">WordMarks</a></li>
+                <li><a href="#">Pictorial Marks</a></li>
+                <li><a href="#">Monograms Logos</a></li>
+                <li><a href="#">Abstract Logos</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Digital Marketing  ►</a>
+              <ul>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Email</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Web Development</a></li>
+          </ul>
+        </li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About Us</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

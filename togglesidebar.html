@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Responsive Sidebar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 1. THE MASTER SWITCH */
+        #menu-toggle {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        /* 2. THE MENU BUTTON (HAMBURGER) */
+        .menu-btn {
+            display: inline-block;
+            padding: 15px;
+            background: #333;
+            color: white;
+            cursor: pointer;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+
+        /* 3. THE SIDEBAR */
+        .sidebar {
+            position: fixed;
+            left: -250px; /* Start hidden */
+            width: 250px;
+            height: 100%;
+            background: #f4f4f4;
+            transition: left 0.3s ease;
+            padding-top: 60px; /* Space for the menu button */
+            z-index: 99;
+            border-right: 1px solid #ddd;
+        }
+
+        /* 4. THE CONTENT AREA */
+        .content {
+            margin-left: 0;
+            padding: 20px;
+            padding-top: 70px; /* Space for the button */
+            transition: margin-left 0.3s ease;
+        }
+
+        /* 5. OPEN STATE LOGIC */
+        /* When checked, move sidebar in */
+        #menu-toggle:checked ~ .sidebar {
+            left: 0;
+        }
+
+        /* When checked, push the content to the right */
+        #menu-toggle:checked ~ .content {
+            margin-left: 250px;
+        }
+
+        /* SUBMENU LOGIC */
+        .toggle { display: none; }
+        .submenu { 
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.3s ease; 
+            padding-left: 20px;
+            list-style: none;
+        }
+        .label { display: block; padding: 10px; cursor: pointer; background: #eee; border-bottom: 1px solid #ccc; }
+        
+        .toggle:checked + .label + .submenu {
+            max-height: 200px;
+        }
+
+        .cards {
+            background: orchid;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        /* RESPONSIVE BREAKPOINT */
+        @media screen and (max-width: 768px) {
+            #menu-toggle:checked ~ .content {
+                margin-left: 0; /* On mobile, don't push content, just cover it */
+            }
+            .sidebar {
+                width: 80%; /* Take more screen on mobile */
+                left: -80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This is the 'Master Switch' -->
+    <input type="checkbox" id="menu-toggle">
+    
+    <!-- This is the 'Hamburger' Button -->
+    <label for="menu-toggle" class="menu-btn">☰ Menu</label>
+
+    <aside class="sidebar">
+        <ul style="list-style:none;">
+            <li class="menu-item">
+                <input type="checkbox" id="products-toggle" class="toggle">
+                <label for="products-toggle" class="label">Products ▼</label>
+                <ul class="submenu">
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Phones</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <input type="checkbox" id="services-toggle" class="toggle">
+                <label for="services-toggle" class="label">Services ▼</label>
+                <ul class="submenu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <div class="cards">Card 1 Content...</div>
+        <div class="cards">Card 2 Content...</div>
+    </main>
+
+</body>
+</html>

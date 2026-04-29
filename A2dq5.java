@@ -20,7 +20,7 @@ public class A2dq5{
             a[i]=scanner.nextInt();
         }
         s=sum(a);
-        System.out.println("sum of array" +s);
+        System.out.println("sum of array: " +s);
         
         }
 
