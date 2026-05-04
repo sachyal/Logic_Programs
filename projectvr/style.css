@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 100px;
+}
+
+.vr-headset{
+    display: flex;
+    background-color: aquamarine;
+    
+}
+.vr-text{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 10px 100px 150px;
+    justify-content: flex-start;
+    align-items: start;
+    color:black;
+}
+.vr-text div{
+    padding: 20px;
+    padding-left: 0;
+    
+}
+
+.vr-text p{
+    line-height: 30px;
+    font-weight: bold;
+}
+.vr-headline{
+    color: blueviolet;
+    font-size: 50px;
+}
+.vr-head{
+    display: inline-block;
+    padding-right: 10px;
+    border-top:5px solid blueviolet;
+}
+.vr-text a{
+    color:black;
+
+}
+.vr-button{
+    width:200px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+}
+.vr-image{
+    height: 10px;
+}
+.surprising-benefits{
+    display:flex;
+    flex-direction: column;
+    padding:20px; 
+    margin-top: 0;
+    row-gap: 20px;
+    background-color: blueviolet;
+    align-items: center;
+    color: white;
+}
+.surprising-benefits h1{
+ font-size: 35px;
+ font-weight: 400;
+ text-indent: 20px;
+}
+.card-section{
+    display: flex;
+    gap:30px;
+}
+.card-item{
+    background-color: white;
+    align-items: center;
+    color:black;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+}
+.card-item h2{
+    color: blueviolet;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+.card-item p{
+    line-height: 25px;
+}
+.card-button{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid blueviolet;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.card-item img{
+    position: absolute;
+    top:-25px;
+    width: 80px;
+    left: 110px;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+.virtual-reality{
+    padding: 40px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+}
+.virtual-text{
+    padding:50px 0;
+    width: 500px;
+}
+.virtual-text h4{
+    color:blueviolet;
+    font-weight: 400;
+
+}
+.virtual-text h2{
+    color:black;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.virtual-text p{
+    line-height: 25px;
+}
+.virtual-text div{
+    margin: 30px 0;
+}
+.virtual-li{
+    border-top: 1px solid black;
+}
+.virtual-li ul{
+    list-style: none;
+}
+.virtual-li li{
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+}
+.virtual-icon img{
+  margin-right: 20px;
+}
+.benefits{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    row-gap: 20px;
+}
+.benefit-text h2{
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: 400;
+    text-indent: 20px;
+}
+.benefits ol{
+    font-size: 100px;
+    color:blueviolet;
+    list-style-type: none;
+
+    background-color: white;
+}
+.benefits li{
+    font-size:30px;
+    padding: 10px;
+}
+.li-count{
+    font-size:70px;
+    padding:10px;
+}
+.li1{
+    background-color: lightgrey;
+    display: flex;
+}
+.li2{
+    background-color: white;
+    box-shadow: 2px 2px wheat;
+    display: flex;
+}
+.li3{
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.li-t{
+    font-size: 30px;
+    
+}
+.vr-bad{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    column-gap: 20px;
+}
+.bad-text{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 450px;
+}
+.bad-headline h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+.bad-text p{
+    margin-top: 20px;
+}
+.bad-p{
+    font-weight: bold;
+}
+.bad-a{
+    margin:20px 0;
+}
+.bad-button{
+    padding:20px;
+    border:2px solid blueviolet;
+    background-color: white;
+}
+.virtual-tech{
+    display:flex;
+    margin-top: 20px;
+    column-gap: 30px;
+    background-color: rgb(97, 58, 134);
+    justify-content: center;
+    align-items: center;
+}
+.virtual-image img{
+    height: 500px;
+}
+.tech-text{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 340px;
+}
+.tech-text h4{
+    color: blueviolet;
+    margin-top: 30px;
+
+}
+.tech-text h1{
+    color:blueviolet;
+    font-size: 45px;
+    font-weight: 380;
+}
+.tech-button{
+    padding: 20px;
+    border: 2px solid blueviolet;
+    color:black;
+
+    text-align: center;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.key-benefits{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    column-gap: 20px;
+}
+.education{
+    width: 500px;
+}
+.education h3{
+    color: rgb(43, 7, 76);
+    font-size: 25px;
+    font-weight: 600;
+}
+.education p{
+    line-height: 30px;
+    margin-top: 20px;
+}
+.whats-up{
+    margin: 30px 0;
+}
+.fa-whatsapp{
+    color: white;
+    font-size: 20px;
+    border-radius: 13px;
+    background-color: blueviolet;
+}
+.whatsup-text{
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.opinion{
+    width: 500px;
+}
+.opinion h1{
+    color: blueviolet;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.opinion p{
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.footer{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 30px;
+    color:white;
+}
+.footer h2{
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+}
+.social-link{
+    padding: 10px;
+    text-align: center;
+    
+}
+.social-link:hover{
+    border-bottom: 4px solid white;
+}
+.fa-brands{
+    color:white;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .header-section { padding: 10px 20px; flex-direction: column; gap: 10px; }
+    .vr-headset { flex-direction: column; }
+    .vr-text { 
+        padding: 40px 20px; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .virtual-reality{
+        flex-direction: column;
+    }
+    .vr-bad{
+        flex-direction: column;
+    }
+    .virtual-tech{
+        flex-direction: column;
+    }
+
+    .vr-headline { font-size: 32px; }
+    .vr-text div { padding: 10px 0; }
+    
+    .surprising-benefits h1 { font-size: 28px; }
+    .card-section { flex-direction: column; align-items: center; }
+    .card-item { width: 100%; max-width: 350px; }
+    
+    .virtual-reality { padding: 30px 20px; }
+    .virtual-text h2 { font-size: 32px; }
+    
+    .benefit-text h2 { font-size: 24px; }
+    .li-count { font-size: 50px; }
+    .li-t { font-size: 16px; }
+    .benefits li { flex-direction: column; text-align: center; }
+    
+    .bad-headline h3 { font-size: 28px; }
+    .tech-text h1 { font-size: 32px; }
+    .opinion h1 { font-size: 32px; }
+    .footer h2 { font-size: 28px; }
+}

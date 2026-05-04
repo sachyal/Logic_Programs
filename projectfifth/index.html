@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project_fifth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+  
+            <div class="sidebar-header">
+                <div class="logo">
+                 <i class="fa-solid fa-cloud" style="font-size:48px; color:skyblue;"></i>
+                <span class="logo-text">cloudcash</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                    <span class="nav-icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="nav-text">Overview</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                    <span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
+                    <span class="nav-text">Transaction</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                    <span class="nav-icon"><i class="fa-solid fa-credit-card"></i></span>
+                    <span class="nav-text">Cards</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                    <span class="nav-icon"><i class="fa-solid fa-file"></i></span>
+                    <span class="nav-text">Invoices</span>
+                    </a>
+                </li>
+
+                 <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                    <span class="nav-icon"><i class="fa-solid fa-award"></i></span>
+                    <span class="nav-text">Goals</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                    <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
+                    <span class="nav-text">Setting</span>
+                    </a>
+                </li>
+              
+                 </ul>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="upgrade-box">
+                <div class="upgrade-icon"><i class="fa-solid fa-cloud" style="font-size:48px; color:skyblue;"></i></div>
+                <span class="text-bottom">Give your money <br>awesome space in cloud</span>
+                <button class="upgrade-btn">Upgrade to premium ⬆</button>
+                </div>
+            </div>
+
+        </aside>
+          
+
+    <main class="main-content">
+    
+    
+        <header class="main-header">
+           <div class="header-right"> <h1>Weekly sumup</h1>
+            <p>Get summary of your weekly online transaction here.</p></div>
+            <div class="user-profile">
+                <div><i class="fa-solid fa-envelope"></i></div>
+               <div> <i class="fa-solid fa-bell"></i></div>
+               <div><i style="font-size: 30px; color: darkorange;" class="fa-solid fa-user-circle"></i></div>
+              <div style="margin-right:10px;"><span id="name">Andrew</span><br><span style="font-size: 12px; line-height: 0%;">Admin account</span></div>  
+
+                </div>
+                
+         </header>
+
+    
+        <section class="dashboard-grid">
+          <div class="left-column">
+             <div class="card">
+                <h3>Cards</h3>
+             <div class="card-wrapper">
+                <div class="card-left">
+                    <div class="card-top">
+                        <button class="card-arrow"><</button>
+                        <div class="card-widget">
+                            <div class="card-name"><h4>cloudcash</h4><p>PREMIUM ACCOUNT</p></div>
+                            <div class="card-number"><p>5789 <span class="star">* * * * </span> <span class="star">* * * * </span>2817</p></div>
+                            <div class="card-holder">
+                                <div class="holder-name"><p>Card holder</p><h4>Mike Smith</h4></div>
+                                <div class="expire-date"><p>Expire Date</p><h4>06/21</h4></div>
+                            </div>
+                        </div>
+                        <button class="card-arrow">></button>
+                    </div>
+                    <div class="card-bottom">
+                    <div class="card-meter-container"><div class="card-meter-fill" ></div> <p>Weekly payment limit <span class="meter-amount">$350.60/$4000</span></p> </div></div>
+
+                </div>
+                <div class="card-right">
+                   <div class="dollar"><h2><span class="dollar-sign">$</span>2850.75</h2><p>Current balance</p></div>
+                   <div class="dollar2"><h3><span class="dollar-sign">$</span>1500.50</h3><p>Income</p></div>
+                   <div class="dollar3"><h4><span class="dollar-sign">$</span>350.60</h4><p>Outcome</p></div>
+                   <div class="card-switch">
+                       <div> 
+                        <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        </label>
+                                        <p>Deactivate Card</p> 
+                                    
+                         </div>
+                  
+                    </div>
+                </div>
+            
+            </div>
+             </div>
+            <div class="transaction-section">
+                <h3>Transaction history</h3>
+                <table class="transaction-table">
+                        <thead>
+                            <tr>
+                                <th>Reciever</th>
+                                <th>Type</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="icon">🛒</span> Tesco Market</td>
+                                <td>Shopping</td>
+                                <td>13 Dec 2020</td>
+                                <td><strong>$75.67</strong></td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon">📦</span> ElectroMen Market</td>
+                                <td>Shopping</td>
+                                <td>14 Dec 2020</td>
+                                <td><strong>$250.00</strong></td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon">🍽️</span> Fiorgio Restaurant</td>
+                                <td>Food</td>
+                                <td>07 Dec 2020</td>
+                                <td><strong>$19.50</strong></td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon">🏃</span> John Mathew Kayne</td>
+                                <td>Sport</td>
+                                <td>06 Dec 2020</td>
+                                <td><strong>$350</strong></td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon">👤</span> Ann Marlin</td>
+                                <td>Shopping</td>
+                                <td>31 Nov 2020</td>
+                                <td><strong>$430</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+          </div>
+
+          <div class="right-column"> 
+            <div class="goals-widget">
+                <div class="widget-header">
+                    <h3>Goals</h3>
+                    <button class="add-goal-btn">+</button>
+                </div>
+                <div class="goals-list">
+                    <div class="goal-item">
+                        <div class="goal-info">
+                            <span class="goal-amount">$550</span>
+                            <span class="goal-date">12/20/20</span>
+                        </div>
+                        <div class="goal-bottom">
+                            <span class="goal-icon"><i class="fa-solid fa-mountain icon"></i></span>
+                            <span class="goal-name">Holidays</span>
+
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-info">
+                            <span class="goal-amount">$200</span>
+                            <span class="goal-date">12/20/20</span>
+                        </div>
+                        <div class="goal-bottom">
+                            <span class="goal-icon"> <i class="fa-solid fa-brush icon"></i></span>
+                            <span class="goal-name">Renovation</span>
+                        </div>
+
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-info">
+                            <span class="goal-amount">$820</span>
+                            <span class="goal-date">12/20/20</span>
+                        </div>
+                        <div class="goal-bottom">
+                            <span class="goal-icon3"><i class="fa-solid fa-gamepad icon"></i></span>
+                            <span class="goal-name">Xbox</span>
+                        </div>
+                    </div>
+                    <button class="side-goal-btn">></button>
+                </div>
+            </div>
+
+            <div class="outcome-widget">
+                <div class="widget-header">
+                    <h3>Outcome Statistics</h3>
+                </div>
+                <div class="chart-container">
+                    <div class="stat-column">
+                        <div class="icon-label"> <i class="fa-solid fa-cart-shopping icon"></i> </div>
+                        <div class="meter-container"><div class="meter-fill1" style="width: 52%;"></div> <p>Shopping</p> </div>
+                        <div class="stat-percent">52%</div>
+                    </div>
+
+                    <div class="stat-column">
+                        <div class="icon-label"> <i class="fa-solid fa-truck icon delivery"></i></div>
+                        <div class="meter-container"><div class="meter-fill2" style="width: 21%;"></div> <p>Electronics</p> </div>
+                        <div class="stat-percent">21%</div>
+                    </div>
+
+                    <div class="stat-column">
+                        <div class="icon-label"> <i class="fa-solid fa-plane icon"></i></div>
+                        <div class="meter-container"><div class="meter-fill3" style="width: 74%;"></div> <p >Travel</p> </div>
+                        <div class="stat-percent">74%</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="new-transaction">
+                 <div class="transaction-widget">
+                <h3>New transaction</h3>
+                <div class="avatar-list">
+                    <div class="avatar"><img src="avatar.png" alt="avatar_png">
+                      <p>Ann</p></div>
+                    <div class="avatar"><img src="avatar.png" alt="avatar_png">
+                     <p>Monica</p></div>
+                    <div class="avatar"><img src="avatar.png" alt="avatar_png">
+                    <p>John</p></div>
+                    <div class="avatar"><img src="avatar.png" alt="avatar_png">
+                    <p>Mike</p></div>
+                    <div class="avatar"><img src="avatar.png" alt="avatar_png">
+                    <p>Mia</p></div>
+                    <div class="avatar-btn"><button class="add-btn">+ </button> <p>Add New</p></div>
+                </div>
+
+                <div class="pill-container">
+                    <div class="input-wrapper">
+                    <span class="prefix">0</span>
+                    <input type="text"  class="amount-field">
+                    <span class="suffix">$</span></div>
+                    <button class="transfer-btn">send the transfer ></button>
+                </div>
+                </div>
+                <div class="loan-widget">
+                    <button class="content">
+                        <div><p class="loan-text" style="text-indent: 15px;">Get great</p><p class="loan-text">loan! ></p></div>
+                    </button>
+                </div>
+            </div>
+
+
+          </div>
+         </section>
+
+  </main>
+    
+    
+    </div>
+
+    
+</body>
+</html>
