@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crm project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"><img src="images/logo-crm.png" alt="crm-logo"></div>
+                <div class="sidebar-header-text"><h3>CefPro CRM</h3><p>-User-Panel-</p></div>
+            </div>
+            <div class="sidebar-nav">
+                <dl>
+                    <dt>VIEW</dt>
+                    <dd><a href="index.html" class="sidebar-link" target="_blank"><span class="nav-icon"><i class="fa-solid fa-arrows-left-right"></i>
+                    </span>DELEGATE</a></dd>
+
+                     <dt>MAIN</dt>
+                    <dd><a href="index.html" class="sidebar-link active"  target="_blank"><span class="nav-icon"><i class="fa-solid fa-gauge"></i>
+                    </span>Dashboard</a></dd>
+
+                    <dt>LEADS</dt>
+                    <dd><a href="myleads.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-users"></i>
+                    </span>MY LEADS</a></dd>
+                    <dd><a href="all_leads.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-users"></i>
+                    </span>ALL LEADS</a></dd>
+                    <dd><a href="speaker.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-microphone"></i> 
+                    </span>SPEAKERS</a></dd>
+
+                    <dt>DATA</dt>
+                    <dd><a href="export.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-download"></i> 
+                    </span>EXPORT</a></dd>
+
+                    <dt>SOURCES</dt>
+                    <dd><a href="connect.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-globe"></i>
+                    </span>CONNECT</a></dd>
+                </dl>
+            </div>
+
+
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <div class="content-info"><h2>Export</h2></div>
+                <div class="user-info">
+                    <div class="user-name"><p>Sachin Goyal</p></div>
+                    <div class="log-button"><button><span class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i></span> Logout</button></div>
+                </div>
+            </header>
+
+            <main class="export-page-content" id="export">
+
+                <section class="data-export">
+                    <h2>Data Export</h2>
+                    <form>
+                        <label for="dataset">Choose Data:</label>
+                        <select id="dataset" name="dataset">
+                        <option value="all-leads">All Leads</option>
+                        <option value="my-leads">My Leads</option>
+                        <option value="speakers">Speakers</option>
+                        <option value="events">Events</option>
+                        </select>
+
+                        <label for="format">Export Format:</label>
+                        <select id="format" name="format">
+                        <option value="csv">CSV</option>
+                        <option value="xlsx">Excel</option>
+                        <option value="pdf">PDF</option>
+                        </select>
+
+                        <label for="daterange">Date Range:</label>
+                        <input type="date" id="start"> to <input type="date" id="end">
+
+                        <button type="submit"><i class="fa-solid fa-download"></i> Export</button>
+                    </form>
+                    </section>
+
+            </main>
+
+        </div>
+    </div>
+</body>
+</html>

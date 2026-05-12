@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crm project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"><img src="images/logo-crm.png" alt="crm-logo"></div>
+                <div class="sidebar-header-text"><h3>CefPro CRM</h3><p>-User-Panel-</p></div>
+            </div>
+            <div class="sidebar-nav">
+                <dl>
+                    <dt>VIEW</dt>
+                    <dd><a href="index.html" class="sidebar-link" target="_blank"><span class="nav-icon"><i class="fa-solid fa-arrows-left-right"></i>
+                    </span>DELEGATE</a></dd>
+
+                     <dt>MAIN</dt>
+                    <dd><a href="index.html" class="sidebar-link active"  target="_blank"><span class="nav-icon"><i class="fa-solid fa-gauge"></i>
+                    </span>Dashboard</a></dd>
+
+                    <dt>LEADS</dt>
+                    <dd><a href="myleads.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-users"></i>
+                    </span>MY LEADS</a></dd>
+                    <dd><a href="all_leads.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-users"></i>
+                    </span>ALL LEADS</a></dd>
+                    <dd><a href="speaker.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-microphone"></i> 
+                    </span>SPEAKERS</a></dd>
+
+                    <dt>DATA</dt>
+                    <dd><a href="export.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-download"></i> 
+                    </span>EXPORT</a></dd>
+
+                    <dt>SOURCES</dt>
+                    <dd><a href="connect.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-globe"></i>
+                    </span>CONNECT</a></dd>
+                </dl>
+            </div>
+
+
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <div class="content-info"><h2>Connect</h2></div>
+                <div class="user-info">
+                    <div class="user-name"><p>Sachin Goyal</p></div>
+                    <div class="log-button"><button><span class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i></span> Logout</button></div>
+                </div>
+            </header>
+
+            <main class="connect-page-content" id="speaker">
+                <section class="filter-search">
+                            <h2>Filter & Search</h2>
+
+                            
+                            <form action="/action_page.php" method="get" class="filter-search">
+                                <select name="status">
+                                <option value="">All Status</option>
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                                <option value="pending">Pending</option>
+                                </select>
+
+                                <input type="text" name="q" placeholder="Search leads...">
+
+                                <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i> Apply
+                                </button>
+                            </form>
+
+                            
+                            <details>
+                                <summary>
+                                <button type="button">
+                                    Advanced <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                </summary>
+                                <form action="/action_page.php" method="get" class="advanced-search">
+
+                                <label for="events">Events</label>
+                                <input type="text" name="events" id="events"> <br>
+
+                                 <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+
+                                <label for="sm">Social Media</label>
+                                <input type="text" name="social media" id="sm">
+                              
+                                <label for="status">Status</label>
+                                <input type="text" name="status" id="status">
+
+                                <label for="sync">Sync one-way</label>
+                                <input type="radio" name="sync" id="sync">
+                                <label for="sync">Sync both-way</label>
+                                <input type="radio" name="sync" id="sync">
+
+
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i> Apply
+                                </button>
+                                </form>
+                            </details>
+                            </section>
+
+                <section class="connect-section">
+                        <h2>Connect Sources</h2>
+                    <div class="connections">
+                        <div class="connection-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3>Gmail</h3>
+                            <p>Status: Connected</p>
+                            <button>Disconnect</button>
+                            </div>
+                        <div class="connection-card">
+                            <i class="fa-solid fa-calendar"></i>
+                            <h3>Google Calendar</h3>
+                            <p>Status: Not Connected</p>
+                            <button>Connect</button>
+                            </div>
+                        <div class="connection-card">
+                            <i class="fa-solid fa-globe"></i>
+                            <h3>Eventbrite</h3>
+                            <p>Status: Connected</p>
+                            <button>Sync Now</button>
+                            </div>
+
+                         <div class="connection-card">
+                            <i class="fa-brands fa-facebook"></i>
+                            <h3>FACEBOOK</h3>
+                            <p>Status: Not Connected</p>
+                            <button>Sync Now</button>
+                            </div>
+
+                     </div>
+                </section>
+
+
+            </main>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,140 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body{
-        width: 100%;
-        height: 100vh;
-        padding:0;
-        font-family: "Roboto" , sans-serif;
-        margin: 0;
-        box-sizing: border-box;
-        background-color: rgba(235,235,242);
-    }
-    .center{
-        width: 100%;
-        height: 100%;
-        position:sticky;
-        top:0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    .menu{
-        width: 100%;
-        height: fit-content;
-        background-color: rgb(37,38,53);
-        display: flex;
-        align-items: center;
-        color: white;
-        justify-content: space-between;
-
-    }
-    .logo{
-        width:fit-content;
-        font-family: poppins;
-        font-size: 32px;
-        color:white;
-        font-weight: 600;
-        padding:15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-    #menu{
-        display: none;
-    }
-    .items{
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .item{
-        padding: 10px 18px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5mm;
-        font-family: poppins;
-        font-size: 16px;
-        color:white;
-        text-decoration: none;
-    }
-    .item:hover{
-        background-color: rgba(100, 100, 100, 0.5);
-    }
-    
-    .hero{
-        text-align: center;
-        background-color: aqua;
-        padding:20px;
-    }
-    .hero h1{
-        font-family: "poppins";
-        color: rgb(113, 74, 16);
-    }
-    .hero h2{
-        font-family: "poppins";
-        color: blue;
-    }
-    .hero-button{
-        color: black;
-        padding: 10px;
-        border-radius: 20px;
-        border: 2px solid salmon;
-    }
-    .bio{
-        color: brown;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    .bio h3{
-        color: olivedrab;
-    }
-    .skills{
-        font-size: 25px;
-        margin-right: 10px;
-        color: black;
-    }
- .about-me{
+    width: 100%;
+    min-height: 100vh;
+    padding:0;
+    font-family: "Roboto" , sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: rgba(235,235,242);
+}
+.center{
+    width: 100%;
+    position:sticky;
+    top:0;
+    z-index: 999;
+}
+.menu{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(37,38,53);
     display: flex;
- }
- 
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+.logo{
+    width:fit-content;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    color:white;
+    font-weight: 600;
+    padding:15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu{
+    display: none;
+}
+.logo label {
+    display: none;
+}
+.items{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5mm;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+}
+.item:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.hero{
+    text-align: center;
+    background-color: aqua;
+    padding:60px 20px;
+}
+.hero h1{
+    font-family: "Poppins", sans-serif;
+    color: rgb(113, 74, 16);
+    font-size: 48px;
+}
+.hero h2{
+    font-family: "Poppins", sans-serif;
+    color: blue;
+    margin: 10px 0 20px;
+}
+.hero-button{
+    color: black;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: 2px solid salmon;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.bio{
+    color: brown;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.bio h3{
+    color: olivedrab;
+}
+.skills{
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+.about-me{
+    display: flex;
+}
+.projects{
+    text-align: center;
+    background-color: darkslategray;
+    padding: 40px 20px;
+}
+.projects h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding:10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project-image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.project-card{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.project-card a{
+    text-decoration: none;
+    color: blueviolet;
+    padding: 10px;
+    border-radius: 5mm;
+    margin-top: 10px;
+    border: 1px solid blueviolet;
+}
+.project-card h3{
+    color:chartreuse;
+    margin: 10px 0;
+}
+.project-card a:hover{
+    background-color: blanchedalmond;
+    color: red;
+}
 
 
+.footer{
+    text-align: center;
+    background-color: chocolate;
+    padding:30px 20px;
+    color: white;
+}
+.footer h2{
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.fa-brands{
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    background-color: antiquewhite;
+    border-radius: 5mm;
+    color: chocolate;
+}
 
-
-
-
-@media screen and (max-width: 650px) { /* Added space */
-    .menu {
-        display: flex;
-        flex-direction: column;
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 900px) {
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
+    .hero h1 { font-size: 36px; }
+}
 
+@media screen and (max-width: 650px) {
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
     .menu .logo {
         width: 100%;
-        box-sizing: border-box; /* Prevents overflow */
-        display: flex;
-        justify-content: space-between;
+        box-sizing: border-box;
     }
-
     .menu .logo label {
         display: block;
         cursor: pointer;
         width: 30px;
         height: 30px;
     }
-
-    /* Using the Font Awesome library you already linked */
     .menu .logo label::before {
         content: "\f0c9"; 
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         font-size: 24px;
     }
-
     .menu .items {
         width: 100%;
         flex-direction: column;
@@ -142,18 +213,27 @@ body{
         overflow: hidden;
         transition: max-height 0.25s ease-in-out;
     }
-
     .menu .item {
         width: 100%;
         border-top: 0.5mm solid rgb(52,53,71);
         box-sizing: border-box;
+        border-radius: 0;
     }
-
-    #menu:checked ~ .items {
-        max-height: 500px; /* Menu expands */
-    }
-
     #menu:checked ~ .logo label::before {
-        content: "\f00d"; /* Icon changes to 'X' */
+        content: "\f00d"; /* X icon */
     }
+    #menu:checked ~ .items {
+        max-height: 500px;
+    }
+
+    .about-me{
+        flex-direction: column;
+    }
+    .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 { font-size: 28px; }
+    .hero h2 { font-size: 20px; }
+    .projects h2 { font-size: 28px; }
+    .footer h2 { font-size: 28px; }
 }

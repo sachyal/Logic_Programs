@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crm project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"><img src="images/logo-crm.png" alt="crm-logo"></div>
+                <div class="sidebar-header-text"><h3>CefPro CRM</h3><p>-User-Panel-</p></div>
+            </div>
+            <div class="sidebar-nav">
+                <dl>
+                    <dt>VIEW</dt>
+                    <dd><a href="index.html" class="sidebar-link" target="_blank"><span class="nav-icon"><i class="fa-solid fa-arrows-left-right"></i>
+                    </span>DELEGATE</a></dd>
+
+                     <dt>MAIN</dt>
+                    <dd><a href="index.html" class="sidebar-link active"  target="_blank"><span class="nav-icon"><i class="fa-solid fa-gauge"></i>
+                    </span>Dashboard</a></dd>
+
+                    <dt>LEADS</dt>
+                    <dd><a href="myleads.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-users"></i>
+                    </span>MY LEADS</a></dd>
+                    <dd><a href="all_leads.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-users"></i>
+                    </span>ALL LEADS</a></dd>
+                    <dd><a href="speaker.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-microphone"></i> 
+                    </span>SPEAKERS</a></dd>
+
+                    <dt>DATA</dt>
+                    <dd><a href="export.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-download"></i> 
+                    </span>EXPORT</a></dd>
+
+                    <dt>SOURCES</dt>
+                    <dd><a href="connect.html" class="sidebar-link active" target="_blank"><span class="nav-icon"><i class="fa-solid fa-globe"></i>
+                    </span>CONNECT</a></dd>
+                </dl>
+            </div>
+
+
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <div class="content-info"><h2>LEADS</h2></div>
+                <div class="user-info">
+                    <div class="user-name"><p>Sachin Goyal</p></div>
+                    <div class="log-button"><button><span class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i></span> Logout</button></div>
+                </div>
+            </header>
+
+            <main class="lead-page-content" id="myleads">
+                <section class="filter-search">
+                            <h2>Filter & Search</h2>
+
+                            
+                            <form action="/action_page.php" method="get" class="filter-search">
+                                <select name="status">
+                                <option value="">All Status</option>
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                                <option value="pending">Pending</option>
+                                </select>
+
+                                <input type="text" name="q" placeholder="Search leads...">
+
+                                <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i> Apply
+                                </button>
+                            </form>
+
+                            
+                            <details>
+                                <summary>
+                                <button type="button">
+                                    Advanced <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                </summary>
+                                <form action="/action_page.php" method="get" class="advanced-search">
+                                <label for="id">Enter ID</label>
+                                <input type="number" name="id" id="id">
+
+                                <label for="fname">First Name</label>
+                                <input type="text" name="first-name" id="fname">
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="last-name" id="lname">
+
+                                <label for="Cname">Company</label>
+                                <input type="text" name="company" id="Cname">
+
+                                <label for="d&t">Date & Time</label>
+                                <input type="datetime-local" name="datetime" id="d&t">
+
+                                <label for="events">Events</label>
+                                <input type="text" name="events" id="events">
+
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i> Apply
+                                </button>
+                                </form>
+                            </details>
+                            </section>
+
+
+                <section class="mylead-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                            <th>Date</th>
+                            <th>Company</th>
+                            <th>Events</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                            <th>Action</th>
+                            </tr>
+                        </thead>
+                       <tbod>
+                         <tr>
+                            <td>1</td>
+                            <td>02.03.26</td>
+                            <td>ABD firm</td>
+                            <td>breaking point</td>
+                            <td>john</td>
+                            <td>bravo</td>
+                            <td><input type="checkbox" name="checkbox"></td>
+                            <td><input type="checkbox" name="checkbox"></td>
+                            <td><button>save</button><button>edit</button></td>
+                         </tr>
+                       </tbod>
+                    </table>
+                    <div class="card-footer">
+                        <p>showing 1 to 1 entries</p>
+                        <div class="footer-pagging">
+                            <a hre="#">Previous</a>
+                            <a href="#">1</a>
+                            <a href="#">Next</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="graph-cards">
+               <div class="graph-statics">
+                 <div class="contents-top">
+                    <div class="content-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3>Analytics & Report</h3>
+                </div>
+                <div class="card-content">
+                    <img src="images/chart.png" alt="char_image">
+                          
+                </div>
+               </div>
+             </section>
+
+           
+
+
+            </main>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "shiftleftapproachdel",
+      "request": "launch",
+      "mainClass": "shiftleftapproachdel",
+      "projectName": "Logic_Programs_e088c2ff"
+    },
+    {
+      "type": "java",
+      "name": "Arraydel",
+      "request": "launch",
+      "mainClass": "Arraydel",
+      "projectName": "Logic_Programs_e088c2ff"
+    },
+    {
+      "type": "java",
+      "name": "Abcd",
+      "request": "launch",
+      "mainClass": "Abcd",
+      "projectName": "Logic_Programs_e088c2ff"
+    },
+    {
+      "type": "java",
+      "name": "abcd",
+      "request": "launch",
+      "mainClass": "abcd",
+      "projectName": "Logic_Programs_e088c2ff"
+    },
+    {
+      "type": "java",
       "name": "Ctq6",
       "request": "launch",
       "mainClass": "Ctq6",

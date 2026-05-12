@@ -1,0 +1,368 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(23, 40, 52, 0.838);
+    overflow: scroll;
+    z-index: 1;
+}
+.sidebar-header{
+    padding: 10px;
+    display: flex;
+    column-gap: 1px;
+    background-color:rgb(92, 86, 72); 
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.sidebar-header-text h3 {
+    font-family: "poppins";
+    color: white;
+}
+.sidebar-header-text p{
+    color: aliceblue;
+    font-size: 13px;
+} 
+.sidebar-nav dd{
+    text-align: center;
+    padding: 5px;
+
+
+}
+.sidebar-nav dt{
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+.sidebar-nav dd a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5mm;
+}
+.sidebar-nav dd a:hover{
+    background-color: darkgray;
+    border-right: 4px solid saddlebrown;
+    border-left: 4px solid saddlebrown;
+    .nav-icon{
+        color: blueviolet;
+    }
+
+}
+.nav-icon{
+    margin-right: 10px;
+}
+.main-content{
+    top:0;
+    margin-left:200px;
+    height: 100%;
+    background-color: beige;
+}
+.main-header{
+    display: flex;
+    background-color: rgb(91, 19, 124);
+    color: white;
+}
+.main-header{
+    padding:10px;
+    width: 100%;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-info{
+    display: flex;
+    column-gap: 20px;
+}
+.log-button{
+    border-left: 1px solid white;
+}
+.log-button button{
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5mm;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+.log-button button:hover{
+    scale: 1.03;
+    .fa-right-from-bracket{
+        color: powderblue;
+    }
+}
+.contents-top{
+    display: flex;
+    column-gap: 10px;
+    padding: 20px;
+    background-color: bisque;
+    border-radius:20px;
+}
+.fa-bell{color: blueviolet;}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-content{
+    padding:20px;
+}
+
+.table{
+  margin:20px 0;
+}
+.table table{
+    overflow-x: auto;
+    border-collapse: collapse;
+    th,td{
+        text-align: start;
+        padding:10px;
+    }
+    thead tr{
+        background-color: aliceblue;
+        margin-bottom: 5px;
+        border-radius: 5mm;
+    }
+    tbody tr{
+        padding-top: 10px;
+        border-bottom: 1px solid red;
+        border-radius: 5mm;
+    }
+
+    button{
+        padding:10px;
+        border-radius: 5mm;
+
+        .fa-check{
+            color: blue;
+            margin-right: 5px;
+        }
+    }
+}
+.footer-pagging{
+    border: 1px solid lightblue;
+    padding: 10px 0;
+}
+.footer-pagging a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+.footer-pagging a:hover{
+    color:blanchedalmond;
+    background-color: blueviolet;
+
+}
+.dash-page-content{
+    display: grid;
+    grid-template-rows: auto ;
+    row-gap: 20px
+
+}
+.events button{
+    padding: 5px 10px;
+    border: none;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.events input{
+    width: 80%;
+}
+.events button:hover{scale:1.03;}
+
+.graph-cards{
+    display: flex;
+    column-gap: 20px;
+}
+.card-content p{
+    text-align: center;
+
+    button{
+        border: none;
+    }
+}
+.dash-page-content{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    padding:30px;
+}
+.reminder-card{
+    border-radius: 20px;
+     border: 1px solid gainsboro;
+}
+.report-card{
+    border-radius:20px;
+     border: 1px solid gainsboro;
+}
+.graph-cards{
+    border-radius:20px;
+    border: 1px solid gainsboro;
+}
+.lead-page-content{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    padding: 30px;
+}
+.filter-search form{
+    margin: 20px 10px;
+}
+
+.mylead-table table{
+    overflow-x: auto;
+    border-collapse: collapse;
+    text-align: start;
+    width: 100%;
+    border: 1px solid brown;
+     th,td{
+        padding:10px;
+        border: 1px solid black;
+     }
+}
+.all_leads-page-content{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    margin: 30px;
+}
+.card-footer{
+    margin-top: 20px;
+}
+.speaker-page-content{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    margin: 30px;
+}
+.speaker-table table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: start;
+    td,th {border: 1px solid black; padding:10px;}
+}
+.export-page-content{
+     display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    margin: 30px;
+
+}
+.export-table table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: start;
+    td,th {border: 1px solid black; padding:10px;}
+}
+
+.connections{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.connection-card{
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 2px 2px white;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid white;
+
+    .fa-solid ,.fa-brands{
+        color: blue;
+    }
+
+    button{
+        padding: 8px;
+        border-radius: 5mm;
+        background-color: white;
+        margin-top: 10px;
+        
+    }
+    button:hover{
+        scale:1.03;
+        
+    }
+    h3{
+        font-weight: 400;
+    }
+     p{
+        font-size: 13px;
+        color: blueviolet;
+     }
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  .main-content {
+    margin:0;
+  }
+  .dash-page-content , .all_leads-page-content , .export-page-content,
+   .lead-page-content, .speaker-page-content , .connect-page-content{
+    padding: 5px;
+    margin: 0;
+  }
+
+  .contents-top{
+    width: 100%;
+  }
+  .sidebar-nav dd a {
+    display: block;
+    padding: 8px;
+    text-align: left;
+  }
+  .graph-cards {
+    flex-direction: column;
+    row-gap: 20px;
+    img{
+        width: 100%;
+    }
+  }
+  .connections {
+    grid-template-columns: 1fr; 
+  }
+  .user-info {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .table , .mylead-table , .speaker-table , .export-table{
+    overflow-x: auto;
+  }
+  .table table, .mylead-table table, .speaker-table table, .export-table table {
+    font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+    th,td{
+        padding:2px;
+    }
+
+  }
+}
