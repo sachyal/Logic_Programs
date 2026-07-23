@@ -1,0 +1,91 @@
+<html>  
+<head> <title> Events </title> </head>  
+<body onload="window.alert('Page successfully loaded');">  
+<script language="Javascript" type="text/Javascript">  
+     
+    function clickevent()  
+    {  
+        document.write("onclick button");  
+    }  
+      function mouseoverevent()  
+    {  
+        alert("mouse over event");  
+    }  
+     function focusevent()  
+    {  
+        document.getElementById("input1").style.background=" aqua";  
+    }  
+     function keydownevent()  
+    {  
+        document.getElementById("input1");  
+        alert("Pressed a key");  
+    }  
+    document.write("The page is loaded successfully");  
+</script>  
+<form>  
+<input type="button" onclick="clickevent()" value="Who's this?"/>  
+<p onmouseover="mouseoverevent()"> Keep cursor over me</p>  
+</form>  
+
+<p> Example of the addEventListener() method. </p>    
+<p> Click the following button to see the effect. </p>    
+<button id = "btn"> Click me </button>    
+<p id = "para"></p>    
+<script>    
+document.getElementById("btn").addEventListener("click", fun);    
+function fun() {    
+document.getElementById("para").innerHTML = "Hello World" + "<br>" + "Welcome to the javascript eventListner";    
+}    
+</script>   
+
+<p> This is an example of adding multiple events to the same element. </p>    
+<p> Click the following button to see the effect. </p>    
+<button id = "btn"> Click me </button>    
+<p id = "para1"></p>    
+<p id = "para2"></p>      
+<script>    
+function fun1() {    
+    alert("javascript multi eventListner");    
+}     
+     
+function fun2() {    
+   document.getElementById("para1").innerHTML =  "This is second function";    
+    
+}    
+function fun3() {    
+   document.getElementById("para2").innerHTML =  "This is third function";    
+}    
+var mybtn = document.getElementById("btn");    
+mybtn.addEventListener("click", fun1);    
+mybtn.addEventListener("click", fun2);    
+mybtn.addEventListener("click", fun3);    
+</script>    
+<p> This is an example of adding multiple events of different type to the same element. </p>    
+<p> Click the following button to see the effect. </p>    
+<button id = "btn"> Click me </button>    
+<p id = "para"></p>    
+<script>    
+function fun1() {    
+    btn.style.width = "50px";    
+    btn.style.height = "50px";    
+    btn.style.background = "yellow";    
+    btn.style.color = "blue";    
+}    
+     
+function fun2() {    
+   document.getElementById("para").innerHTML =  "This is second function";    
+    
+}    
+function fun3() {    
+    btn.style.width = "";    
+    btn.style.height = "";    
+    btn.style.background = "";    
+    btn.style.color = "";    
+}    
+var mybtn = document.getElementById("btn");    
+mybtn.addEventListener("mouseover", fun1);    
+mybtn.addEventListener("click", fun2);    
+mybtn.addEventListener("mouseout", fun3);    
+</script>    
+</body>  
+</html>  

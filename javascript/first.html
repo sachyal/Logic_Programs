@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javasrcipt</title>
+</head>
+<body>
+
+<script>
+    document.write("hello world");
+    console.log("new ");
+    alert("hello world");
+ tf = confirm("do want to continue");
+ alert(tf);
+</script>
+
+<script>
+     data = parseInt(prompt ("enter a value" , ""));
+ if(data%2==0){
+    alert("even");
+ }
+ else{
+    alert("odd");
+ }
+ for(i=1; i<=6; i++){
+    document.write("<h" + i + ">" + i + "</h" + i + ">");
+ }
+
+    document.write("<table border='1'>");
+    document.write("<tr>");
+    document.write("<th>Radius</th><th>Area</th>");
+    document.write("</tr>");
+
+    for (let i = 1; i <= 5; i++) {
+        let a = 3.14 * i * i;
+        document.write("<tr>");
+        document.write("<td>" + i + "</td>");
+        document.write("<td>" + a + "</td>");
+        document.write("</tr>");
+    }
+
+    document.write("</table>");
+
+    data1=parseInt(prompt("enter a value" , ""));
+    data2=parseInt(prompt("enter a value" , ""));
+    var  add = data1 + data2;
+    alert(add);
+
+    data3 = parseInt(prompt("enter a value for fac." , ""));
+    var k = 1;
+    for(let i=1; i<=data3; i++){
+      k = k*i;
+    }
+    alert(k);
+
+     document.write("<table border='1'>");
+    document.write("<tr>");
+    document.write("<th>Numbers</th>");
+    document.write("</tr>");
+
+    for (let i = 1; i <= 5; i++) {
+        document.write("<tr>");
+        document.write("<td>" + i + "</td>");
+        document.write("</tr>");
+    }
+
+    document.write("</table>");
+</script>
+    
+
+</body>
+</html>

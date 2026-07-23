@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nav-item{
+    width:100%;
+}
+.nav-link{
+    color:black;
+}
+.nav-link:hover{
+    background-color: black;
+    color:white;
+    width: 100%;
+    
+}
+.nav-item:hover{
+     background-color: black;
+    color:white;
+    
+}
+.fa-solid{
+    color:gray;
+}
+.bouncy-value{
+    width:270px;
+}
+.biling-trans , .transaction , .billing-info{
+    width:400px;
+}
+.sidebar{
+    width: 250px;
+    height: 700px;
+}
+.main{
+    margin-left:260px;
+}
+.table th{
+    color:gray;
+}
+.image-div{
+    position: relative;
+}
+.image-ss-1 , .image-ss-2 , .image-ss-3 , .image-ss-4{
+    position:absolute;
+    z-index:0;
+   
+}
+.image-ss-2 , .image-ss-3 , .image-ss-4{
+    left:20px;
+}
+.image-ss-3 , .image-ss-4{
+    left:40px;
+   
+}
+.image-ss-4{
+    left:60px;
+}
+.image-ss-1:hover , .image-ss-2:hover , .image-ss-3:hover , .image-ss-4:hover{
+    z-index:1;
+}
+.fa-money-bill{
+    color:dark;
+}
+.fa-key , .fa-code{color:red;}
+.fa-credit-card{color:yellow;}
+.fa-cart-shopping{color:blue;}
+.order-bell{color:green;}
+.strait-line{
+    width:2px;
+    height:100%;
+    background-color: gray;
+    
+}
+.fa-wallet , .fa-landmark{color:white; background: black;padding: 20px; border-radius: 10px;}
+.fa-pen{color:black;}
+.card{
+    width:500px;
+}
+.card-s{
+    width: 350px;
+}
+.orders{width:370px;}

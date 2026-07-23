@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="style.css">  
+</head>
+  <body>
+    <header class="header border border-bottom p-3 d-flex flex-row justify-content-between">
+            
+        <div class="logo">
+                <img src="images/logo.PNG" alt="logo_image">
+                <span class="logo-text fs-4 ">NiceAdmin</span>
+            </div>
+           
+            <div class="d-flex g-4">
+             <div >
+                <form class="search-header">
+                <div class="d-flex border">
+                <span class="input-group-text bg-white border border-0" id="basic-addon1"><i class="bi bi-search search-icon"></i></span>
+                <input type="text" class=" input-border border border-0" placeholder="Search,Projects,Invoices,users" aria-label="Username" />
+                  
+            </div>
+            </form>
+            
+            </div>
+
+           <div class="dropdown us-image">
+                <button class="btn btn-light mx-2  border p-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="">  <img class="img-fluid " src="images/us.png">ENG</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Francais <br><span class="text-muted">France</span></a></li>
+                    <li><a class="dropdown-item" href="#">Deutsh <br><span class="text-muted">Germany</span></a></li>
+                    <li><a class="dropdown-item " href="#">Espanol <br><span class="text-muted">Spain</span></a></li>
+                </ul>
+                </div>
+
+            <div class="dropdown">
+                <button class="btn mx-2  border p-2 btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filter-square"></i>
+                </button>
+                
+                <ul class="dropdown-menu">
+                    <h4>Quick Access</h4> <hr>
+                    <div class="d-flex border g-3 bg-light">
+                        <div><button class=""><i class="bi mx-2 bi-lightning-charge"></i></button></div>
+                        <div>
+                        <p>Create new Workspace <br>
+                           Launch new Projects,assign,team,set timeline</p> 
+                         </div>
+                    </div>
+                    <li><a class="dropdown-item" href="#"> <div class="d-flex g-4 "> 
+                        <div class="border p-1 "> <button class="border-0 bg-white"><i class="bi bi-calendar"></i></button><p>Calender</p> <p class="text-muted small">Events</p></div>
+                         <div class="border p-1"> <button class="border-0 bg-white"><button class="border-0 bg-white"><i class="bi bi-chat-left-text"></i></button></button> <p>Kanban</p> <p class="text-muted small">Boards</p></div>
+                       </div></a></li>
+                    <li><a class="dropdown-item" href="#"><div class="d-flex g-4 "> 
+                        <div class="border p-1 "> <button class="border-0 bg-white"><i class="bi bi-chat-left-text"></i></button> <p>Chat</p> <p class="text-muted small">Inbox</p></div>
+                         <div class="border p-1"><button class="border-0 bg-white"><i class="bi bi-envelope"></i></button> <p>Email</p> <p class="text-muted small">Compaigns</p></div>
+                       </div></a></li>
+                    <li><a class="dropdown-item" href="#"><div class="d-flex g-4 "> 
+                        <div class="border p-1 "> <button class="border-0 bg-white"><i class="bi bi-card-checklist"></i></button><p>Files</p> <p class="text-muted small">Assets</p></div>
+                         <div class="border p-1"> <button class="border-0 bg-white"><i class="bi bi-headset"></i></button><p>Support</p> <p class="text-muted small">Tickets</p></div>
+                       </div></a></li>
+                </ul>
+                </div>
+
+             <div class="dropdown">
+            <button class="btn mx-2  border p-2 btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bell"></i>
+            </button>
+            <ul class="dropdown-menu p-3">
+                <div class="d-flex justify-content-between">
+                    <div><h3><i class="bi bi-bell"></i></h3> <p>4 unread</p></div>
+                    <div><h6>Mark all read</h6></div>
+                </div>
+                <div class="d-flex">
+                    <div><h6>7</h6> <p>TODAY</p></div>
+                    <div><h6>23</h6> <p>THIS WEEK</p></div>
+                    <div><h6>3</h6> <p>APPROVALS</p></div>
+                </div>
+                <li><a class="dropdown-item" href="#"> <div class="d-flex g-3 justify-content-start align-items-center"">
+                    <div><i class="bi bi-rocket"></i></div>
+                    <div><h6>Deploy ready</h6> <p>Sprint release passed QA validation</p> <P>5M AGO</P></div>
+                </div> </a></li>
+               
+                <li><a class="dropdown-item" href="#"><div class="d-flex g-3 justify-content-start align-items-center"">
+                    <div> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h6>Mia Send Feedback</h6> <p>Please review updated dashboard spacing </p> <P>25M AGO</P></div>
+                </div></a></li>
+
+                <li><a class="dropdown-item" href="#"><div class="d-flex g-3 justify-content-start align-items-center"">
+                    <div><i class="bi bi-exclamation-square"></i></div>
+                    <div><h6>Storage Alert</h6> <p>Media Bucket reached 81% usage.</p> <P>56M AGO</P></div>
+                </div></a></li>
+
+                <li><a class="dropdown-item" href="#"><div class="d-flex g-3 justify-content-start align-items-center">
+                    <div><i class="bi bi-check-circle"></i></div>
+                    <div><h6>Payment Received</h6> <p>Invoice #INV-3921 settled Successfully</p> <P>2H AGO</P></div>
+                </div></a></li>
+            </ul>
+            </div>
+
+            <div class="dropdown">
+            <button class="btn border  mx-2 btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="bi bi-chat-square-text"></i>
+            </button>
+            <ul class="dropdown-menu p-2">
+                 <div class="d-flex justify-content-between">
+                    <div><h3>Messages</h3> <p>5 unread</p></div>
+                    <div><h3>Open Chat</h3></div>
+                </div><hr>
+                <div class="d-flex flex-row g-2">
+                    <div class="border  teams-message p-2">Direct</div>
+                    <div class="border teams-message p-2">Team</div>
+                    <div class="border teams-message p-2">Clients</div>
+                </div> <hr>
+            
+                <li><a class="dropdown-item  " href="#"><div class="d-flex m-0 p-0">
+                    <div class="message-image"> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h5>Mia Rodriguez</h5> <p class="message-p">Can you review the analytics wireframe today ?</p > <P class="message-p">2M AGO</P></div>
+                </div></a></li>
+                <li><a class="dropdown-item" href="#"><div class="d-flex">
+                    <div class="message-image"> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h5>Dev Channel</h5> <p class="message-p">Build passed.Ready for production deploy</p> <P class="message-p">12M AGO</P></div>
+                </div></a></li>
+                <li><a class="dropdown-item" href="#"><div class="d-flex justify-content-start">
+                    <div class="message-image"> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h5>Sarah Kim</h5> <p class="message-p">Shared file Q1-forecast-report.pdf</p> <P class="message-p">35M AGO</P></div>
+                </div></a></li>
+            </ul>
+            </div>
+
+            <div><button class="border mx-2 bg-light p-2 "><i class="bi bi-moon"></i></button></div>
+
+            <div class="d-flex">
+                <div class="mx-2"><img src="images/avatar.png" alt="avatar-img"></div>
+                <div><h6 class="fw-bold ">John doe</h6>
+                     <p class="product-admin text-muted">PRODUCT ADMIN</p></div>
+            </div>
+
+           </div>
+           
+
+        </header>
+    
+    <main class="page-content ">
+        <div class="side-bar d-flex flex-column">
+            <nav class="navbar-side">
+               <ul class="sidebar-nav role-list2">
+                 
+                <li><a><div class="d-flex"> 
+                    <div><button class="mx-2 border-0"><i class="bi bi-menu-button-wide"></i></button></div>
+                    <div><h6>Dashboard</h6></div>
+                    <div class="mx-4 fs-6"><p>HOME</p></div>
+                </div></a></li>
+
+                <li><a href="index.html" class="text-dark text-decoration-none"><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-speedometer2"></i></button></div>
+                    <div><h6>Dashboards</h6></div>
+                </div></a></li>
+
+                <li>
+                    <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <span class="fs-6"><span class="mx-2"><i class="bi bi-people"></i></span>Users</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-white">
+                        <li><a class="dropdown-item" href="userlist.html" target="_self">Users List</a></li>
+                        <li><a class="dropdown-item" href="userview.html">Users view</a></li>
+                        <li><a class="dropdown-item" href="useredit.html">Users Edit</a></li>
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="role&permission.html">Roles & Permission</a></li>
+                    </ul>
+                    </div>
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-shield-check"></i></button></div>
+                    <div><h6>Authentication</h6></div>
+                </div></a>    
+                </li>
+
+                <li><div class="d-flex justify-content-center align-items-center"><div class="text-muted sidebar-prodapps"><p>Productivity Apps</p></div> <div class="sidebar-line"></div> </div>   
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-calendar"></i></button></div>
+                    <div><h6>Calender</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a href="kanbanboard.html" class="text-dark text-decoration-none"><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-kanban"></i></button></div>
+                    <div><h6>Kanban Board</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-chat"></i></button></div>
+                    <div><h6>Chat</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-person-lines-fill"></i></button></div>
+                    <div><h6>Contacts</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-folder"></i></button></div>
+                    <div><h6>File Managar</h6></div>
+                </div></a>    
+                </li>
+               
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-envelope"></i></button></div>
+                    <div><h6>Email</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-check-all"></i></button></div>
+                    <div><h6>Todo List</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-headset"></i></button></div>
+                    <div><h6>Support Center</h6></div>
+                </div></a>    
+                </li>
+
+                <li><div class="d-flex justify-content-center align-items-center"><div class="text-muted sidebar-prodapps"><p>Interface</p></div> <div class="sidebar-line"></div> </div>   
+                </li>
+                
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-puzzle"></i></button></div>
+                    <div><h6>Components</h6></div>
+                </div></a>    
+                </li>
+                
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-border-width"></i></button></div>
+                    <div><h6>Widget</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-input-cursor-text"></i></button></div>
+                    <div><h6>forms</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-table"></i></button></div>
+                    <div><h6>Tables</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-graph-up-arrow"></i></button></div>
+                    <div><h6>Charts</h6></div>
+                </div></a>    
+                </li>
+                
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-square"></i></button></div>
+                    <div><h6>Icons</h6></div>
+                </div></a>    
+                </li>
+                 
+                 <li><div class="d-flex justify-content-center align-items-center"><div class="text-muted sidebar-prodapps"><p>Utility Pages</p></div> <div class="sidebar-line"></div> </div>   
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-send"></i></button></div>
+                    <div><h6>Contact</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-receipt"></i></button></div>
+                    <div><h6>Invoices</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-bookmark"></i></button></div>
+                    <div><h6>Pricing</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-question-circle"></i></button></div>
+                    <div><h6>FAQ</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-exclamation-triangle"></i></button></div>
+                    <div><h6>Error pages</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-clock-history"></i></button></div>
+                    <div><h6>Time Line</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-search"></i></button></div>
+                    <div><h6>Search Results</h6></div>
+                </div></a>    
+                </li>
+                
+                <li class="link-nav"><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-file-earmark"></i></button></div>
+                    <div><h6>Blank page</h6></div>
+                </div></a>    
+                </li>
+               
+             </ul>
+            </nav>
+            <section class="sidebar-footer p-3">
+                <div class="border p-2 d-flex justify-content-between "> 
+                  <div class="d-flex justify-content-center align-items-center"><div><img src="images/avatar.png" alt="avatar_img"></div>
+                    <div> <p style="color:#012970; line-height: 0; font-size: 12px; font-weight: bold;">John Doe</p>
+                     <p style="color:gray; font-size:12; line-height: 0; ">Product</p>
+                   </div></div>
+                  <div> <button class="p-1 bg-white text-muted"><i class="bi bi-gear"></i></button> <button class="p-1 bg-white text-muted"><i class="bi bi-box-arrow-right"></i></button></div>
+                </div>
+
+                <div class="p-2"> <button class="p-2 border text-muted"><span ><i class="bi bi-headset"></i></span> <span class="text-muted">Support Desk</span></button> 
+                  <button class="p-2 border text-muted"><span ><i class="bi bi-bell"></i></span> <span class="text-muted">Alerts</span></button>  </div>
+            </section>
+        </div>
+       
+        <div class="main-content bg-light  " id="userview">
+            <!-- user-info-->
+            <section class="user-info-card shadow bg-white p-3 d-flex justify-content-between align-items-start">
+                <div class="d-flex">
+                    <div><img src="images/avatar.png" alt="users_image"> <span class="active-cir"></span></div>
+                    <div> <h4 style="color: #012970;">John Doe</h4>
+                      <p class="text-muted">john.doe@example.com</p>
+                      <div class="d-flex gap-2">
+                        <div class="text-danger "><span class="badge  p-2 rounded-3 fs-6 text-bg-danger"><i class="bi bi-shield-check"></i>Danger</span></div>
+                        <div class="border p-2  rounded-2">#USR-001</div>
+                        <div class="border p-2  rounded-2">Engineering</div>
+                      </div>
+                    </div>
+                </div>
+
+                <div><button type="button" class="btn btn-primary"><i class="bi bi-pencil"></i> Edit</button>
+                 <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3"></i> Delete</button></div>
+
+            </section>
+            <!-- Operation feed & Account posture -->
+            
+            <section class="row mt-3 ms-2 gap-3">
+                <div class="col-xl-8">
+                    <div class="row">
+                        <!-- operation feed -->
+                        <div class="operation-feed p-2 shadow bg-white">
+                            <h5 style="color: #012970;">Operation feed</h5><hr>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div class="operation-cirlg rounded-3 me-2 bg-success"></div>
+                                  <div><p style="color: #012970; font-size: 12;line-height: 0;">Logged in</p>
+                                   <p style="color:gray; font-size: 12; line-height: 0;">Chrome on Windows • New York, USA</p></div>
+                                </div>
+                                
+                                <div class="muted">Now</div>
+                            </div><hr>
+
+                             <div class="d-flex mt-3 justify-content-between">
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div class="operation-cirlg rounded-3 me-2 bg-info"></div>
+                                  <div><p style="color: #012970; font-size: 12; line-height: 0;">Updated profile information</p>
+                                   <p style="color:gray; font-size: 12; line-height: 0;">Changed phone number and location</p></div>
+                                </div>
+
+                                <div class="muted">2h ago</div>
+                            </div><hr>
+
+                            <div class="d-flex mt-3 justify-content-between">
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div class="operation-cirlg rounded-3 me-2 bg-warning"></div>
+                                  <div><p style="color: #012970; font-size: 12; line-height: 0;">Enabled two-factor authentication</p>
+                                   <p style="color:gray; font-size: 12; line-height: 0;">Using authenticator app</p></div>
+                                </div>
+
+                                <div class="muted">Yesterday</div>
+                            </div><hr>
+
+                            <div class="d-flex mt-3 justify-content-between">
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div class="operation-cirlg rounded-3 me-2 bg-info"></div>
+                                  <div><p style="color: #012970; font-size: 12; line-height: 0;">Joined Engineering team</p>
+                                   <p style="color:gray; font-size: 12; line-height: 0;">Added by Chris Thompson</p></div>
+                                </div>
+
+                                <div class="muted">3d ago</div>
+                            </div><hr>
+
+                            <div class="d-flex mt-3 justify-content-between">
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div class="operation-cirlg rounded-3 me-2 bg-success"></div>
+                                  <div><p style="color: #012970; font-size: 12; line-height: 0;">Completed 5 tasks in Project Alpha</p>
+                                   <p style="color:gray; font-size: 12; line-height: 0;">Sprint 12 milestone reached</p></div>
+                                </div>
+
+                                <div class="muted">5d ago</div>
+                            </div><hr>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row shadow mt-3">
+                        <div class="d-flex justify-content-between p-2 bg-white">
+                            <h5 style="color:#012970;">Project Coverage</h5>
+                            <p style="font-size: 12px; color: #012970;">Open Workload</p>
+                        </div>
+                 <table class="table userlist-table">
+                <thead>
+                    <tr class="table-secondary ">
+                    <th scope="col" class="text-muted">Project</th>
+                    <th scope="col" class="text-muted">Role</th>
+                    <th scope="col" class="text-muted">Load</th>
+                    <th scope="col" class="text-muted">Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                  
+                   <td>Alpha Platform</td>
+                   <td>Owner</td>
+                   <td>Load</td>
+                   <td><span class="badge text-bg-success">78%</span></td>
+                    </tr>
+
+                     <tr>
+                   <td>Billing Upgrade</td>
+                   <td>Reviewer</td>
+                   <td>Medium</td>
+                   <td><span class="badge text-bg-primary">56%</span></td>
+                    </tr>
+
+                  <tr>
+                   <td>Mobile Analytics</td>
+                   <td>Contributor</td>
+                   <td>Low</td>
+                   <td><span class="badge text-bg-warning">33%</span></td>
+                    </tr>
+                </tbody>
+                </table>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <!-- Account posture -->
+                    <div class="row">
+                        <div class="Account-poture bg-white p-3 shadow">
+                            <p style="color: #012970; font-weight: bold;">Account Posture</p><hr>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted small-posturep">Status</p>
+                                <P class="text-success small-posturep">Active</P>
+                            </div><hr>
+
+                             <div class="d-flex justify-content-between">
+                                <p class="text-muted small-posturep">Email Verification</p>
+                                <P class="text-success small-posturep">Verified</P>
+                            </div><hr>
+
+                             <div class="d-flex justify-content-between">
+                                <p class="text-muted small-posturep">2FA</p>
+                                <P class="text-success small-posturep">Enabled</P>
+                            </div><hr>
+
+                             <div class="d-flex justify-content-between">
+                                <p class="text-muted small-posturep">Last Login</p>
+                                <P class="text-primary small-posturep">Just now</P>
+                            </div><hr>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted small-posturep">Risk Score</p>
+                                <P class="text-primary small-posturep">Low</P>
+                            </div><hr>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted small-posturep">Manager</p>
+                                <P class="text-primary small-posturep">Chris Thompson</P>
+                            </div><hr>
+                        </div>
+                    </div>
+
+                     <div class="row mt-3">
+                        <div class="Account-poture bg-white p-3 shadow">
+                            <p style="color: #012970; font-weight: bold;">Permission Surface</p><hr>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted small-perm">Dashboard</p>
+                               <div class="text-success small-perm"><i class="bi bi-check-circle"></i></div>
+                            </div><hr>
+
+                             <div class="d-flex justify-content-between">
+                                <p class="text-muted small-perm">Users</p>
+                                <div class="text-success small-perm"><i class="bi bi-check-circle"></i></div>
+                            </div><hr>
+
+                             <div class="d-flex justify-content-between">
+                                <p class="text-muted small-perm">Roles</p>
+                               <div class="text-success small-perm"><i class="bi bi-check-circle"></i></div>
+                            </div><hr>
+
+                             <div class="d-flex justify-content-between">
+                                <p class="text-muted small-perm">Settings</p>
+                               <div class="text-success small-perm"><i class="bi bi-check-circle"></i></div>
+                            </div><hr>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="text-muted small-perm">Reports</p>
+                                <div class="text-success small-perm"><i class="bi bi-check-circle"></i></div>
+                            </div><hr>
+                        </div>
+                    </div>
+
+                    <div class="row  mt-3">
+                        <div class="Account-poture bg-white p-3 shadow">
+                            <p style="color: #012970; font-weight: bold;">Session Devices</p><hr>
+
+                        <div>
+                            <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                                <div><i class="bi bi-laptop"></i></div>
+                                <div><p style="color:#012970; font-size: 12px; line-height:0;">Chrome on Windows <span class="badge  bg-success">current</span></p></div>
+                                <p style="color: gray; font-size: 12px; line-height: 0;">New York • Active now</p>
+                            </div>
+                        </div>
+                       
+                         <div>
+                            <div class="d-flex gap-2 justify-content-center align-items-center">
+                                <div><i class="bi bi-phone"></i></div>
+                                <div><p style="color:#012970; font-size: 12px;">Safari on iPhone</p></div>
+                                <p style="color: gray; font-size: 12px;">New York • Last active 3h ago</p>
+                                <button type="button" class="btn btn-outline-danger">REVOKE</button>
+                            </div>
+                        </div>
+
+                          <div>
+                            <div class="d-flex gap-2 justify-content-center align-items-center">
+                                <div><i class="bi bi-phone"></i></div>
+                                <div><p style="color:#012970; font-size: 12px;">Firefox on macOS</p></div>
+                                <p style="color: gray; font-size: 12px;">Boston • Last active 2 days ago</p>
+                                <button type="button" class="btn btn-outline-danger">REVOKE</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </div>
+
+            </section>
+
+       
+        </div>
+        
+    </main>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+ 

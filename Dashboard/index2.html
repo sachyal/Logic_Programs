@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+  <body>
+        <div class="row p-4 bg-secondary-subtle">
+            <div class="col-2 sidebar position-fixed d-flex flex-column bg-white justify-content-between p-4">
+                 <div class="logo d-flex justify-content-start border-bottom  border-dark ">
+                    <div class="logo_image"><img src="tim_logo.PNG"></div>
+                    <h6>Creative Tim</h6>
+                </div>
+               
+                <nav class="navbar ">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item bg-dark px-4 rounded-2">
+                                    
+                                <a class="nav-link active text-white " href="#"><i class="fa-solid fa-gauge me-2"></i>Dashboard</a>
+                                </li>
+                                <li class="nav-item px-4 rounded-2">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-table me-2"></i>Table</a>
+                                </li>
+                                <li class="nav-item  px-4 rounded-2">
+                                <a class="nav-link k" href="#"><i class="fa-solid fa-file-invoice-dollar me-2"></i>Billing</a>
+                                </li>
+                                <li class="nav-item  px-4 rounded-2">
+                                <a class="nav-link " href="#"><i class="fa-solid fa-vr-cardboard me-2"></i>Virtual Reality</a>
+                                </li>
+                                 <li class="nav-item  px-4 rounded-2" >
+                                <a class="nav-link" href="#"><i class="fa-solid fa-language me-2"></i>RTL</a>
+                                </li>
+                                 <li class="nav-item  px-4 rounded-2">
+                                <a class="nav-link " href="#"><i class="fa-solid fa-bell me-2"></i> Notifications</a>
+                                </li>
+                            </ul>
+                             <p class="m-4 text-gray">Account pages</p>
+                             <ul class="navbar-nav  ">
+                                 <li class="nav-item px-4 rounded-2">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-user me-2"></i>Profile</a>
+                                </li>
+                                 <li class="nav-item px-4 rounded-2">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket me-2"></i>Sign In </a>
+                                </li>
+                                 <li class="nav-item px-4 rounded-2">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-user-plus me-2"></i>Sign Up </a>
+                                </li>
+
+                             </ul>
+                            
+                        </nav>
+                       
+                        <div class="sidebar-bottom mt-4">
+                            <button type="button" class="btn border-dark">Documentation</button>
+                            <button type="button" class="btn btn-dark mt-2">Upgrade to Pro</button>
+
+                        </div>
+           
+           
+        </div>
+        
+            <div class="col-10 main dashboard ps-4">
+             <div class="header-section  d-flex justify-content-between g-2 ">
+                <div class="dashboard-title"><span class="text-muted">pages</span>/Dashboard</div>
+             <nav class="navbar">
+                <div class="container-fluid ">
+                    <form role="search">
+                    <input class="form-control  bg-body-tertiary me-2" type="search" placeholder="Type here.." aria-label="Search"/>
+                    </form>
+                     <button class="btn btn-outline-danger mx-4" type="submit">online-builder</button>
+                     <button class="btn btn-outline-secondary p-1 fs-6" type="submit"><i class="fa-regular fa-star"></i>Star</button>
+                     <button class="btn btn-outline-secondary bg-white text-muted fs-6 p-1" type="submit">11,883</button>
+                        <!-- setting -->
+                     <i class=" mx-2 fa-solid fa-gear"></i>
+                     <!-- Bell / Notifications -->
+                     <i class=" mx-2 fa-solid fa-bell"></i>
+                     <!-- User / Profile -->
+                     <i class="mx-2 fa-solid fa-user"></i>
+                </div>
+                </nav>
+
+             </div>
+              
+             <div class="page-content">
+             <h3 class="fw-bold">Dashboard</h3>
+             <p class="text-muted">Check the sales, value and bounce rate by country.</p>
+
+              <div class=" users-informations d-flex flex-row  justify-content-between">
+                <div class=" p-2 bouncy-value bg-white rounded-2">
+                    <div class="money d-flex justify-content-between">
+                        <div class="dollar border-bottom border-muted flex-grow-1">
+                            <p>Today's Money</p>
+                             <h3>$53k</h3>
+                        </div>
+                        <div class="money-icon"><i class="fa-solid fa-print text-white bg-dark p-3 rounded-2"></i> </div>
+                    </div>
+                    <p><span class="text-success">+55% </span>than last week</p>
+                </div>
+
+                 <div class=" p-2 bouncy-value bg-white rounded-2">
+                    <div class="money d-flex justify-content-between">
+                        <div class="dollar border-bottom border-muted flex-grow-1">
+                            <p>Today's Users</p>
+                             <h3>2300</h3>
+                        </div>
+                        <div class="money-icon"><i class="fa-solid fa-user text-white bg-dark p-3 rounded-2"></i> </div>
+                    </div>
+                    <p><span class="text-success">+3% </span>than last month</p>
+                </div>
+
+                <div class="  p-2 bouncy-value bg-white rounded-2">
+                    <div class="money d-flex justify-content-between">
+                        <div class="dollar border-bottom border-muted flex-grow-1">
+                            <p>Ads Views</p>
+                             <h3>3,462</h3>
+                        </div>
+                        <div class="money-icon"><i class="fa-solid fa-chart-bar text-white bg-dark p-3 rounded-2"></i> </div>
+                    </div>
+                    <p><span class="text-danger">-2% </span>than last week</p>
+                </div>
+
+                <div class="  p-2 bouncy-value bg-white rounded-2">
+                    <div class="money d-flex justify-content-between">
+                        <div class="dollar border-bottom border-muted flex-grow-1">
+                            <p>Today's Money</p>
+                             <h3>$53k</h3>
+                        </div>
+                        <div class="money-icon"><i class="fa-solid fa-print text-white bg-dark p-3 rounded-2"></i> </div>
+                    </div>
+                    <p><span class="text-success">+55% </span>than last week</p>
+                </div>
+
+
+              </div>
+              
+               <div class="col-12 section-card mt-4 ">
+                <div class="d-flex  justify-content-start gap-4">
+                    <div class=" card bg-dark p-3 rounded-4 text-white d-flex flex-column gap-4 justify-content-between">
+                        <div><i class="fa-solid fa-wifi"></i></div>
+                        <p class="flex-grow-1 fs-3">4562 <span class="mx-4">1122</span>  4594  <span class="mx-4">7852</span> </p>
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div><p class=" fs-5 lh-1">Card Holder</p><h3 class="fw-bold lh-1 fs-6">Jack Peterson</h3></div>
+                             <div><p class=" lh-1 fs-5">Expires</p><h3 class="fw-bold lh-1 fs-6">11/22</h3></div>
+                             <div class="text-white">LOGO</div>
+                        </div>
+                    </div>
+                    <div class=" card-s d-flex gap-3 bg-white p-2 flex-column rounded-3 justify-content-between align-items-center">
+                        
+                        <div class="d-flex gap-2 flex-column rounded-2 justify-content-start align-items-center"><div><i class="fa-solid fa-landmark"></i></div>
+                        <h5 class="fw-bold" >Salary</h5>
+                        <P>Belong Interactive</P></div>
+                        <h4 class="fw-bold">+$2000</h4>
+                    </div>
+                    <div class="card-s d-flex gap-3 bg-white p-2 flex-column rounded-3 justify-content-between align-items-center">
+                        
+                        <div class="d-flex gap-2 flex-column rounded-2 justify-content-start align-items-center"><div><i class="fa-solid fa-wallet"></i></div>
+                        <h5 class="fw-bold ">Paypal</h5>
+                        <P>Freelance Payment</P></div>
+                        <h4 class="fw-bold">$455.00</h4>
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="col-12 bg-white p-3  rounded-4 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <div><h3 class="fw-bold">Payment Method</h3></div>
+                        <div class="method-btn">
+                        <button type="button" class="btn btn-dark">+ Add new card</button>
+                      </div>
+                    </div>
+
+                    <div class=" row d-flex p-4 justify-content-between">
+                        <div class="col-5 p-3 border border-dark d-flex justify-content-between">
+                            <div>logo</div>
+                            <div class="fs-5 fw-bold">****   ****   ****   7852</div>
+                            <div class="data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Card"" ><i class="fa-solid fa-pen"></i></div>
+                        </div>
+
+                         <div class="col-5 p-3 border border-dark d-flex justify-content-between">
+                            <div>logo</div>
+                            <div class="fs-5 fw-bold">****   ****   ****   7852</div>
+                            <div class=" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Card" "><i class="fa-solid fa-pen"></i></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+               
+              <div class="budget-information d-flex flex-row gap-3 mt-4 justify-content-between">
+                 
+                <div class="biling-trans p-2 d-flex flex-column bg-white gap-4 rounded-2">
+                    <div class="invoice-info d-flex flex-row justify-content-between">
+                        <div class=" invoice border-bottom border-muted flex-grow-1">
+                             <h5>Invoices</h5>
+                        </div>
+                        <div class="invoce-button"><button type="button" class="btn btn-outline-danger">View all</button>
+                         </div>
+                         
+                    </div>
+
+                     <div class="invoice-info d-flex flex-column justify-content-between">
+                        <div class=" invoice d-flex justify-content-between border-bottom  border-muted">
+                             <div >
+                             <h6 class="fw-bold">March, 01, 2020</h6>
+                             <span class="text-muted">#MS-415646</span>
+                        </div>
+                        <div class="invoice-price"><span class="text-muted me-2">$180</span> 
+                    <span class="pdf"><i class="fa-solid me-2 fa-file-pdf "></i>Pdf</span></div>
+                        </div>
+                       
+                    </div>
+
+                     <div class="invoice-info d-flex flex-column justify-content-between">
+                        <div class=" invoice d-flex justify-content-between border-bottom  border-muted">
+                             <div >
+                             <h6 class="fw-bold">February, 10, 2021</h6>
+                             <span class="text-muted">#MS-415646</span>
+                        </div>
+                        <div class="invoice-price"><span class="text-muted me-2">$250</span> 
+                    <span class="pdf"><i class="fa-solid me-2 fa-file-pdf "></i>Pdf</span></div>
+                        </div>
+                       
+                    </div>
+
+                     <div class="invoice-info d-flex flex-column justify-content-between">
+                        <div class=" invoice d-flex justify-content-between border-bottom  border-muted">
+                             <div >
+                             <h6 class="fw-bold">April, 05, 2020</h6>
+                             <span class="text-muted">#MS-415646</span>
+                        </div>
+                        <div class="invoice-price"><span class="text-muted me-2">$560</span> 
+                    <span class="pdf"><i class="fa-solid me-2 fa-file-pdf "></i>Pdf</span></div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="invoice-info d-flex flex-column justify-content-between">
+                        <div class=" invoice d-flex justify-content-between border-bottom  border-muted">
+                             <div >
+                             <h6 class="fw-bold">June, 25, 2019</h6>
+                             <span class="text-muted">#MS-415646</span>
+                        </div>
+                        <div class="invoice-price"><span class="text-muted me-2">$120</span> 
+                    <span class="pdf"><i class="fa-solid me-2 fa-file-pdf "></i>Pdf</span></div>
+                        </div>
+                       
+                    </div>
+
+                     <div class="invoice-info d-flex flex-column justify-content-between">
+                        <div class=" invoice d-flex justify-content-between border-bottom  border-muted">
+                             <div >
+                             <h6 class="fw-bold">March, 01, 2019</h6>
+                             <span class="text-muted">#MS-415646</span>
+                        </div>
+                        <div class="invoice-price"><span class="text-muted me-2">$300</span> 
+                    <span class="pdf"><i class="fa-solid me-2 fa-file-pdf "></i>Pdf</span></div>
+                        </div>
+                       
+                    </div>
+
+                </div>
+                  
+
+                <div class="transaction bg-white p-2">
+                   
+                     <div class="trans-title d-flex justify-content-between">
+                      <h6 class="fw-bold">your Transactions</h6>
+                      <p class="text-muted"><i class="fa-solid me-2 fa-calendar"></i>23-30 March 2020</p>
+                    </div>
+                    
+                    <p class="text-muted fs-5">NEWEST</p>
+                    <div class="trans-title d-flex justify-content-between">
+                     <div> <button type="button" class="btn me-2 btn-outline-danger">
+                        <i class="fa-solid  fa-chevron-down"></i>
+                     </button>
+                        <span class="fw-bold">Netflix</span>
+                         <p class="text-muted ms-5 mt-1">27 March 2020, at 12:30 PM</p>
+                        </div>
+                      <p class="text-danger">-$2,500</p>
+                    </div>
+
+                     <div class="trans-title d-flex justify-content-between">
+                     <div> <button type="button" class="btn me-2 btn-outline-success">
+                        <i class="fa-solid  fa-chevron-up"></i>
+                     </button>
+                        <span class="fw-bold">Apple</span>
+                         <p class="text-muted ms-5 mt-1">27 March 2020, at 12:30 PM</p>
+                        </div>
+                      <p class="text-success">+$2,500</p>
+                    </div>
+                   
+                    <p class="text-muted m-2 fs-5">Yesterday</p>
+                    <div class="trans-title d-flex justify-content-between">
+                     <div> <button type="button" class="btn me-2 btn-outline-success">
+                        <i class="fa-solid  fa-chevron-up"></i>
+                     </button>
+                        <span class="fw-bold">Stripe</span>
+                         <p class="text-muted ms-5 mt-1">27 March 2020, at 12:30 PM</p>
+                        </div>
+                      <p class="text-success">+$1,000</p>
+                    </div>
+
+                   <div class="trans-title d-flex justify-content-between">
+                     <div> <button type="button" class="btn me-2 btn-outline-success">
+                        <i class="fa-solid  fa-chevron-up"></i>
+                     </button>
+                        <span class="fw-bold">Hubsport</span>
+                         <p class="text-muted ms-5 mt-1">27 March 2020, at 12:30 PM</p>
+                        </div>
+                      <p class="text-success">+$2,500</p>
+                    </div>
+
+                   <div class="trans-title d-flex justify-content-between">
+                     <div> <button type="button" class="btn me-2 btn-outline-success">
+                        <i class="fa-solid  fa-chevron-up"></i>
+                     </button>
+                        <span class="fw-bold">Creative Tim</span>
+                         <p class="text-muted ms-5 mt-1">27 March 2020, at 12:30 PM</p>
+                        </div>
+                      <p class="text-success">+$2,500</p>
+                    </div>
+
+                    <div class="trans-title d-flex justify-content-between">
+                     <div> <button type="button" class="btn me-2 btn-outline-dark">
+                       !
+                     </button>
+                        <span class="fw-bold">Webflow</span>
+                         <p class="text-muted ms-5 mt-1">27 March 2020, at 12:30 PM</p>
+                        </div>
+                      <p class="text-dark">Pending</p>
+                    </div>
+                    
+
+
+                </div>
+
+                <div class="billing-info bg-white p-2">
+                    <h6 class="fw-bold">Billing information</h6>
+                    <div class="users-billing d-flex flex-column gap-2">
+                        <div class="user bg-secondary-subtle p-2">
+                            <h6 class="fw-bold">Oliver Liam</h6>
+                            <div class="adress d-flex justify-content-between">
+                                <div>
+                                    <address>
+                                        <p><span class="text-muted">Company Name:</span>Viking Burrito</p>
+                                        <p ><span class="text-muted">Email-Address:</span>oliver@burrito.com</p>
+                                         <p><span class="text-muted">VAT Number:</span>FRB1235476</p>
+                                    </address>
+                                </div>
+                                <div><button type="button" class="btn text-danger"><i class="fa-solid me-2 fa-trash"></i>Delete</button>
+                                <button type="button" class="btn text-dark"><i class="fa-solid me-2 fa-pencil"></i>Edit</button>
+                            </div>          
+                            </div>
+                             
+                        </div>
+
+                         <div class="user bg-secondary-subtle p-2">
+                            <h6 class="fw-bold">Lucas Harper</h6>
+                            <div class="adress d-flex justify-content-between">
+                                <div>
+                                    <address>
+                                        <p><span class="text-muted">Company Name:</span>Stone Tech Zone</p>
+                                        <p><span class="text-muted">Email-Address:</span>lucas@stone-tech.com</p>
+                                         <p><span class="text-muted">VAT Number:</span>FRB1235476</p>
+                                    </address>
+                                </div>
+                                <div><button type="button" class="btn text-danger"><i class="fa-solid me-2 fa-trash"></i>Delete</button>
+                                <button type="button" class="btn text-dark"><i class="fa-solid me-2 fa-pencil"></i>Edit</button>
+                            </div>          
+                            </div>
+                             
+                        </div>
+
+                         <div class="user bg-secondary-subtle p-2">
+                            <h6 class="fw-bold">Ethan James</h6>
+                            <div class="adress d-flex justify-content-between">
+                                <div>
+                                    <address>
+                                        <p><span class="text-muted">Company Name:</span>Fiber Notion</p>
+                                        <p><span class="text-muted">Email-Address:</span>ethan@fiber.com</p>
+                                         <p><span class="text-muted">VAT Number:</span>FRB1235476</p>
+                                    </address>
+                                </div>
+                                <div><button type="button" class="btn text-danger"><i class="fa-solid me-2 fa-trash"></i>Delete</button>
+                                <button type="button" class="btn text-dark"><i class="fa-solid me-2 fa-pencil"></i>Edit</button>
+                            </div>          
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                </div>
+
+              </div>
+
+               <div class="projects col-12 row d-flex flex-row justify-content-start ms-1  gap-4 mt-4">
+                <div class="tables col-8 p-2 bg-white">
+                    <h5 class="fw-bold">Projects</h5>
+                    <p class="text-muted"><span class="text-primary-emphasis">30 done </span>this month</p>
+                     
+                    <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Comapnies</th>
+                        <th scope="col">Members</th>
+                        <th scope="col">Budget</th>
+                        <th scope="col">Completion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td scope="row"><img class="me-1" src="images/icon1.PNG">Material XD Version</td>
+                        <td><div class="image-div">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-1" class="image-ss-1 me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-2" class="image-ss-2  me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-3" class="image-ss-3  me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-4" class="image-ss-4  me-1" src="images/avatar.png">  
+                        </div>
+                        </td>
+                        <td>$14,000 </td>
+                        <td>60% <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 60%"></div>
+                             </div></td>
+                        </tr>
+                        <tr>
+                        <td scope="row"><img class="me-1" src="images/icon2.PNG">Add Progress Track</td>
+                        <td><div class="image-div">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-1" class="image-ss-1 me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-2" class="image-ss-2  me-1" src="images/avatar.png"> 
+                        </div>
+                        </td>
+                        <td>$3,000 </td>
+                        <td>25%<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%"></div>
+                             </div></td>
+                        </tr>
+                        <tr>
+                        <td scope="row"><img class="me-1" src="images/icon3.PNG">Fix Platform errors</td>
+                        <td><div class="image-div">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-1"  class="image-ss-1  me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-2"  class="image-ss-2  me-1" src="images/avatar.png">  
+                        </div>
+                        </td>
+                        <td>Not set</td>
+                        <td>100%<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: 100%"></div>
+                             </div></td>
+                        </tr>
+                         <tr>
+                        <td scope="row"><img class="me-1" src="images/icon4.PNG">Launch Our Mobile App</td>
+                        <td><div class="image-div">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-1"  class="image-ss-1  me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-2" class="image-ss-2  me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-3"  class="image-ss-3  me-1" src="images/avatar.png">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-4" class="image-ss-4  me-1" src="images/avatar.png">  
+                        </div>
+                        </td>
+                        <td>$20,500</td>
+                        <td>100%<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: 100%"></div>
+                             </div></td>
+                         </tr>
+                        <tr>
+                        <td scope="row"><img class="me-1" src="images/icon5.PNG">Add new Pricing Pages</td>
+                        <td><div class="image-div">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="image-1"  class="image-ss-1 me-1" src="images/avatar.png">
+                           
+                        </div> </td>
+                        <td>$500</td>
+                        <td>25%<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%"></div>
+                             </div></td>
+                        </tr>
+                        <tr>
+                        <td scope="row"><img class="me-1" src="images/icon6.PNG">Redesign New Online Shop</td>
+                        <td><div class="image-div">
+                            <img  data-bs-toggle="tooltip" data-bs-placement="top" title="image-1" class="image-ss-1 me-1" src="images/avatar.png">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="image-2" class="image-ss-2 me-1" src="images/avatar.png">
+                           
+                        </div>
+                        </td>
+                        <td>$2,000</td>
+                        <td>40%<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 40%"></div>
+                             </div></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                  
+                </div>
+
+                <div class="orders  bg-white p-2">
+                   <h5>Orders overview</h5>
+                   <p class="text-muted">24% this month</p>
+                   <div class="oders d-flex  gap-4">
+                  <div class="d-flex flex-column justify-content-center align-items-center"> <div><i class="fa-solid fa-bell order-bell"></i></div>
+                    <div class="strait-line"></div>
+                  </div>
+                    <div>
+                        <h5>$2400, Design changes</h5>
+                        <p>22 DEC 7:20 PM</p>
+                    </div>
+                   </div>
+
+                    <div class="oders d-flex  gap-4">
+                   <div class="d-flex flex-column justify-content-center align-items-center"> <div><i class="fa-solid fa-code"></i></div>
+                    <div class="strait-line"></div>
+                  </div>
+                    <div>
+                        <h5>New order #1832412</h5>
+                        <p>22 DEC 11:00 PM</p>
+                    </div>
+                   </div>
+
+                    <div class="oders d-flex  gap-4">
+                   <div class="d-flex flex-column justify-content-center align-items-center"> <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="strait-line"></div>
+                  </div>
+                    <div>
+                        <h5>Server payments for April</h5>
+                        <p>22 DEC 9:34 PM</p>
+                    </div>
+                   </div>
+
+                    <div class="oders d-flex  gap-4">
+                  <div class="d-flex flex-column justify-content-center align-items-center"> <div><i class="fa-solid fa-credit-card"></i></div>
+                    <div class="strait-line"></div>
+                  </div>
+                    <div>
+                        <h5>New card added for order #4395133</h5>
+                        <p>20 DEC 2:20 AM</p>
+                    </div>
+                   </div>
+
+                   <div class="oders d-flex  gap-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center"><div ><i class="fa-solid fa-key"></i></div>
+                    <div class="strait-line"></div>
+                  </div>
+                    <div>
+                        <h5>Unlock packages for development</h5>
+                        <p>18 DEC 4:54 AM</p>
+                    </div>
+                   </div>
+
+                     <div class="oders d-flex  gap-4">
+                   <div class="d-flex flex-column justify-content-center align-items-center"> <div ><i class="fa-solid fa-money-bill"></i></div>
+                    <div class="strait-line"></div>
+                  </div>
+                    <div>
+                        <h5>New order #9583120</h5>
+                        <p>17 DEC</p>
+                    </div>
+                   </div>
+
+                   
+                    
+                </div>
+
+              </div>
+              
+              
+             
+
+             
+
+
+             </div>
+            </div>
+    </div>
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script> 
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+  new bootstrap.Tooltip(el);
+  });
+
+  </script>
+  
+</body>
+</html>

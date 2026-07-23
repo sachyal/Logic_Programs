@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+<script>
+    function addData(){
+        data1 = document.f1.t1.value;
+        data2 = document.f1.t2.value;
+        ans = parseInt(data1) + parseInt(data2);
+        document.f1.ans.value=ans;
+    }
+     function subData(){
+        data1 = document.f1.t1.value;
+        data2 = document.f1.t2.value;
+        ans = parseInt(data1) - parseInt(data2);
+        document.f1.ans.value=ans;
+    }
+     function multiData(){
+        data1 = document.f1.t1.value;
+        data2 = document.f1.t2.value;
+        ans = parseInt(data1) * parseInt(data2);
+        document.f1.ans.value=ans;
+    }
+    function divData(){
+        data1 = document.f1.t1.value;
+        data2 = parseInt(document.f1.t2.value );
+        if(data2<=0){
+            alert("enter a value bigger than 0");
+        }
+        else{
+            ans = parseInt(data1) / data2;
+        document.f1.ans.value=ans;
+        }
+    }
+</script>
+</head>
+
+<body>
+    <form name="f1">
+        Data 1:<input type="text" name="t1" /> <br>
+        Data 2:<input type="text" name="t2" /><br>
+        Ans:<input type="text" name="ans" /> <br>
+        <input type="button" value="Add" onclick="addData()" />
+        <input type="button" value="Sub" onclick="subData()" />
+         <input type="button" value="Multi" onclick="multiData()" />
+          <input type="button" value="divide" onclick="divData()" />
+    </form>
+    
+</body>
+</html>

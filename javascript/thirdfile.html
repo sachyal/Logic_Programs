@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator Demo</title>
+  <script>
+    // Function to get values from form
+    function getValues() {
+      let v1 = parseFloat(document.forms["calcForm"]["data1"].value);
+      let v2 = parseFloat(document.forms["calcForm"]["data2"].value);
+      return [v1, v2];
+    }
+
+    // Arithmetic functions
+    function add() {
+      let [v1, v2] = getValues();
+      alert("Addition: " + (v1 + v2));
+    }
+
+    function sub() {
+      let [v1, v2] = getValues();
+      alert("Subtraction: " + (v1 - v2));
+    }
+
+    function multi() {
+      let [v1, v2] = getValues();
+      alert("Multiplication: " + (v1 * v2));
+    }
+
+    function div() {
+      let [v1, v2] = getValues();
+      if (v2 === 0) {
+        alert("Cannot divide by zero");
+      } else {
+        alert("Division: " + (v1 / v2));
+      }
+    }
+
+    // Run when body loads
+    function init() {
+      alert("Calculator ready! Enter values and click a button.");
+    }
+  </script>
+</head>
+<body onload="init()">
+  <form name="calcForm">
+    <label>Data1: <input type="text" name="data1"></label><br>
+    <label>Data2: <input type="text" name="data2"></label><br><br>
+
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Sub" onclick="sub()">
+    <input type="button" value="Multi" onclick="multi()">
+    <input type="button" value="Div" onclick="div()">
+  </form>
+</body>
+</html>

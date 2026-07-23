@@ -1,0 +1,122 @@
+.registration-overview{
+    background-color: lightblue;
+    color:blue;
+    border-radius:10px;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.regis-icon{
+    margin-right:5px;
+}
+.regis-icon2{
+    margin-left:10px;
+    font-size: 12px;
+    color:gray;
+    padding:5px;
+    border:2px solid blue;
+    border-radius: 50%;
+
+}
+.registration-text2{
+    color:gray;
+    padding:5px;
+    text-align: center;
+    border:1px solid white;
+}
+.regis-year{
+    display: inline-block;
+    padding:5px;
+    background-color:white;
+    color:black;
+    margin-left:5px;
+}
+.card-wrapper{
+    background-color: gainsboro;
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding:10px;
+    border-radius:10px;
+    width:200px;
+    background-color: white;
+}
+
+.card-icon{ margin-right:20px;}
+.fa-exclamation{margin-left:10px;}
+.fa-computer{padding:10px; color:white; background-color: black; font-size:20px; border-radius:10px;}
+.fa-pencil{padding:10px; color:white; background-color: green; font-size:20px; border-radius:10px;}
+.fa-file{padding:10px; color:white; background-color: rgb(146, 37, 37); font-size:20px; border-radius:10px;}
+.fa-note-sticky{padding:10px; color:white; background-color: yellow; font-size:20px; border-radius:10px;}
+.fa-calendar{padding:10px; color:white; background-color: lightseagreen; font-size:20px; border-radius:10px;}
+.fa-circle-check{padding:10px; color:white; background-color: rgba(198, 32, 198, 0.489); font-size:20px; border-radius:10px;}
+.card-meter{
+    width:100%;
+    height: 3px;
+    background-color:black;
+}
+.card-meter2{ width:100%; height: 3px; background-color:green;}
+.card-meter3{ width:20%; height: 3px; background-color:rgb(146, 37, 37);}
+.card-meter4{ width:100%; height: 0px; background-color:yellow;}
+.card-meter5{ width:100%; height: 0px; background-color:lightseagreen;}
+.card-meter6{ width:100%; height: 0px; background-color:rgba(198, 32, 198, 0.489);}
+.card{
+    transition:0.3 ease-in-out;
+}
+.card:hover{translate: 0 -4px;}
+/* 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+div {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+*/
+/*
+animation-name:practice;
+animation-duration: 2s;
+animation-iteration-count:1;
+animation-timing-fnction:ease;
+
+@keyframes practice{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+button {
+  background-color: lightblue;
+  transition: background-color 0.5s ease-in-out; 
+
+  
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+
+*/
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 1s ease, background-color 2s ease;
+}
+
+.box:hover {
+  width: 200px;
+  background: green;
+}

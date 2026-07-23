@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>removeEventListener Example</title>  
+  <style>  
+    #myBtn {  
+      background-color: green;  
+      color: white;  
+      padding: 10px 20px;  
+      cursor: pointer;  
+      border: none;  
+      border-radius: 5px;  
+    }  
+  </style>  
+</head>  
+<body>  
+  
+  <button id="myBtn">Click Me!</button>  
+  <button id="removeBtn">Remove Event Listener</button>  
+  
+  <script>  
+    const myBtn = document.getElementById("myBtn");  
+    const removeBtn = document.getElementById("removeBtn");  
+  
+    // Define a function (must be a named function, not anonymous)  
+    function sayHello() {  
+      alert("Button Clicked!");  
+    }  
+  
+    // Add event listener to button  
+    myBtn.addEventListener("click", sayHello);  
+  
+    // Remove event listener when second button is clicked  
+    removeBtn.addEventListener("click", function () {  
+      myBtn.removeEventListener("click", sayHello);  
+      alert("Event listener removed. Now the button won't respond.");  
+    });  
+  </script>  
+  
+</body>  
+</html>  

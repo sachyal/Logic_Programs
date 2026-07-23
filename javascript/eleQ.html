@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script type="text/javascript">  
+function msg(){  
+ alert("Hello Alert Box");  
+}  
+</script>  
+<input type="button" value="click" onclick="msg()"/>  
+
+
+<script type="text/javascript">  
+function msg(){  
+var v= confirm("Are u sure?");  
+if(v==true){  
+alert("ok");  
+}  
+else{  
+alert("cancel");  
+}  
+  
+}  
+</script>  
+  
+<input type="button" value="delete record" onclick="msg()"/>  
+
+<script type="text/javascript">  
+function msg(){  
+var v= prompt("Who are you?");  
+alert("I am "+v);  
+  
+}  
+</script>  
+  
+<input type="button" value="click" onclick="msg()"/>  
+
+<script type="text/javascript">  
+function msg(){  
+open("http://www.tpointtech.com");  
+}  
+</script>  
+<input type="button" value="Tpoint Tech" onclick="msg()"/> 
+
+<script type="text/javascript">  
+function msg(){  
+setTimeout(  
+function(){  
+alert("Welcome to Tpoint Tech after 2 seconds")  
+},2000);  
+  
+}  
+</script>  
+  <!-- History object-->
+<input type="button" value="click" onclick="msg()"/>  
+
+<button onclick="showHistory()">Show History Length</button>  
+  
+<script>  
+function showHistory() {  
+    alert("History Length: " + history.length);  
+}  
+</script>  
+<button onclick="history.back()">Go Back</button>  
+
+<button onclick="history.forward()">Next Page</button>  
+<button onclick="history.go(-2)">Go Back Two Pages</button>  
+
+<!-- navigator Obj-->
+ <script>  
+document.writeln("Browser Name: " + navigator.appName + "<br>");  
+document.writeln("Code Name: " + navigator.appCodeName + "<br>");  
+document.writeln("Version: " + navigator.appVersion + "<br>");  
+document.writeln("Platform: " + navigator.platform);  
+</script>  
+
+<button onclick="checkCookie()">Check Cookies</button>  
+  
+<script>  
+function checkCookie() {  
+    if (navigator.cookieEnabled) {  
+        alert("Cookies are enabled.");  
+    } else {  
+        alert("Cookies are disabled.");  
+    }  
+}  
+</script> 
+<script>  
+document.writeln("Language: " + navigator.language + "<br>");  
+document.writeln("Online Status: " + navigator.onLine);  
+</script> 
+<!-- screen object-->
+ <script>  
+document.writeln("Screen Width: " + screen.width + "<br>");  
+document.writeln("Screen Height: " + screen.height);  
+</script> 
+
+<script>  
+document.writeln("Available Width: " + screen.availWidth + "<br>");  
+document.writeln("Available Height: " + screen.availHeight);  
+</script>  
+  <script>  
+document.writeln("Color Depth: " + screen.colorDepth + " bits");  
+</script>
+
+<!-- DOM(DOCUMent object model)-->
+
+ <p id="demo">JavaScript DOM</p>  
+    <button onclick="changeColor('purple');">purple</button>  
+    <script>  
+        function changeColor(newColor) {  
+        const elem = document.getElementById("demo");  
+        elem.style.color = newColor;  
+      }  
+    </script>  
+
+    <h2>The getElementByName method</h2>  
+   Phone:  
+   <input name="devices" type ="checkbox" value="Phone">  
+   Laptop:  
+   <input name="devices" type ="checkbox" value="Laptop">  
+   Sofa:  
+   <input name="furnitures" type ="checkbox" value="Sofa">  
+   <p>Check the checkboxes that have name = "devices"</p>  
+<script>  
+   const collection = document.getElementsByName("devices");  
+   for(let i =0; i <collection.length; i++){  
+      if(collection[i].type =="checkbox"){  
+         collection[i].checked = true;  
+      }  
+   }  
+</script>  
+
+<p class="highlight">This is paragraph 1.</p>  
+  <p class="highlight">This is paragraph 2.</p>  
+  <p>This is a normal paragraph.</p>  
+  <button onclick="highlightParagraphs()">Highlight Paragraphs</button>  
+  <script>  
+    function highlightParagraphs() {  
+      // Get all elements with the class 'highlight'  
+      var elements = document.getElementsByClassName("highlight");  
+      // Loop through the elements and change their background color  
+      for (var i = 0; i < elements.length; i++) {  
+        elements[i].style.backgroundColor = "yellow";  
+      }  
+    }  
+  </script>  
+
+  <script type="text/javascript">    
+function countpara(){    
+var totalpara=document.getElementsByTagName("p");    
+alert("total p tags are: "+totalpara.length);    
+}    
+</script>    
+<p>This is a paragraph</p>    
+<p>Here we are going to count a total number of paragraphs by the getElementByTagName() method.</p>    
+<p>Let's see the simple example</p>    
+<button onclick="countpara()">count paragraph</button>    
+
+<p id="myParagraph">Click the button to change this text.</p>  
+  <button id="myButton">Click Me</button>  
+  <script>  
+    const button = document.querySelector('#myButton');  
+  
+    button.addEventListener('click', () => {   
+      const paragraph = document.querySelector('#myParagraph');  
+      paragraph.textContent = 'The text has been changed!';  
+    });  
+  </script>
+<h2 class="highlight">Heading One</h2>  
+  <h2 class="highlight">Heading Two</h2>  
+  <h2>Heading Three</h2>  
+  <script>  
+   const elements = document.querySelectorAll('.highlight');  
+   elements.forEach((element) => {  
+  element.style.color = 'red';  
+    });  
+  </script>  
+
+  <!-- function-->
+<script>
+    function introduce(city, country) {  
+  console.log(this.name + " from " + city + ", " + country);  
+}  
+const person = { name: "Taylor Swift" };  
+introduce.apply(person, ["New York", "USA"]);   
+
+function greet() {  
+  console.log("Hi, " + this.name);  
+}  
+const person2 = { name: "Tom" };  
+const greetgreetClara = greet.bind(person);  
+greetClara();  
+
+function greet() {  
+  console.log("Hello, " + this.name);  
+}  
+const person3 = { name: "Taylor" };  
+greet.call(person); 
+
+function sum(a, b) {  
+  return a + b;  
+}  
+console.log(sum.toString()); 
+
+const p = ["Water", "Air", "Light", "Earth"];  
+const pp2 = p.map(function (s) {  
+    return s.length;  
+});  
+console.log("Normal way ", p2);  
+const pp3 = p.map((s) => s.length);  
+console.log("Using arrow Function ", p3); 
+
+ function showData(name, amt) {  
+        alert('Hello ' + name + '\nYour entered amount is ' + amt);  
+      }  
+  
+      function getData(callback) {  
+        var name = prompt("Welcome to TpointTech.com. What is your name?");  
+        var amt = prompt("Enter some amount...");  
+        callback(name, amt);  
+      }  
+  
+      getData(showData);  
+
+let x = function () {    
+    console.log('It is an anonymous function');    
+};    
+x(); 
+
+function outerFun(a) {  
+    function innerFun(b) {  
+        return a + b;  
+    }  
+    return innerFun;  
+}  
+  
+const addTen = outerFun(11);  
+console.log(addTen(5));  
+
+const people = {  
+printIntro: function () {  
+console.log(`My full name is ${this.Fname}. Am I Alive? ${this.isalive}`);  
+}  
+};  
+const name = Object.create(people);  
+name.Fname = "Robert"; // "Fname" is a property set on "name", but not on "people"  
+name.isalive = true;  
+name.printIntro();  
+
+const student = { 1: 'Steve', 100: 'Sanju', 45: 'Chris' };  
+console.log(Object.entries(student));  
+
+let employee_detail = {  
+employee_name: 'Smith',  
+employee_salary: 144,  
+employee_age : 23  
+} ;  
+console.log(Object.keys(employee_detail).length);  
+
+// Returning property values of an array  
+var check = ['x', 'y', 'z'];  
+console.log(Object.values(check));  
+
+// Returning property values of an array  
+var check = ['x', 'y', 'z'];  
+console.log(Object.values(check));  
+
+onsole.log(Object.is(5, 5)); // true  
+console.log(Object.is('Java', 'Java')); // true  
+console.log(Object.is(true, false)); // false  
+console.log(Object.is(0, -0)); // false  
+console.log(Object.is(NaN, NaN)); // true  
+
+</script>
+
+<!-- Array-->
+ <script>
+    let country = [ "India", "Australia", "England" ];  
+for (let i = 0; i<country.length; i++ ){  
+console.log( country[i]);  
+}  
+let num;  
+let country = new Array ();  
+country[0] = "Japan";  
+country[1] = "Spain";  
+country[2] = "Germany";  
+for ( num = 0; num<country.length; num++ )  
+{  
+console.log( country[num]);  
+}  
+let employee = new Array("Rohit", "Vivek", "John");    
+for (let i=0;i<employee.length;i++){      
+console.log(employee[i]);      
+};    
+
+const arr1 = [1, 2];  
+const arr2 = [3, 4];  
+console.log(arr1.concat(arr2));  
+
+const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];  
+fruits.copyWithin(0, 3);  
+console.log(fruits);  
+
+const fruits = ["apple", "banana", "cherry"];  
+const fruitEntries = fruits.entries();  
+for (const entry of fruitEntries) {  
+  console.log(entry);  
+};  
+
+const numbers = [2, 4, 6, 8, 10];  
+const allEven = numbers.every(number => number % 2 === 0);  
+console.log(allEven);  
+const mixedNumbers = [1, 3, 5, 7, 9, 10];  
+const allOdd = mixedNumbers.every(number => number % 2 !== 0);  
+console.log(allOdd);  
+
+const numbers1 = [2, 4, 6, 8, 10];  
+const allEven1= numbers.every(number => number % 2 === 0);  
+console.log(allEven);  
+const mixedNumbers1 = [1, 3, 5, 7, 9, 10];  
+const allOdd1 = mixedNumbers.every(number => number % 2 !== 0);  
+console.log(allOdd);  
+
+const nestedArray = [1, [2, 3], [4, [5, 6]]];  
+ const flatArray = nestedArray.flat();  
+ console.log(flatArray);  
+
+ const myNumber = [ 1, 2, 3];  
+const myResult = myNumber.flatMap(num => [num, num * 2]);  
+console.log(myResult);  
+
+const myArray = new Array(5).fill(0);  
+console.log(myArray);  
+
+const myStr = "Hello JavaScript";  
+const myResult1 = Array.from(myStr);  
+console.log(myResult);  
+
+const myNum = [1, 2, 3, 4, 5, 6];  
+const myEvenNumber = myNum.filter(num => num % 2 === 0);  
+console.log(myEvenNumber);  
+
+const myNumbers = [3, 7, 12, 18, 5];  
+const myResult2 = myNumbers.find(num => num > 10);  
+console.log(myResult);  
+
+const myNumbers2 = [3, 7, 12, 18, 5];  
+const myResult3 = myNumbers.findIndex(num => num > 10);  
+console.log(myResult);  
+
+const myNumbers3 = [1, 2, 3, 4, 5];  
+myNumbers.forEach(num => {  
+console.log(num);  
+});  
+
+const myName = ['John', 'Shiv', 'Ankit'];  
+console.log(myName.includes('Shiv'));  
+
+const myFruits3 = ['apple', 'cherry', 'banana'];  
+console.log(myFruits.indexOf('cherry'));  
+
+const myFruits = ['apple', 'banana', 'cherry'];  
+console.log(Array.isArray(myFruits));  
+
+const words = ['Hello', 'world', '!'];  
+const sentence = words.join(' ');  
+console.log(sentence);  
+
+let arr = [5, 6, 10];  
+let iterator = arr.keys();  
+for (let key of iterator) {  
+console.log(key);  
+};  
+
+const colors = ['red', 'blue', 'green', 'blue', 'yellow'];  
+console.log(colors.lastIndexOf('blue'));   
+
+let myNumbers4 = [1, 2, 3, 4, 5];  
+console.log(myNumbers.map(num => num * 2));  
+
+
+
+
+ </script>
+ 
+<!-- String-->
+ <script>
+  let text = "JavaScript";  
+console.log(text.length);  
+
+let firstName = "John";  
+let lastName = "Smith";  
+  
+console.log(firstName + " " + lastName);  
+
+ </script>
+
+</body>
+</html>

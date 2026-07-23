@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <form name="f1">
+        <h3>for Finding length and Count of vowels.</h3>
+        Data:<input type="text" name="d1">
+        <input type="submit" value="Submit" onclick="lenvow()"> 
+    </form>
+    
+    <h3>Checking both are equals or not</h3>
+    <form name="f2">
+        Data1:<input type="text" name="f2d1"> <br>
+        Data1:<input type="text" name="f2d2"> <br>
+        <input type="submit" value="Check Equal" onclick="checkequal()" > 
+    </form>
+
+    <h3>fidning number of words</h3>
+    <form name="f3">
+        Data1:<input type="text" name="f3d1" value="Hello : how: are : you">
+        <input type="submit" value="Submit" onclick="findwords()">
+
+    </form>
+
+    <h3>Calculator</h3>
+    <form name="f4">
+        Data1:<input type="text" name="f4d1"><br>
+        Data2:<input type="text" name="f4d2"><br>
+        Data3:<input type="number" name="f4ans">
+        <input type="button" value="Add" onclick="calculate(this)">
+        <input type="button" value="Sub" onclick="calculate(this)">
+        <input type="button" value="Multi" onclick="calculate(this)">
+        <input type="button" value="Div" onclick="calculate(this)">
+    </form>
+    <script>
+        function lenvow(){
+            data1=document.f1.d1.value;
+            alert("Total Length is: " + data1.length);
+            let vowels="aeiouAEIOU";
+            let count=0;
+            for(let i=0; i<data1.length; i++){
+                if(vowels.includes(data1[i])){
+                    count++;
+                }
+            }
+            alert("Count of vowels is: " + count);
+        }
+      function checkequal(){
+        data1=(document.f2.f2d1.value).toLowerCase();
+        data2=(document.f2.f2d2.value).toLowerCase();
+        if(data1==data2){
+            alert("Both are equal.")
+        }
+        else(
+            alert("Both are not equal.")
+        )
+      }    
+    function findwords(){
+        let data1 = document.f3.f3d1.value;
+      let words = data1.split(/[:\s]+/).filter(Boolean);
+      alert("Number of words: " + words.length);
+      let output = "";
+      for (let w of words) {
+        output += w + "\n";
+      }
+      alert(output);
+    }
+    function calculate(btnobj){
+        d1=parseInt(document.f4.f4d1.value);
+        d2=parseInt(document.f4.f4d2.value);
+
+        if(btnobj.value==="Add"){
+            document.f4.f4ans.value= d1 + d2 ;
+        }
+        if(btnobj.value==="Sub"){
+            document.f4.f4ans.value=d1-d2;
+        }
+        if(btnobj.value==="Multi"){      
+            document.f4.f4ans.value=d1*d2;
+        }
+        if(btnobj.value==="Div"){
+            if(d2==0){
+                alert("value cannot be Zero");
+            }
+            else{
+            document.f4.f4ans.value=d1/d2 ; }
+        }
+
+    }
+    </script>
+</body>
+</html>

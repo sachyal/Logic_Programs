@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Form Controls Demo</title>
+    <style>
+        body{font-family:Arial; padding:20px}
+       .box{padding:15px; margin-bottom:15px; border-radius:8px}
+       .error{color:red; font-size:12px}
+    </style>
+</head>
+<body>
+
+
+
+<form name="myForm" id="myForm" onsubmit="return handleSubmit(event)" onreset="handleReset()">
+
+    <div class="box">
+        <h3>1. TEXT FIELD</h3>
+        Name:
+        <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter name" 
+            value="" 
+            size="30" 
+            maxlength="20" 
+            required 
+            onfocus="fieldFocus(this)" 
+            onblur="fieldBlur(this)" 
+            onkeyup="charCount(this)" 
+            onchange="fieldChange(this)" 
+        >
+        <span id="count" class="error"></span>
+        <br><br>
+        <button type="button" onclick="clearText()">Clear Text </button>
+        <button type="button" onclick="focusText()">Focus Text </button>
+        <button type="button" onclick="selectText()">Select Text </button>
+    </div>
+
+    <div class="box">
+        <h3>2. RADIO BUTTON</h3>
+        Gender:
+        <input type="radio" name="gender" value="Male" onclick="radioClick(this)"> Male
+        <input type="radio" name="gender" value="Female" onclick="radioClick(this)"> Female
+        <input type="radio" name="gender" value="Other" onclick="radioClick(this)"> Other
+        <p id="radioResult"></p>
+    </div>
+
+    <div class="box">
+        <h3>3. CHECKBOX</h3>
+        Skills:
+        <input type="checkbox" name="skills" value="HTML" onchange="checkboxChange()"> HTML
+        <input type="checkbox" name="skills" value="CSS" onchange="checkboxChange()"> CSS
+        <input type="checkbox" name="skills" value="JS" onchange="checkboxChange()"> JS
+        <p id="checkboxResult"></p>
+        <button type="button" onclick="checkAll()">Check All </button>
+        <button type="button" onclick="uncheckAll()">Uncheck All </button>
+    </div>
+
+    <div class="box">
+        <h3>4. BUTTON vs SUBMIT vs RESET</h3>
+        <input type="button" value="Normal Button" onclick="normalBtn()"> 
+        <input type="submit" value="Submit Form"> 
+        <input type="reset" value="Reset Form"> 
+    </div>
+
+</form>
+
+<p id="output"></p>
+
+<script>
+
+    function fieldFocus(el){
+        el.style.background = "lightyellow"; 
+    }
+    function fieldBlur(el){
+        el.style.background = "white";
+    }
+    function fieldChange(el){
+        console.log("Value changed to: " + el.value); 
+    }
+    function charCount(el){
+        document.getElementById("count").innerText = el.value.length + "/20"; 
+    }
+    function clearText(){
+        document.myForm.username.value = ""; 
+        document.myForm.username.focus(); 
+    }
+    function focusText(){
+        document.getElementById("username").focus(); 
+    }
+    function selectText(){
+        document.getElementById("username").select(); 
+    }
+
+    
+    function radioClick(radio){
+        document.getElementById("radioResult").innerText = "Selected: " + radio.value; 
+    }
+
+  
+    function checkboxChange(){
+        let skills = document.myForm.skills; 
+        let result = [];
+        for(let i=0; i<skills.length; i++){
+            if(skills[i].checked){ 
+                result.push(skills[i].value); 
+            }
+        }
+        document.getElementById("checkboxResult").innerText = "Selected: " + result.join(", ");
+    }
+    function checkAll(){
+        let skills = document.myForm.skills;
+        for(let i=0; i<skills.length; i++){
+            skills[i].checked = true; 
+        }
+        checkboxChange();
+    }
+    function uncheckAll(){
+        let skills = document.myForm.skills;
+        for(let i=0; i<skills.length; i++){
+            skills[i].checked = false; 
+        }
+        checkboxChange();
+    }
+
+   
+    function handleSubmit(e){
+        e.preventDefault(); 
+        let name = document.myForm.username.value.trim(); 
+        if(name === ""){
+            alert("Please enter name");
+            document.myForm.username.focus(); 
+            return false;
+        }
+        document.getElementById("output").innerText = "Form Submitted Successfully!";
+        return true;
+    }
+    function handleReset(){
+        document.getElementById("output").innerText = "Form Reset";
+        document.getElementById("radioResult").innerText = "";
+        document.getElementById("checkboxResult").innerText = "";
+    }
+
+    
+    console.log("Form Name: " + document.myForm.name); 
+    console.log("Total Elements: " + document.myForm.elements.length); 
+
+</script>
+
+</body>
+</html>

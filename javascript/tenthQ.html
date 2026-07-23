@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h3>Operations on Arithmatic Operators</h3>
+    <form name="f1">
+        Data1:<input type="text" name="d1">
+         <select name="operators">
+            <option>Select Operator for expected result</option>
+            <option value="+"> Addition(+) </option>
+            <option value="-">Substraction(-)</option>
+            <option value="*">Multiplication(*)</option>
+            <option value="/">Division(/)</option>
+        </select>
+        Data1:<input type="text" name="d2">
+       
+        <br><br>
+        Ans.-><input type="text" name="ans">
+        <input type="button" value="submit" onclick="calc()">
+    </form> <br> <br>
+
+    <h3>Form 2 Multiple Select</h3>
+
+    <form name="f2">
+    <select name="s1" multiple>
+        <option >Select known language</option>
+        <option value="Hindi">Hindi</option>
+        <option value="English">English</option>
+        <option value="Gujarati">Gujarati</option>
+        <option value="Haryanvi">Haryanvi</option>
+        <option value="German">German</option>
+        <option value="Russian">Russian</option>
+    </select>
+
+    <input type="button" value="Submit" onclick="lang()">
+    </form>
+
+
+
+    <script>
+       
+       function calc() {
+        let data1 = parseFloat(document.f1.d1.value);
+        let op = document.f1.operators.value;
+        let data2 = parseFloat(document.f1.d2.value);
+        let ans;
+
+        if (op === "+") {
+            ans = data1 + data2;
+        } else if (op === "-") {
+            ans = data1 - data2;
+        } else if (op === "*") {
+            ans = data1 * data2;
+        } else if (op === "/") {
+            if (data2 !== 0) {
+            ans = data1 / data2;
+            } else {
+            alert("Division by zero is not allowed");
+            return;
+            }
+        } else {
+            alert("Please select a valid operator");
+            return;
+        }
+
+        document.f1.ans.value = ans;
+        }
+
+         function lang() {
+            let selected = [];
+            let options = document.f2.s1.options;
+
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].selected) {
+                    selected.push(options[i].value);
+                }
+            }
+
+            if (selected.length > 0) {
+                alert("Your Selected: " + selected.join(", "));
+            } else {
+                alert("Please select at least one language.");
+            }
+        }
+       
+
+    </script>
+</body>
+</html>

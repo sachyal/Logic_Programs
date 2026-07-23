@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript</title>
+
+    </head>
+    <body>
+    
+<h3>Check gender with Submit</h3>
+ <form name="f1">
+    Gender:<input type="radio" name="g" value="male"> Male
+     <input type="radio" name="g" value="femle">Female
+
+     <input type="submit" value="Submit" onclick="checkgender()">
+
+ </form> <br>
+ 
+ <h3>Check Gender without submit</h3>
+ <form name="f2">
+    Gender: <input type="radio" name="g1" value="male" onclick="checkgender2(this)"> Male
+       <input type="radio" value="female" name="g" onclick="checkgender2(this)"> Female
+ </form> <br>
+
+ <form name="f3">
+    <h3>Hobbies</h3>
+    Cricket: <input type="checkbox" name="cbc" value="Cricket">
+    Football: <input type="checkbox" name="cbf" value="Foot ball">
+    Hockey : <input type="checkbox" name="cbh" value="Hockey">
+
+    <input type="submit" value="Submit" onclick="hobby()">
+ </form> <br>
+
+ <form name="f4">
+    <h3>Hobbies</h3>
+    Cricket: <input type="checkbox" name="cbc2" value="Cricket" onclick="hobby2(this)">
+    Football: <input type="checkbox" name="cbf2" value="Foot ball" onclick="hobby2(this)">
+    Hockey: <input type="checkbox" name="cbh2" value="Hockey" onclick="hobby2(this)">
+ </form> <br>
+
+ <h3>City</h3>
+ <form name="f5">
+    City: <select name="city">
+        <option value="please select">please Select</option>
+        <option value="st">Surat</option>
+        <option value="br">Baroda</option>
+        <option value="Dl">Delhi</option>
+        <option value="hr">Haryana</option>
+    </select>
+    <input type="button" value="Submit" onclick="city1()">
+ </form> <br>
+
+ <h3>Submit Form</h3>
+
+ <form name="f6">
+    Name:<input type="text" name="name"> <br>
+    Password: <input type="password" name="passwd"><br>
+    Gender:<input type="radio" name="g" value="Male"> Male
+    <input type="radio" name="g" value="Female"> Female <br>
+    Hobbies: <input type="checkbox" value="Cricket" name="cbc"> Cricket
+     <input type="checkbox" value="Foot ball" name="cbf" > Football
+     <input type="checkbox" value="Hockey" name="cbh"> Hockey <br>
+
+      City: <select name="city">
+        <option value="please select">please Select</option>
+        <option value="st">Surat</option>
+        <option value="br">Baroda</option>
+        <option value="Dl">Delhi</option>
+        <option value="hr">Haryana</option>
+    </select>
+
+    <input type="submit" value="Submit" onclick="fminfo()" >
+
+ </form> <br>
+
+ <h3>checking each. form</h3>
+  <form name="myForm" onsubmit="return validateForm()">
+    Name: <input type="text" name="username"><br><br>
+    Email: <input type="text" name="email"><br><br>
+    Website: <input type="text" name="website"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+<br>
+  <h3>Form area</h3>
+ <form name="f7">
+    Name:<input type="text" name="name" maxlength="10" placeholder="enter your name" > <br>
+    Password: <input type="password" name="passwd" oninput="console.log(this.value)"><br>
+    Gender:<input type="radio" name="g" value="Male"> Male
+    <input type="radio" name="g" value="Female"> Female <br>
+    Hobbies: <input type="checkbox" value="Cricket" name="cbc"> Cricket
+     <input type="checkbox" value="Foot ball" name="cbf" > Football
+     <input type="checkbox" value="Hockey" name="cbh"> Hockey <br>
+
+      City: <select name="city">
+        <option value="please select">please Select</option>
+        <option value="st">Surat</option>
+        <option value="br">Baroda</option>
+        <option value="Dl">Delhi</option>
+        <option value="hr">Haryana</option>
+    </select>
+
+    
+
+    <input type="submit" value="Submit" onclick="fminfo2()" >
+
+ </form>
+
+<script>
+    function validateForm() {
+    let name = document.myForm.username.value.trim();
+    let email = document.myForm.email.value.trim();
+    let website = document.myForm.website.value.trim();
+
+    if (name === "") {
+        alert("Name must not be empty");
+        return false;
+    }
+
+    if (name.length < 5 || name.length > 10) {
+        alert("Name must be between 5 and 10 characters");
+        return false;
+    }
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    let urlPattern = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(\/.*)?$/;
+    if (!urlPattern.test(website)) {
+        alert("Please enter a valid website URL (example: https://example.com)");
+        return false;
+    }
+
+    alert("Form submitted successfully!");
+    return true;
+}
+    function checkgender(){
+        gen=document.f1.g.value;
+        alert("Gender= " + gen);
+    }
+    function checkgender2(obj){
+        gen=obj.value;
+        alert("your Gender=" + gen);
+        
+    }
+    function hobby(){
+        let h = "";
+        if(document.f3.cbc.checked){
+            h=h+" " + document.f3.cbc.value;
+        }
+        if(document.f3.cbf.checked){
+            h=h + " " + document.f3.cbf.value;
+        }
+        if(document.f3.cbh.checked){
+            h=h+ " " + document.f3.cbh.value;
+        }
+        alert("Your Hobbies " + h + " ");
+    }
+    function hobby2(obj){
+        let h = "";
+        if(document.f4.cbc2.checked){
+            h= h + document.f4.cbc2.value + " " ; 
+        }
+        if(document.f4.cbf2.checked){
+            h= h + document.f4.cbf2.value + " "  ;
+        }
+        if(document.f4.cbh2.checked){
+            h = h + document.f4.cbh2.value + " " ;
+        }
+        alert("Your hobbies : " + h + " ");
+
+    }
+
+    function city1() {
+    let h = document.f5.city.options.length;
+    alert("Length: " + h);
+
+    let index = document.f5.city.selectedIndex;
+    alert("Selected index: " + index);
+  
+    let selectedValue = document.f5.city.value;
+    alert("You selected: " + selectedValue);
+/*  
+
+    let v ;
+    for (let i = 0; i < document.f5.city.options.length; i++) {
+        v = document.f5.city.options[i].value + " ";
+    }
+
+    alert("you selected " + v);
+    
+*/    
+}
+
+function fminfo(){
+   let a= document.f6.name.value;
+ 
+   
+   let b=document.f6.passwd.value;
+   
+   
+   let c=document.f6.g.value;
+   
+   let h = "";
+        if(document.f6.cbc.checked){
+            h=h+" " + document.f6.cbc.value;
+        }
+        if(document.f6.cbf.checked){
+            h=h + " " + document.f6.cbf.value;
+        }
+        if(document.f6.cbh.checked){
+            h=h+ " " + document.f6.cbh.value;
+        }
+
+    let d= document.f6.city.value;
+    alert( "Name: " + a + " |  Pass word: " + b +" | Gender : " + c + " | Your Selected city: " + d + " | Your Hobbies " + h);
+}
+
+function fminfo2() {
+    document.f7.name.focus();
+    let name = document.f7.name.value;
+    let passwd = document.f7.passwd.value;
+
+    let gender = document.f7.g.value;
+
+    let hobbies = "";
+    if (document.f7.cbc.checked) hobbies += document.f7.cbc.value + " ";
+    if (document.f7.cbf.checked) hobbies += document.f7.cbf.value + " ";
+    if (document.f7.cbh.checked) hobbies += document.f7.cbh.value + " ";
+
+    let city = document.f7.city.value;
+    let message = "Name: " + name +
+                  "\nPassword: " + passwd +
+                  "\nGender: " + gender +
+                  "\nHobbies: " + hobbies +
+                  "\nCity: " + city;
+
+    alert(message);
+
+}
+</script>
+    </body>
+</html>

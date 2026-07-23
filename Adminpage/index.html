@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="style.css">  
+</head>
+  <body>
+    <header class="header border border-bottom p-3 d-flex flex-row justify-content-between">
+            
+        <div class="logo">
+                <img src="images/logo.PNG" alt="logo_image">
+                <span class="logo-text fs-4 ">NiceAdmin</span>
+            </div>
+           
+            <div class="d-flex g-4">
+             <div >
+                <form class="search-header">
+                <div class="d-flex border">
+                <span class="input-group-text bg-white border border-0" id="basic-addon1"><i class="bi bi-search search-icon"></i></span>
+                <input type="text" class=" input-border border border-0" placeholder="Search,Projects,Invoices,users" aria-label="Username" />
+                  
+            </div>
+            </form>
+            
+            </div>
+
+           <div class="dropdown us-image">
+                <button class="btn btn-light mx-2  border p-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="">  <img class="img-fluid " src="images/us.png">ENG</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Francais <br><span class="text-muted">France</span></a></li>
+                    <li><a class="dropdown-item" href="#">Deutsh <br><span class="text-muted">Germany</span></a></li>
+                    <li><a class="dropdown-item " href="#">Espanol <br><span class="text-muted">Spain</span></a></li>
+                </ul>
+                </div>
+
+            <div class="dropdown">
+                <button class="btn mx-2  border p-2 btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filter-square"></i>
+                </button>
+                
+                <ul class="dropdown-menu">
+                    <h4>Quick Access</h4> <hr>
+                    <div class="d-flex border g-3 bg-light">
+                        <div><button class=""><i class="bi mx-2 bi-lightning-charge"></i></button></div>
+                        <div>
+                        <p>Create new Workspace <br>
+                           Launch new Projects,assign,team,set timeline</p> 
+                         </div>
+                    </div>
+                    <li><a class="dropdown-item" href="#"> <div class="d-flex g-4 "> 
+                        <div class="border p-1 "> <button class="border-0 bg-white"><i class="bi bi-calendar"></i></button><p>Calender</p> <p class="text-muted small">Events</p></div>
+                         <div class="border p-1"> <button class="border-0 bg-white"><button class="border-0 bg-white"><i class="bi bi-chat-left-text"></i></button></button> <p>Kanban</p> <p class="text-muted small">Boards</p></div>
+                       </div></a></li>
+                    <li><a class="dropdown-item" href="#"><div class="d-flex g-4 "> 
+                        <div class="border p-1 "> <button class="border-0 bg-white"><i class="bi bi-chat-left-text"></i></button> <p>Chat</p> <p class="text-muted small">Inbox</p></div>
+                         <div class="border p-1"><button class="border-0 bg-white"><i class="bi bi-envelope"></i></button> <p>Email</p> <p class="text-muted small">Compaigns</p></div>
+                       </div></a></li>
+                    <li><a class="dropdown-item" href="#"><div class="d-flex g-4 "> 
+                        <div class="border p-1 "> <button class="border-0 bg-white"><i class="bi bi-card-checklist"></i></button><p>Files</p> <p class="text-muted small">Assets</p></div>
+                         <div class="border p-1"> <button class="border-0 bg-white"><i class="bi bi-headset"></i></button><p>Support</p> <p class="text-muted small">Tickets</p></div>
+                       </div></a></li>
+                </ul>
+                </div>
+
+             <div class="dropdown">
+            <button class="btn mx-2  border p-2 btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bell"></i>
+            </button>
+            <ul class="dropdown-menu p-3">
+                <div class="d-flex justify-content-between">
+                    <div><h3><i class="bi bi-bell"></i></h3> <p>4 unread</p></div>
+                    <div><h6>Mark all read</h6></div>
+                </div>
+                <div class="d-flex">
+                    <div><h6>7</h6> <p>TODAY</p></div>
+                    <div><h6>23</h6> <p>THIS WEEK</p></div>
+                    <div><h6>3</h6> <p>APPROVALS</p></div>
+                </div>
+                <li><a class="dropdown-item" href="#"> <div class="d-flex g-3 justify-content-start align-items-center"">
+                    <div><i class="bi bi-rocket"></i></div>
+                    <div><h6>Deploy ready</h6> <p>Sprint release passed QA validation</p> <P>5M AGO</P></div>
+                </div> </a></li>
+               
+                <li><a class="dropdown-item" href="#"><div class="d-flex g-3 justify-content-start align-items-center"">
+                    <div> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h6>Mia Send Feedback</h6> <p>Please review updated dashboard spacing </p> <P>25M AGO</P></div>
+                </div></a></li>
+
+                <li><a class="dropdown-item" href="#"><div class="d-flex g-3 justify-content-start align-items-center"">
+                    <div><i class="bi bi-exclamation-square"></i></div>
+                    <div><h6>Storage Alert</h6> <p>Media Bucket reached 81% usage.</p> <P>56M AGO</P></div>
+                </div></a></li>
+
+                <li><a class="dropdown-item" href="#"><div class="d-flex g-3 justify-content-start align-items-center">
+                    <div><i class="bi bi-check-circle"></i></div>
+                    <div><h6>Payment Received</h6> <p>Invoice #INV-3921 settled Successfully</p> <P>2H AGO</P></div>
+                </div></a></li>
+            </ul>
+            </div>
+
+            <div class="dropdown">
+            <button class="btn border  mx-2 btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="bi bi-chat-square-text"></i>
+            </button>
+            <ul class="dropdown-menu p-2">
+                 <div class="d-flex justify-content-between">
+                    <div><h3>Messages</h3> <p>5 unread</p></div>
+                    <div><h3>Open Chat</h3></div>
+                </div><hr>
+                <div class="d-flex flex-row g-2">
+                    <div class="border  teams-message p-2">Direct</div>
+                    <div class="border teams-message p-2">Team</div>
+                    <div class="border teams-message p-2">Clients</div>
+                </div> <hr>
+            
+                <li><a class="dropdown-item  " href="#"><div class="d-flex m-0 p-0">
+                    <div class="message-image"> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h5>Mia Rodriguez</h5> <p class="message-p">Can you review the analytics wireframe today ?</p > <P class="message-p">2M AGO</P></div>
+                </div></a></li>
+                <li><a class="dropdown-item" href="#"><div class="d-flex">
+                    <div class="message-image"> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h5>Dev Channel</h5> <p class="message-p">Build passed.Ready for production deploy</p> <P class="message-p">12M AGO</P></div>
+                </div></a></li>
+                <li><a class="dropdown-item" href="#"><div class="d-flex justify-content-start">
+                    <div class="message-image"> <img src="images/avatar.png" alt="avatar-image"></div>
+                    <div><h5>Sarah Kim</h5> <p class="message-p">Shared file Q1-forecast-report.pdf</p> <P class="message-p">35M AGO</P></div>
+                </div></a></li>
+            </ul>
+            </div>
+
+            <div><button class="border mx-2 bg-light p-2 "><i class="bi bi-moon"></i></button></div>
+
+            <div class="d-flex">
+                <div class="mx-2"><img src="images/avatar.png" alt="avatar-img"></div>
+                <div><h6 class="fw-bold ">John doe</h6>
+                     <p class="product-admin text-muted">PRODUCT ADMIN</p></div>
+            </div>
+
+           </div>
+           
+
+        </header>
+    
+    <main class="page-content ">
+        <div class="side-bar d-flex flex-column">
+            <nav class="navbar-side">
+               <ul class="sidebar-nav role-list2">
+                 
+                <li><a><div class="d-flex"> 
+                    <div><button class="mx-2 border-0"><i class="bi bi-menu-button-wide"></i></button></div>
+                    <div><h6>Dashboard</h6></div>
+                    <div class="mx-4 fs-6"><p>HOME</p></div>
+                </div></a></li>
+
+                <li><a href="index.html" class="text-dark text-decoration-none"><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-speedometer2"></i></button></div>
+                    <div><h6>Dashboards</h6></div>
+                </div></a></li>
+
+                <li>
+                    <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <span class="fs-6"><span class="mx-2"><i class="bi bi-people"></i></span>Users</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-white">
+                        <li><a class="dropdown-item" href="userlist.html" target="_self">Users List</a></li>
+                        <li><a class="dropdown-item" href="userview.html">Users view</a></li>
+                        <li><a class="dropdown-item" href="useredit.html">Users Edit</a></li>
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="role&permission.html">Roles & Permission</a></li>
+                    </ul>
+                    </div>
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-shield-check"></i></button></div>
+                    <div><h6>Authentication</h6></div>
+                </div></a>    
+                </li>
+
+                <li><div class="d-flex justify-content-center align-items-center"><div class="text-muted sidebar-prodapps"><p>Productivity Apps</p></div> <div class="sidebar-line"></div> </div>   
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-calendar"></i></button></div>
+                    <div><h6>Calender</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a href="kanbanboard.html" class="text-dark text-decoration-none"><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-kanban"></i></button></div>
+                    <div><h6>Kanban Board</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-chat"></i></button></div>
+                    <div><h6>Chat</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-person-lines-fill"></i></button></div>
+                    <div><h6>Contacts</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-folder"></i></button></div>
+                    <div><h6>File Managar</h6></div>
+                </div></a>    
+                </li>
+               
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-envelope"></i></button></div>
+                    <div><h6>Email</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-check-all"></i></button></div>
+                    <div><h6>Todo List</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-headset"></i></button></div>
+                    <div><h6>Support Center</h6></div>
+                </div></a>    
+                </li>
+
+                <li><div class="d-flex justify-content-center align-items-center"><div class="text-muted sidebar-prodapps"><p>Interface</p></div> <div class="sidebar-line"></div> </div>   
+                </li>
+                
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-puzzle"></i></button></div>
+                    <div><h6>Components</h6></div>
+                </div></a>    
+                </li>
+                
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-border-width"></i></button></div>
+                    <div><h6>Widget</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-input-cursor-text"></i></button></div>
+                    <div><h6>forms</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-table"></i></button></div>
+                    <div><h6>Tables</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-graph-up-arrow"></i></button></div>
+                    <div><h6>Charts</h6></div>
+                </div></a>    
+                </li>
+                
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-square"></i></button></div>
+                    <div><h6>Icons</h6></div>
+                </div></a>    
+                </li>
+                 
+                 <li><div class="d-flex justify-content-center align-items-center"><div class="text-muted sidebar-prodapps"><p>Utility Pages</p></div> <div class="sidebar-line"></div> </div>   
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-send"></i></button></div>
+                    <div><h6>Contact</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-receipt"></i></button></div>
+                    <div><h6>Invoices</h6></div>
+                </div></a>    
+                </li>
+
+                 <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-bookmark"></i></button></div>
+                    <div><h6>Pricing</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-question-circle"></i></button></div>
+                    <div><h6>FAQ</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-exclamation-triangle"></i></button></div>
+                    <div><h6>Error pages</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-clock-history"></i></button></div>
+                    <div><h6>Time Line</h6></div>
+                </div></a>    
+                </li>
+
+                <li><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-search"></i></button></div>
+                    <div><h6>Search Results</h6></div>
+                </div></a>    
+                </li>
+                
+                <li class="link-nav"><a><div class="d-flex"> 
+                    <div> <button class="mx-2 border-0"><i class="bi bi-file-earmark"></i></button></div>
+                    <div><h6>Blank page</h6></div>
+                </div></a>    
+                </li>
+               
+             </ul>
+            </nav>
+            <section class="sidebar-footer p-3">
+                <div class="border p-2 d-flex justify-content-between "> 
+                  <div class="d-flex justify-content-center align-items-center"><div><img src="images/avatar.png" alt="avatar_img"></div>
+                    <div> <p style="color:#012970; line-height: 0; font-size: 12px; font-weight: bold;">John Doe</p>
+                     <p style="color:gray; font-size:12; line-height: 0; ">Product</p>
+                   </div></div>
+                  <div> <button class="p-1 bg-white text-muted"><i class="bi bi-gear"></i></button> <button class="p-1 bg-white text-muted"><i class="bi bi-box-arrow-right"></i></button></div>
+                </div>
+
+                <div class="p-2"> <button class="p-2 border text-muted"><span ><i class="bi bi-headset"></i></span> <span class="text-muted">Support Desk</span></button> 
+                  <button class="p-2 border text-muted"><span ><i class="bi bi-bell"></i></span> <span class="text-muted">Alerts</span></button>  </div>
+            </section>
+        </div>
+
+        <div class="main-content bg-light  ">
+        <h4 style="color:#012970; font-weight: bolder;" class="ms-2 ">Executive Operations Dashboard</h4>
+        <p style="font-size: 12px; color:gray;" class="ms-2">Unified delivery, growth, and reliability signals for daily decision-making.</p>
+        
+        <section class="dashcard-wrapper ms-2 d-flex justify-content-between ">
+            <div class="card card1 p-2 d-flex flex-column justify-content-start"> 
+                <div class="fs-3"><i class="bi p-1 bg-success bi-currency-dollar"></i></div>
+                <p class="p-c">Net Revenue</p>
+                <h4 style="color:#012970; font-weight: bolder;">$94.2k</h4>
+                 <p class="p-c text-success"><i class="bi bi-arrow-up-right"></i>9.4%</p>
+
+            </div>
+
+            <div class="card card2 p-2 d-flex flex-column justify-content-start"> 
+                <div class="fs-3"><i class="bi bg-primary bi-people-fill"></i></div>
+                <p class="p-c">Qualified Leads</p>
+                <h4 style="color:#012970; font-weight: bolder;">1,284</h4>
+                 <p class="p-c text-success"><i class="bi bi-arrow-up-right"></i>6.1%</p>
+
+            </div>
+
+            <div class="card card3 p-2 d-flex flex-column justify-content-start"> 
+                <div class="fs-3"><i class="bi bg-warning bi-stopwatch"></i></div>
+                <p class="p-c">Avg. Cycle Time</p>
+                <h4 style="color:#012970; font-weight: bolder;">4.2d</h4>
+                 <p class="p-c text-warning"><i class="bi bi-arrow-down-right"></i>3.5%</p>
+
+            </div>
+
+             <div class="card card4 p-2 d-flex flex-column justify-content-start"> 
+                <div class="fs-3"><i class="bi bg-primary bi-stopwatch"></i></div>
+                <p class="p-c">Retention</p>
+                <h4 style="color:#012970; font-weight: bolder;">92.7%</h4>
+                 <p class="p-c text-success"><i class="bi bi-arrow-down-right"></i>1.8%</p>
+
+            </div>
+        </section>
+      <!-- graph recent activity -->
+        <section class="row mt-3 ms-2 d-flex">
+            <div class="col-7 bg-white shadow  p-2">
+                <div class="d-flex  justify-content-between">
+                    <h3 style="color:#012970;">Performance Curve</h3>
+                    <div class="p-2">
+                        <span class="p-1 border prc-text text-muted">Month</span>
+                        <span class="p-1 border prc-text text-muted">Week</span>
+                        <span class="p-1 border prc-text text-muted">Day</span>
+                    </div>
+                </div> <hr>
+
+                <div class="d-flex g-2 justify-content-between">
+                    <div class="p-2 per-cur-card  border">
+                        <p class="text-muted">Revenue</p>
+                        <h5 style="color: #012970;">$94.2k</h5>
+                    </div>
+
+                    <div class="p-2 per-cur-card  border ">
+                        <p class="text-muted">Cost</p>
+                        <h5 style="color: #012970;">$57.6k</h5>
+                    </div>
+
+                    <div class="p-2 per-cur-card  border">
+                        <p class="text-muted">Margin</p>
+                        <h5 style="color: #012970;">$36.6k</h5>
+                    </div>
+                </div>
+
+                <div>GRAPH</div>
+            </div>
+            <div class="col-4 width-taken recent-activity mx-4 shadow bg-white p-2">
+               <div class="d-flex justify-content-between">
+                 <div><p style="color: #012970;">Recent Activity</p> <p class="text-muted lh-0 small">Last Two Hours</p>
+                 </div>
+                 <div><p style="color: #012970;">View</p></div>
+                </div>
+
+                <div>
+                   
+                    <div>
+                        <div class="p-2 border">
+                        <div class="activity-text"><span class="recent-tag-dot bg-success"></span> <strong>Alex Thompson</strong>
+                            completed purchase workflow update.
+                        </div>
+                    </div>
+
+                    <div class="p-2 border">
+                        <div class="activity-text"><span class="recent-tag-dot bg-primary"></span> <strong>Sarah Wilson</strong>
+                            submitted dashboard UX revisions.
+                        </div>
+                    </div>
+
+                     <div class="p-2 border">
+                        <div class="activity-text"><span class="recent-tag-dot bg-warning"></span> <strong></strong>
+                            Storage usage crossed 80% on media bucket.
+                        </div>
+                    </div>
+                    
+                    <div class="p-2 border">
+                        <div class="activity-text"><span class="recent-tag-dot bg-success"></span> <strong></strong>
+                            Deployment v3.2.1 passed production checks
+                        </div>
+                    </div>
+
+                     <div class="p-2 border">
+                        <div class="activity-text"><span class="recent-tag-dot bg-success"></span> <strong></strong>
+                            New lead batch synced from CRM integrations.
+                        </div>
+                    </div>
+
+                    <div class="p-2 border">
+                        <div class="activity-text"><span class="recent-tag-dot bg-danger"></span> <strong></strong>
+                            Billing retry required for invoice #INV-8043.
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+        <!-- table and pie-->
+        <section class="row ms-2 mt-3 ">
+            <div class="col-7 shadow bg-white ">
+                <div class="d-flex p-2  justify-content-between p-2">
+                <div style="color:#012970"><strong>Latest Transactions</strong></div>
+                <div class="text-primary">open Ledger</div>
+            </div>
+            <table class="table table-users">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ACCOUNT</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TXN-3112</td>
+                        <td style="color: #012970;"><img src="images/avatar.png" alt="avatar-image"><strong>Alex Thomas</strong></td>
+                        <td>Feb 24, 2026</td>
+                        <td>$2,140.00</td>
+                        <td><span class="badge text-success table-stcomp">Completed</span></td>
+                    </tr>
+
+                     <tr>
+                        <td>#TXN-3112</td>
+                        <td style="color: #012970;"><img src="images/avatar.png" alt="avatar-image"><strong>Mia Rodriguez</strong></td>
+                        <td>Feb 24, 2026</td>
+                        <td>$890.00</td>
+                        <td><span class="badge text-warning table-stpend">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>#TXN-3112</td>
+                        <td style="color: #012970;"><img src="images/avatar.png" alt="avatar-image"><strong>Mike Johnson</strong></td>
+                        <td>Feb 24, 2026</td>
+                        <td>$3,420.00</td>
+                        <td><span class="badge text-success table-stcomp">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>#TXN-3112</td>
+                        <td style="color: #012970;"><img src="images/avatar.png" alt="avatar-image"><strong>Emily Davis</strong></td>
+                        <td>Feb 24, 2026</td>
+                        <td>$540.00</td>
+                        <td><span class="badge text-danger table-stfail">failed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="col-4 width-taken pie-table shadow mx-4 bg-white p-3">
+                <h6 style="color: #012970;">Acquisition Mix</h6> <hr>
+                <div class="d-flex align-items-center justify-content-center" style="color: #012970; font-weight: bolder;">
+                  <p> <strong style="color:gray">Total</strong> <br> 100%</p></div>
+
+                  <div class="d-flex border justify-content-between p-2">
+                    <div class="text-muted">Inbound</div>
+                    <div style="color: #012970;">38%</div>
+                  </div>
+
+                  <div class="d-flex border justify-content-between p-2">
+                    <div class="text-muted">Outbound</div>
+                    <div style="color: #012970;">24%</div>
+                  </div>
+
+                  <div class="d-flex border justify-content-between p-2">
+                    <div class="text-muted">partners</div>
+                    <div style="color: #012970;">21%</div>
+                  </div>
+
+                  <div class="d-flex border justify-content-between p-2">
+                    <div class="text-muted">Community</div>
+                    <div style="color: #012970;">17%</div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Sales and System stability -->
+        <section class="row ms-2 mt-3">
+                <div class="col-7 bg-white shadow p-2">
+                    <div class="d-flex justify-content-between">
+                    <h5 style="color: #012970;"><strong>Sales Target</strong></h5>
+                    <p class="text-primary">view report</p>
+                    </div>
+                    <hr>
+
+                    <div>
+                    <div class="d-flex justify-content-between text-muted">
+                        <p>Product Revenue</p>
+                        <p style="color: #012970; font-weight: bolder;">74%</p>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 74%;" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </div>
+
+                    <div>
+                    <div class="d-flex mt-3 justify-content-between text-muted">
+                        <p>Sales Revenue</p>
+                        <p style="color: #012970; font-weight: bolder;">61%</p>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 61%;" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </div>
+
+                    <div>
+                    <div class="d-flex justify-content-between mt-3 text-muted">
+                        <p>Renewals</p>
+                        <p style="color: #012970; font-weight: bolder;">83%</p>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </div>
+                </div>
+
+                 <div class="col-4 width-taken mx-4 bg-white shadow p-2">
+                    <div class="d-flex justify-content-between">
+                    <h5 style="color: #012970;"><strong>System Stabiliy</strong></h5>
+                    <p class="text-primary"></p>
+                    </div>
+                    <hr>
+
+                    <div>
+                    <div class="d-flex justify-content-between text-muted">
+                        <p>API Success</p>
+                        <p style="color: #012970; font-weight: bolder;">99%</p>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 99%;" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </div>
+
+                    <div>
+                    <div class="d-flex mt-3 justify-content-between text-muted">
+                        <p>background jobs</p>
+                        <p style="color: #012970; font-weight: bolder;">97.8%</p>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 97%;" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </div>
+
+                    <div>
+                    <div class="d-flex justify-content-between mt-3 text-muted">
+                        <p>Queue Throughput</p>
+                        <p style="color: #012970; font-weight: bolder;">93.1%</p>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 93%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Team Activity Matrix-->
+        <section class="row ms-2 mt-3">
+            <div class="col-7 bg-white p-2">
+                 <div class="d-flex p-2  justify-content-between p-2">
+                <div style="color:#012970"><strong>Team Activity</strong></div>
+                <div class="text-primary">View all</div>  </div>
+                <table class="table table-users">
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Task</th>
+                        <th>Status</th>
+                        <th>ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sarah W.</td>
+                        <td>Campaign split test</td>
+                        <td><span class="badge text-primary table-stpro">Inprogress</span></td>
+                        <td>2h</td>
+                    </tr>
+
+                     <tr>
+                        <td>Alex T.</td>
+                        <td>Q1 budget review</td>
+                        <td><span class="badge text-success table-stcomp">Done</span></td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mia R.</td>
+                        <td>Partner outreach deck</td>
+                        <td><span class="badge text-warning table-stpend">Review</span></td>
+                        <td>Today</td>
+                    </tr>
+
+                    <tr>
+                        <td>Emily D.</td>
+                        <td>Billing edge-case QA</td>
+                        <td><span class="badge text-danger table-stfail">Blocked</span></td>
+                        <td>1d</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+           
+             <div class="col-4 table-compaign mx-4 bg-white p-2">
+                 <div class="d-flex p-2  justify-content-between p-2">
+                <div style="color:#012970"><strong>Team Activity</strong></div>
+                <div class="text-primary"></div>  </div>
+                <table class="table table-users table-compaign">
+                <thead>
+                    <tr>
+                        <th>Compaign</th>
+                        <th>Owner</th>
+                        <th>Spend</th>
+                        <th>ROI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Enterprise outbound</td>
+                        <td>Sarah W.</td>
+                        <td>$12,400</td>
+                        <td><span class="badge text-success table-stcomp">+31%</span></td>
+                    </tr>
+
+                     <tr>
+                        <td>Lifecycle nurture</td>
+                        <td>Mia R.</td>
+                        <td>$8,650</td>
+                        <td><span class="badge text-primary table-stpro">+18%</span></td>
+                    </tr>
+
+                    <tr>
+                       <td>Partner activation</td>
+                        <td>Alex T.</td>
+                        <td>$6,220</td>
+                        <td><span class="badge text-warning table-stpend">+9%</span></td>
+                    </tr>
+
+                    <tr>
+                       <td>Community relaunch</td>
+                        <td>Emily D.</td>
+                        <td>$4,980</td>
+                        <td><span class="badge text-danger table-stfail">-2%</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+         
+        </div>
+    </main>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+ 

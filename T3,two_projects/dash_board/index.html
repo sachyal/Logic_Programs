@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Header -->
+ <header class="top-header d-flex justify-content-between align-items-center px-4">
+  <div class="d-flex align-items-center gap-3">
+    <!-- Hamburger Menu -->
+    <button id="sidebarToggle" class="btn btn-link p-0">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+    
+    <h5 class="mb-0 fw-bold"><img src="images/logo.PNG" height="28" class="me-2"> NiceAdmin</h5>
+  </div>
+  
+  <div class="d-flex align-items-center gap-3">
+    <!-- Search -->
+    <div class="search-box d-none d-lg-block">
+      <i class="bi bi-search"></i>
+      <input type="text" class="form-control" placeholder="Search projects, invoices, users...">
+    </div>
+    
+    <!-- Quick Access Dropdown -->
+    <div class="dropdown">
+      <button class="btn btn-link p-0" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-grid-3x3-gap fs-5"></i>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end p-3" style="min-width: 280px;">
+        <h6 class="dropdown-header px-0 mb-2">Quick Access</h6>
+        <div class="row g-2">
+          <div class="col-12">
+            <a href="#" class="quick-link">
+              <i class="bi bi-plus-circle"></i>
+              <div>
+                <div class="fw-semibold">Create New Workspace</div>
+                <small class="text-muted">Launch projects, assign team, set timeline</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="quick-link">
+              <i class="bi bi-calendar3"></i>
+              <div>
+                <div class="fw-semibold">Calendar</div>
+                <small class="text-muted">Events</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="quick-link">
+              <i class="bi bi-kanban"></i>
+              <div>
+                <div class="fw-semibold">Kanban</div>
+                <small class="text-muted">Boards</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="quick-link">
+              <i class="bi bi-chat-dots"></i>
+              <div>
+                <div class="fw-semibold">Chat</div>
+                <small class="text-muted">Inbox</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="quick-link">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <div class="fw-semibold">Email</div>
+                <small class="text-muted">Campaigns</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="quick-link">
+              <i class="bi bi-folder"></i>
+              <div>
+                <div class="fw-semibold">Files</div>
+                <small class="text-muted">Assets</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 mt-2">
+            <a href="#" class="quick-link">
+              <i class="bi bi-headset"></i>
+              <div>
+                <div class="fw-semibold">Support</div>
+                <small class="text-muted">Tickets</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <!-- Language Dropdown -->
+    <div class="dropdown">
+      <button class="btn btn-link p-0 d-flex align-items-center gap-1" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-globe fs-5"></i>
+        <span class="d-none d-md-inline small">EN</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#"><i class="bi bi-flag me-2"></i> English</a></li>
+        <li><a class="dropdown-item" href="#"><i class="bi bi-flag me-2"></i> Français</a></li>
+        <li><a class="dropdown-item" href="#"><i class="bi bi-flag me-2"></i> Deutsch</a></li>
+        <li><a class="dropdown-item" href="#"><i class="bi bi-flag me-2"></i> Español</a></li>
+      </ul>
+    </div>
+    
+    <!-- Icons -->
+    <i class="bi bi-bell fs-5 position-relative">
+      <span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">4</span>
+    </i>
+    <i class="bi bi-chat-left-text fs-5 position-relative">
+      <span class="badge bg-primary rounded-pill position-absolute top-0 start-100 translate-middle">5</span>
+    </i>
+    
+    <!-- Night Mode Toggle -->
+    <button id="theme-toggle" class="btn btn-link p-0">
+      <i class="bi bi-moon fs-5"></i>
+    </button>
+    
+    <!-- User -->
+    <img src="images/avatar.png" class="rounded-circle" alt="User">
+    <div class="d-none d-md-block">
+      <div class="fw-semibold">John Doe</div>
+      <small class="text-muted">PRODUCT ADMIN</small>
+    </div>
+  </div>
+</header>
+
+  <!-- Body: Sidebar + Main -->
+  <div class="container-fluid p-0">
+    <div class="d-flex">
+   
+      <!-- Sidebar -->
+     <aside class="sidebar" id="sidebar">
+  <ul class="nav flex-column px-2">
+    <li class="nav-item">
+      <a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Home</a>
+    </li>
+
+    <!-- Dashboards Dropdown -->
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#dashboardsMenu" role="button" aria-expanded="false" aria-controls="dashboardsMenu">
+        <i class="bi bi-speedometer2"></i> Dashboards 
+        <span class="badge bg-primary ms-auto">6</span>
+        <i class="bi bi-chevron-down ms-2 small"></i>
+      </a>
+      <div class="collapse" id="dashboardsMenu">
+        <ul class="nav flex-column ms-4">
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-graph-up-arrow"></i> Sales</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-bar-chart-line"></i> Analytics</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-person-badge"></i> CRM</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-megaphone"></i> Marketing</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-diagram-3"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-cash-coin"></i> Finance</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-people"></i> Users</a></li>
+
+    <!-- Authentication Dropdown -->
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#authMenu" role="button" aria-expanded="false" aria-controls="authMenu">
+        <i class="bi bi-shield-lock"></i> Authentication 
+        <span class="badge bg-primary ms-auto">7</span>
+        <i class="bi bi-chevron-down ms-2 small"></i>
+      </a>
+      <div class="collapse" id="authMenu">
+        <ul class="nav flex-column ms-4">
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-person-plus"></i> Register</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-question-circle"></i> Forgot Password</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-arrow-clockwise"></i> Reset Password</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-envelope-check"></i> Email Verification</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-phone"></i> Two Factor Auth</a></li>
+          <li class="nav-item"><a class="nav-link py-1" href="#"><i class="bi bi-lock"></i> Lock Screen</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <h6 class="sidebar-heading mt-4 mb-2 px-2">PRODUCTIVITY APPS</h6>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-calendar3"></i> Calendar</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-kanban"></i> Kanban Board</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-chat-dots"></i> Chat</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-lines-fill"></i> Contacts</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-folder"></i> File Manager</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-envelope"></i> Email</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-check2-square"></i> Todo List</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-headset"></i> Support Center</a></li>
+
+    <h6 class="sidebar-heading mt-4 mb-2 px-2">INTERFACE</h6>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-grid-3x3-gap"></i> Components</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-puzzle"></i> Widgets</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-ui-checks"></i> Forms</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-table"></i> Tables</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-bar-chart"></i> Charts</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-brightness-high"></i> Icons</a></li>
+
+    <h6 class="sidebar-heading mt-4 mb-2 px-2">UTILITY PAGES</h6>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-telephone"></i> Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-receipt"></i> Invoices</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-tag"></i> Pricing</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i> FAQ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-exclamation-triangle"></i> Error pages</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-clock-history"></i> Timeline</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i> Search Results</a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-file-earmark"></i> Blank Page</a></li>
+  </ul>
+  <!-- user profile -->
+   <div class="sidebar-footer mt-auto">
+    <div class="d-flex align-items-center p-3 border-top">
+      <img src="images/avatar.png" class="rounded-circle me-2" width="30" height="30">
+      <div class="flex-grow-1">
+        <div class="fw-semibold userp">John Doe</div>
+        <small class="text-muted userp ">PRODUCT ADMIN</small>
+      </div>
+      <button class="btn btn-sm"><i class="bi bi-gear"></i></button>
+      <button class="btn btn-sm"><i class="bi bi-box-arrow-right"></i></button>
+    </div>
+    <div class="d-flex gap-2 p-3 pt-0">
+      <button class="btn btn-outline-secondary userp btn-sm flex-fill">
+        <i class="bi bi-headset me-1"></i> Support Desk
+      </button>
+      <button class="btn btn-outline-secondary userp btn-sm flex-fill">
+        <i class="bi bi-bell me-1"></i> Alerts
+      </button>
+    </div>
+  </div>
+</aside>
+      <!-- Main Content -->
+      <main class="main-content flex-grow-1 p-4" id="mainContent">
+        
+         <div>
+            <h3 class="text-primary">Executive Operations Dashboard</h3>
+            <p class="text-muted">Unified delivery, growth, and reliability signals for daily decision-making.</p>
+         </div>
+       <div class="row mb-4 g-3">
+  <div class="col-md-3">
+    <div class="card-metric cardmetric1 d-flex flex-column align-items-start gap-3">
+      <div class="metric-icon "><i class="bi bi-currency-dollar"></i></div>
+      <div>
+        <h6 class="mb-1">NET REVENUE</h6>
+        <h3 class="mb-0">$94.2K</h3>
+        <span class="text-success fs-6">↑9.4%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <div class="card-metric cardmetric2 d-flex flex-column align-items-start gap-3">
+      <div class="metric-icon "><i class="bi bi-person"></i></div>
+      <div>
+        <h6 class="mb-1">QUALIFIED LEADS</h6>
+        <h3 class="mb-0">1,284 </h3>
+        <span class="text-success fs-6">↑6.1%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <div class="card-metric cardmetric3 d-flex flex-column align-items-start gap-3">
+      <div class="metric-icon"><i class="bi bi-stopwatch"></i></div>
+      <div>
+        <h6 class="mb-1">AVG. CYCLE TIME</h6>
+        <h3 class="mb-0">4.2d </h3>
+        <span class="text-danger fs-6">↓3.5%</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <div class="card-metric cardmetric4 d-flex flex-column align-items-start gap-3">
+      <div class="metric-icon "><i class="bi bi-shield-check"></i></div>
+      <div>
+        <h6 class="mb-1">RETENTION</h6>
+        <h3 class="mb-0">92.7% </h3>
+        <span class="text-success fs-6">↑1.8%</span>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<div class="row g-3">
+     <div class="col-md-8 ">
+  <div class="performance-chart bg-white p-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="mb-0 text-primary fw-bold">Performance Curve</h5>
+      <div class="btn-group btn-group-sm">
+        <button class="btn btn-primary">MONTH</button>
+        <button class="btn btn-outline-secondary">WEEK</button>
+        <button class="btn btn-outline-secondary">DAY</button>
+      </div>
+    </div>
+
+     <!-- Revenue / Margin / Cost Stats -->
+    <div class="row g-3 text-start">
+                <div class="col-4 bg-light" >
+                    <div class="stat-item">
+                    <h6 class="text-muted p-2 mb-1">Revenue</h6>
+                    <h6 class="mb-0 text-primary">$94.2K</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-item p-2 bg-light">
+                    <h6 class="text-muted mb-1">Margin</h6>
+                    <h6 class="mb-0 text-primary">42.3%</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-item p-2 bg-light">
+                    <h6 class="text-muted mb-1">Cost</h6>
+                    <h6 class="mb-0 text-primary">$54.1K</h6>
+                    </div>
+                </div>
+                </div>
+    
+    <!-- Chart Area -->
+    <div class="d-flex justify-content-center mt-4 align-items-center bg-light text-muted mb-4" style="height:200px; border-radius:8px;">
+      graph
+    </div>
+           </div>
+            </div>
+   <div class="col-md-4">
+    <div class="recent-activity bg-white p-2">
+    <div class="d-flex text-primary justify-content-between"><h5 class="mb-3">Recent Activity <br> <span class="fs-6 text-muted">view hours</span></h5>
+     <button class="btn text-primary">view</button></div>
+    <ul class="list-unstyled activity-list">
+      <li class="activity-item">
+        <span class="activity-dot dot-success"></span>
+        <div>
+          <small class="text-muted">Alex Thompson completed purchase workflow update</small>
+        </div>
+      </li>
+      <li class="activity-item">
+        <span class="activity-dot dot-primary"></span>
+        <div>
+          <small class="text-muted">Sarah Wilson submitted dashboard UX revisions</small>
+        </div>
+      </li>
+      <li class="activity-item">
+        <span class="activity-dot dot-warning"></span>
+        <div>
+          <small class="text-muted">Storage Alert usage crossed 80% on media bucket</small>
+        </div>
+      </li>
+      <li class="activity-item">
+        <span class="activity-dot dot-info"></span>
+        <div>
+          <small class="text-muted">Deployment v3.2.1 passed production checks</small>
+        </div>
+      </li>
+      <li class="activity-item">
+        <span class="activity-dot dot-success"></span>
+        <div>
+          <small class="text-muted">New lead batch synced from CRM integrations</small>
+        </div>
+      </li>
+      <li class="activity-item">
+        <span class="activity-dot dot-danger"></span>
+        <div>
+          <small class="text-muted"> Billing retry required for invoice #INV-8043</small>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+        </div>
+
+  <div class="row g-4 mt-1">
+  
+  <!-- Left Column: Transactions + Sales Targets + Team Activity -->
+  <div class="col-lg-8">
+    
+    <!-- Latest Transactions -->
+    <div class="dashboard-card mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0 text-primary">Latest Transactions</h5>
+        <a href="#" class="small text-decoration-none">Open ledger</a>
+      </div>
+      <div class="table-responsive ">
+        <table class="table table-borderless  align-middle mb-0">
+          <thead >
+            <tr  >
+              <th>ID</th>
+              <th>ACCOUNT</th>
+              <th>DATE</th>
+              <th>AMOUNT</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr >
+              <td>#TXN-3112</td>
+              <td class="text-primary"><img src="images/avatar.png" class="rounded-circle me-2" width="28"> Alex Thompson</td>
+              <td>Feb 24, 2026</td>
+              <td>$2,140.00</td>
+              <td><span class="badge badge-status badge-success">Completed</span></td>
+            </tr>
+            <tr>
+              <td>#TXN-3111</td>
+              <td class="text-primary"><img src="images/avatar.png" class="rounded-circle me-2" width="28"> Mia Rodriguez</td>
+              <td>Feb 24, 2026</td>
+              <td>$890.00</td>
+              <td><span class="badge badge-status badge-warning">Pending</span></td>
+            </tr>
+            <tr>
+              <td>#TXN-3110</td>
+              <td class="text-primary"><img src="images/avatar.png" class="rounded-circle me-2" width="28"> Mike Johnson</td>
+              <td>Feb 23, 2026</td>
+              <td>$3,420.00</td>
+              <td><span class="badge badge-status badge-success">Completed</span></td>
+            </tr>
+            <tr>
+              <td>#TXN-3109</td>
+              <td class="text-primary"><img src="images/avatar.png" class="rounded-circle me-2" width="28"> Emily Davis</td>
+              <td>Feb 23, 2026</td>
+              <td>$540.00</td>
+              <td><span class="badge badge-status badge-danger">Failed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Sales Targets -->
+    <div class="dashboard-card mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0 text-primary">Sales Targets</h5>
+        <a href="#" class="small text-decoration-none">View report</a>
+      </div>
+      <div class="target-item mb-3">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small">Product Revenue</span>
+          <span class="small fw-semibold">74%</span>
+        </div>
+        <div class="progress" style="height: 6px;">
+          <div class="progress-bar bg-success" style="width: 74%"></div>
+        </div>
+      </div>
+      <div class="target-item mb-3">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small">Service Revenue</span>
+          <span class="small fw-semibold">62%</span>
+        </div>
+        <div class="progress" style="height: 6px;">
+          <div class="progress-bar bg-primary" style="width: 62%"></div>
+        </div>
+      </div>
+      <div class="target-item">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small">Renewals</span>
+          <span class="small fw-semibold">87%</span>
+        </div>
+        <div class="progress" style="height: 6px;">
+          <div class="progress-bar bg-info" style="width: 87%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Activity -->
+    <div class="dashboard-card">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0 text-primary">Team Activity</h5>
+        <a href="#" class="small text-decoration-none">View all</a>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-borderless align-middle mb-0">
+          <thead>
+            <tr class="text-muted small">
+              <th>MEMBER</th>
+              <th>TASK</th>
+              <th>STATUS</th>
+              <th>ETA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sarah W.</td>
+              <td>Campaign split test</td>
+              <td><span class="badge badge-status badge-primary">In Progress</span></td>
+              <td>2h</td>
+            </tr>
+            <tr>
+              <td>Alex T.</td>
+              <td>Q1 budget review</td>
+              <td><span class="badge badge-status badge-success">Done</span></td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>Mia R.</td>
+              <td>Partner outreach deck</td>
+              <td><span class="badge badge-status badge-warning">Review</span></td>
+              <td>Today</td>
+            </tr>
+            <tr>
+              <td>Emily D.</td>
+              <td>Billing edge-case QA</td>
+              <td><span class="badge badge-status badge-danger">Blocked</span></td>
+              <td>1d</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column: Acquisition + System Stability + Campaign -->
+  <div class="col-lg-4">
+    
+    <!-- Acquisition Mix -->
+    <div class="dashboard-card mb-4">
+      <h5 class="mb-3 text-primary">Acquisition Mix</h5>
+      <div class="d-flex justify-content-center mb-3">
+        <div style="width: 160px; height: 160px; position: relative;">
+          <canvas id="acquisitionChart"></canvas>
+          <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <div class="text-muted small">Total</div>
+            <div class="fw-bold text-primary fs-4">100%</div>
+          </div>
+        </div>
+      </div>
+      <div class="acquisition-list">
+        <div class="d-flex justify-content-between py-2 border-bottom">
+          <span><span class=" me-2"></span>Inbound</span>
+          <span class=" text-muted">30%</span>
+        </div>
+        <div class="d-flex justify-content-between py-2 border-bottom">
+          <span><span class=" me-2"></span>Outbound</span>
+          <span class="text-muted">24%</span>
+        </div>
+        <div class="d-flex justify-content-between py-2 border-bottom">
+          <span><span class=" me-2"></span>Partners</span>
+          <span class="text-muted">21%</span>
+        </div>
+        <div class="d-flex justify-content-between py-2">
+          <span><span class=" me-2"></span>Community</span>
+          <span class="text-muted">17%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- System Stability -->
+    <div class="dashboard-card text-muted  mb-4">
+      <h5 class="mb-3 text-primary">System Stability</h5>
+      <div class="stability-item mb-3">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small">API Success</span>
+          <span class="small fw-semibold">99.4%</span>
+        </div>
+        <div class="progress" style="height: 6px;">
+          <div class="progress-bar bg-success" style="width: 99.4%"></div>
+        </div>
+      </div>
+      <div class="stability-item mb-3">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small">Background Jobs</span>
+          <span class="small fw-semibold">97.2%</span>
+        </div>
+        <div class="progress" style="height: 6px;">
+          <div class="progress-bar bg-primary" style="width: 97.2%"></div>
+        </div>
+      </div>
+      <div class="stability-item">
+        <div class="d-flex justify-content-between mb-1">
+          <span class="small">Queue Throughput</span>
+          <span class="small fw-semibold">93.1%</span>
+        </div>
+        <div class="progress" style="height: 6px;">
+          <div class="progress-bar bg-warning" style="width: 93.1%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Campaign Matrix -->
+    <div class="dashboard-card">
+      <h5 class="mb-3 text-primary">Campaign Matrix</h5>
+      <div class="table-responsive">
+        <table class="table table-borderless align-middle mb-0">
+          <thead>
+            <tr class="text-muted small">
+              <th>CAMPAIGN</th>
+              <th>OWNER</th>
+              <th>SPEND</th>
+              <th>ROI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Enterprise outbound</td>
+              <td>Sarah W.</td>
+              <td>$12,400</td>
+              <td><span class="text-success">+31%</span></td>
+            </tr>
+            <tr>
+              <td>Lifecycle nurture</td>
+              <td>Mia R.</td>
+              <td>$8,600</td>
+              <td><span class="text-success">+19%</span></td>
+            </tr>
+            <tr>
+              <td>Partner activation</td>
+              <td>Alex T.</td>
+              <td>$5,220</td>
+              <td><span class="text-warning">+9%</span></td>
+            </tr>
+            <tr>
+              <td>Community relaunch</td>
+              <td>Emily D.</td>
+              <td>$4,980</td>
+              <td><span class="text-danger">-2%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Night mode toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const icon = toggleBtn.querySelector('i');
+    
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+    
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    });
+    
+    function updateIcon(theme) {
+      icon.className = theme === 'dark' ? 'bi bi-sun fs-5' : 'bi bi-moon fs-5';
+    }
+
+    // Sidebar toggle
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+      mainContent.classList.toggle('expanded');
+    });
+  </script>
+</body>
+</html>

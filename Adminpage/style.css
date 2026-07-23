@@ -1,0 +1,201 @@
+
+.slash{
+    padding:4px;
+    border:1px solid grainsboro;
+}
+.logo-text{
+    color:#012970;
+}
+.us-image img{
+    width:25px;
+    height: 20px;
+    margin-right:3px;
+}
+.header{
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 9999;
+}
+.side-bar{
+    width: 300px;
+    top:100px;
+    left:0;
+    position:fixed;
+
+}
+.product-admin{
+    font-size: 12px;
+    line-height: 0;
+}
+.search-header{
+    input{
+        width: 500px;
+    }
+    input:hover{
+        border:none;
+    }
+}
+.message-image img{
+    width:30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.message-p{
+    font-size:15px;
+}
+.small{
+    font-size:12px;
+}
+.sidebar-nav{
+    list-style-type: none;
+}
+.teams-message:hover{
+    color:blue;
+}
+.bi-box-arrow-right , .bi-gear{font-size:12px;}
+.sidebar-line{width:50%; height:1px; background-color: gray;}
+.sidebar-prodapps{font-size:15px;}
+.sidebar-footer{
+    z-index: 2;
+}
+.navbar-side {
+    height: 500px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.link-nav a:hover{background-color: lightblue; border-left: #012970; border-radius: 5px;}
+.sidebar-footer{position:sticky; z-index: 1; overflow: auto;}
+.main-content{top:100px; margin-left:300px; padding:20px;}
+.card{width:250px;}
+.card1{background:lightgreen;}
+.card2{background-color:lightblue ;}
+.card3{background-color: #ec9f05;}
+.card4{background-color: lightblue;}
+.prc-text:hover{color:#012970; background-color: lightblue;}
+.per-cur-card{width: 100%; margin-left: 10px;}
+.recent-tag-dot{display: inline-block; width:8px; height: 8px; border-radius: 4px; margin-right: 5px;}
+.table-users img{width: 25px; height: 25px; margin-right: 5px;}
+.table-users{
+    thead{
+        tr{th{background-color: gainsboro; color: gray;font-weight: normal;}}
+    }
+}
+.table-stcomp{ background-color: lightgreen;}
+.table-stpend{background-color: #f9fb8efa; }
+.table-stfail{ background-color: rgb(241, 129, 129); }
+.table-stpro{background-color: lightblue;}
+.activity-text{font-size: 13px;}
+.table-compaign {width: 400px; overflow-x: scroll;}
+.width-taken{width: 400px;}
+
+
+<!--userlist-->
+
+.search-members{
+    input{padding:5px;}
+}
+.active-cir{width: 8px; height: 8px; background-color: green; display: inline-block; border-radius: 5px;}
+.user-snapshotcard1{background-color: lightblue;}
+.user-snapshotcard2{background-color: lightgreen;}
+.user-snapshotcard3{background-color: lightyellow;}
+.user-snapshotcard4{background-color: rgb(237, 142, 142);}
+
+.userlist-table img{width: 30px; height: 30px;}
+
+/* users-view */
+.operation-cirlg{display: inline-block; width: 8px; height: 8px;}
+.small-posturep{font-size: 12px; line-height: 0;}
+.small-perm{font-size: 12px; line-height: 0;}
+.phone-users{overflow-x: scroll; overflow-y: hidden; width:00px;}
+.user-edit-image img{width: 100px; height: 100px;}
+
+/* profile */
+
+.profile-edit-image img{width:70px; height: 70px;}
+.profile-edit-image img,
+.profile-edit-image sub {
+  display: inline-block;
+  vertical-align: middle; 
+  margin: 0;
+  padding: 0;
+}
+.profile-edit-image {
+  line-height: 0;
+}
+.profile-edit-image {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-edit-image sub {
+  position: absolute;
+  bottom: -5px;  
+  right: -22px;
+}
+.profile-cardt{width: 275px;}
+.workview-profile{width:300px;}
+
+/* Role & Permissions */
+.role-i-1{background-color: rgb(188, 131, 131);}
+.role-i-2{background-color: lightyellow;}
+.role-i-3{background-color: lightblue;}
+.role-i-4{background-color: rgb(189, 161, 215);}
+.role-i-5{background-color: rgb(193, 220, 230);}
+
+.admin-role{background-color: lightblue; border-left: 3px solid #012970;}
+.role-pen-icon{opacity: 0;}
+.role-list li {  width: 100%; margin: 0; padding: 0; }
+.role-list li:hover { .role-pen-icon {opacity: 1;} background-color: lightblue;}
+.role-list p { margin: 0; line-height: 1.2; }
+.r-hr{height: 1px; width: 100%; background:gray;}
+
+
+/* kanban*/
+.kn-rl{position: relative; display: inline-block;}
+.kanabn-img1{position: absolute; left:20px; width: 30px; height: 30px;}
+.kanabn-img2{position: absolute; left:40px; width: 30px; height: 30px;}
+.kanabn-img3{position: absolute; left:60px; width: 30px; height: 30px;}
+.kanabn-img4{position: absolute; left:80px; width: 30px; height: 30px;}
+.kanabn-span{display: inline-block;  width: 25px; height: 25px; position: absolute; left: 120px; background-color: white;}
+
+.role-list2 li {  width: 100%; margin: 0; padding: 0; }
+.role-list2 li:hover { background-color: lightblue; border-left: 3px solid #012970;}
+.role-list2 p { margin: 0; line-height: 1.2; }
+.k-card{position: sticky; top:0;}
+
+.kanbanboard-cards{
+    width: 100%; 
+    height: calc(100vh - 150px); 
+    overflow-y: hidden; 
+    background: white;
+     overflow-x: auto;
+}
+
+.kanbanboard-cards > div > .d-flex.flex-column {
+  overflow-y: auto;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.kanbanboard-cards > div.shadow {
+  flex: 0 0 300px;      
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-1in{border-left:1px solid blue; margin-top: 10px; padding: 10px;}
+.card-2in{border-left:1px solid red; margin-top: 10px; padding: 10px;}
+.card-3in{border-left:1px solid violet; margin-top: 10px; padding: 10px;}
+.card-4in{border-left:1px solid orange; margin-top: 10px; padding: 10px;}
+
+
+
+.k-card{
+  position: sticky; 
+  top: 0;
+  z-index: 10;           
+  background: white; }
+
+
